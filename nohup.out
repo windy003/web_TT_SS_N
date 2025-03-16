@@ -890,3 +890,22 @@ http:///127.0.0.1:5003 is an invalid address, please make sure it has a scheme a
 2025-03-16T02:32:55Z INF Autoupdate frequency is set autoupdateFreq=86400000
 2025-03-16T02:32:55Z ERR Couldn't start tunnel error="http:///127.0.0.1:5003 is an invalid address, please make sure it has a scheme and a hostname"
 http:///127.0.0.1:5003 is an invalid address, please make sure it has a scheme and a hostname
+ * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5003
+ * Running on http://172.23.45.17:5003
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 766-311-987
+127.0.0.1 - - [16/Mar/2025 10:44:04] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [16/Mar/2025 10:44:05] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [16/Mar/2025 11:22:04] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [16/Mar/2025 11:26:56] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [16/Mar/2025 11:27:03] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [16/Mar/2025 11:27:16] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [16/Mar/2025 11:32:49] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [16/Mar/2025 11:32:52] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [16/Mar/2025 11:34:57] "GET / HTTP/1.1" 200 -
