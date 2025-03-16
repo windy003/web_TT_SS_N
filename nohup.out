@@ -909,3 +909,93 @@ Press CTRL+C to quit
 127.0.0.1 - - [16/Mar/2025 11:32:49] "GET / HTTP/1.1" 200 -
 127.0.0.1 - - [16/Mar/2025 11:32:52] "GET / HTTP/1.1" 200 -
 127.0.0.1 - - [16/Mar/2025 11:34:57] "GET / HTTP/1.1" 200 -
+2025-03-16T06:53:28Z INF Starting tunnel tunnelID=bcdc9de5-4470-4628-8d9b-8ca34a373ee9
+2025-03-16T06:53:28Z INF Version 2025.2.1 (Checksum afdfadd1ef552e66bffc35246fe30a9bd578356d2d386de95585ccfc432472b8)
+2025-03-16T06:53:28Z INF GOOS: linux, GOVersion: go1.22.10, GoArch: amd64
+2025-03-16T06:53:28Z INF Settings: map[config:/root/.cloudflared/web_TT_SS_N.yml cred-file:/root/.cloudflared/bcdc9de5-4470-4628-8d9b-8ca34a373ee9.json credentials-file:/root/.cloudflared/bcdc9de5-4470-4628-8d9b-8ca34a373ee9.json]
+2025-03-16T06:53:28Z INF Autoupdate frequency is set autoupdateFreq=86400000
+2025-03-16T06:53:28Z INF Generated Connector ID: 3a64a9cc-6b73-4264-9b7e-eccfb55f078e
+2025-03-16T06:53:28Z INF Starting tunnel tunnelID=6647e3ad-8bed-4a72-bc89-eded4c3464a9
+2025-03-16T06:53:28Z INF Version 2025.2.1 (Checksum afdfadd1ef552e66bffc35246fe30a9bd578356d2d386de95585ccfc432472b8)
+2025-03-16T06:53:28Z INF GOOS: linux, GOVersion: go1.22.10, GoArch: amd64
+2025-03-16T06:53:28Z INF Settings: map[config:/root/.cloudflared/web_TT_SS_C.yml cred-file:/root/.cloudflared/6647e3ad-8bed-4a72-bc89-eded4c3464a9.json credentials-file:/root/.cloudflared/6647e3ad-8bed-4a72-bc89-eded4c3464a9.json]
+2025-03-16T06:53:28Z INF Autoupdate frequency is set autoupdateFreq=86400000
+2025-03-16T06:53:28Z INF Generated Connector ID: efefbdbf-8e18-4ae7-bc9d-0f72b209c0b1
+2025-03-16T06:53:28Z INF Initial protocol quic
+2025-03-16T06:53:28Z INF Initial protocol quic
+2025-03-16T06:53:28Z INF ICMP proxy will use 172.23.45.17 as source for IPv4
+2025-03-16T06:53:28Z INF ICMP proxy will use fe80::215:5dff:fea0:f6eb in zone eth0 as source for IPv6
+2025-03-16T06:53:28Z INF ICMP proxy will use 172.23.45.17 as source for IPv4
+2025-03-16T06:53:28Z INF ICMP proxy will use fe80::215:5dff:fea0:f6eb in zone eth0 as source for IPv6
+2025-03-16T06:53:28Z INF ICMP proxy will use 172.23.45.17 as source for IPv4
+2025-03-16T06:53:28Z INF ICMP proxy will use 172.23.45.17 as source for IPv4
+2025-03-16T06:53:28Z INF ICMP proxy will use fe80::215:5dff:fea0:f6eb in zone eth0 as source for IPv6
+2025-03-16T06:53:28Z INF Starting metrics server on 127.0.0.1:36117/metrics
+2025-03-16T06:53:28Z INF ICMP proxy will use fe80::215:5dff:fea0:f6eb in zone eth0 as source for IPv6
+2025-03-16T06:53:28Z INF Starting metrics server on 127.0.0.1:44375/metrics
+2025-03-16T06:53:28Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.192.47
+2025-03-16T06:53:28Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.192.57
+2025-03-16T06:53:29Z INF Registered tunnel connection connIndex=0 connection=c7384cce-48cb-4247-a666-8a0053bc6509 event=0 ip=198.41.192.57 location=sjc06 protocol=quic
+2025-03-16T06:53:29Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.200.43
+2025-03-16T06:53:29Z INF Registered tunnel connection connIndex=0 connection=72aae8ca-bf4c-4ce5-89cc-ec34075e7826 event=0 ip=198.41.192.47 location=sjc01 protocol=quic
+2025-03-16T06:53:29Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.200.193
+2025-03-16T06:53:29Z INF Registered tunnel connection connIndex=1 connection=e176b53b-8983-4dd4-ac54-187ec693b2b3 event=0 ip=198.41.200.43 location=lax01 protocol=quic
+2025-03-16T06:53:30Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.200.63
+2025-03-16T06:53:30Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.200.33
+2025-03-16T06:53:30Z INF Registered tunnel connection connIndex=2 connection=4983a60a-ebac-466e-8207-d2f4bcdbe954 event=0 ip=198.41.200.63 location=sjc05 protocol=quic
+2025-03-16T06:53:31Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.192.37
+2025-03-16T06:53:31Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.192.77
+2025-03-16T06:53:31Z INF Registered tunnel connection connIndex=2 connection=403bb884-2a41-4200-bd7c-e40fcb033dec event=0 ip=198.41.200.33 location=lax06 protocol=quic
+2025-03-16T06:53:31Z INF Registered tunnel connection connIndex=3 connection=a20f80ff-6f10-4368-a96b-7fa92e3f773c event=0 ip=198.41.192.37 location=lax07 protocol=quic
+2025-03-16T06:53:32Z INF Registered tunnel connection connIndex=3 connection=385c7d01-ee69-4629-b5cf-2c03c4b3355d event=0 ip=198.41.192.77 location=lax05 protocol=quic
+2025-03-16T06:53:34Z WRN Failed to dial a quic connection error="failed to dial to edge with quic: timeout: no recent network activity" connIndex=1 event=0 ip=198.41.200.193
+2025-03-16T06:53:34Z INF Retrying connection in up to 2s connIndex=1 event=0 ip=198.41.200.193
+2025-03-16T06:53:35Z WRN Connection terminated error="failed to dial to edge with quic: timeout: no recent network activity" connIndex=1
+2025-03-16T06:53:49Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.200.233
+2025-03-16T06:53:50Z INF Registered tunnel connection connIndex=1 connection=8b38b25c-5af2-4a86-868b-479ffd021ea6 event=0 ip=198.41.200.233 location=lax01 protocol=quic
+2025-03-16T06:55:02Z INF Starting tunnel tunnelID=6647e3ad-8bed-4a72-bc89-eded4c3464a9
+2025-03-16T06:55:02Z INF Version 2025.2.1 (Checksum afdfadd1ef552e66bffc35246fe30a9bd578356d2d386de95585ccfc432472b8)
+2025-03-16T06:55:02Z INF GOOS: linux, GOVersion: go1.22.10, GoArch: amd64
+2025-03-16T06:55:02Z INF Settings: map[config:/root/.cloudflared/web_TT_SS_C.yml cred-file:/root/.cloudflared/6647e3ad-8bed-4a72-bc89-eded4c3464a9.json credentials-file:/root/.cloudflared/6647e3ad-8bed-4a72-bc89-eded4c3464a9.json]
+2025-03-16T06:55:02Z INF Autoupdate frequency is set autoupdateFreq=86400000
+2025-03-16T06:55:02Z INF Generated Connector ID: 6d899c03-feea-4b9b-8fae-441279c4d66d
+2025-03-16T06:55:02Z INF Starting tunnel tunnelID=bcdc9de5-4470-4628-8d9b-8ca34a373ee9
+2025-03-16T06:55:02Z INF Version 2025.2.1 (Checksum afdfadd1ef552e66bffc35246fe30a9bd578356d2d386de95585ccfc432472b8)
+2025-03-16T06:55:02Z INF GOOS: linux, GOVersion: go1.22.10, GoArch: amd64
+2025-03-16T06:55:02Z INF Settings: map[config:/root/.cloudflared/web_TT_SS_N.yml cred-file:/root/.cloudflared/bcdc9de5-4470-4628-8d9b-8ca34a373ee9.json credentials-file:/root/.cloudflared/bcdc9de5-4470-4628-8d9b-8ca34a373ee9.json]
+2025-03-16T06:55:02Z INF Generated Connector ID: 1b8be771-8fef-4b01-a1cc-25a034051b6a
+2025-03-16T06:55:02Z INF Autoupdate frequency is set autoupdateFreq=86400000
+2025-03-16T06:55:02Z INF Initial protocol quic
+2025-03-16T06:55:02Z INF Initial protocol quic
+2025-03-16T06:55:02Z INF ICMP proxy will use 172.23.45.17 as source for IPv4
+2025-03-16T06:55:02Z INF ICMP proxy will use 172.23.45.17 as source for IPv4
+2025-03-16T06:55:02Z INF ICMP proxy will use fe80::215:5dff:fea0:f6eb in zone eth0 as source for IPv6
+2025-03-16T06:55:02Z INF ICMP proxy will use fe80::215:5dff:fea0:f6eb in zone eth0 as source for IPv6
+2025-03-16T06:55:02Z INF ICMP proxy will use 172.23.45.17 as source for IPv4
+2025-03-16T06:55:02Z INF ICMP proxy will use fe80::215:5dff:fea0:f6eb in zone eth0 as source for IPv6
+2025-03-16T06:55:02Z INF Starting metrics server on 127.0.0.1:45777/metrics
+2025-03-16T06:55:02Z INF ICMP proxy will use 172.23.45.17 as source for IPv4
+2025-03-16T06:55:02Z INF ICMP proxy will use fe80::215:5dff:fea0:f6eb in zone eth0 as source for IPv6
+2025-03-16T06:55:02Z INF Starting metrics server on 127.0.0.1:43969/metrics
+2025-03-16T06:55:02Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.200.53
+2025-03-16T06:55:02Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.200.33
+2025-03-16T06:55:02Z INF Registered tunnel connection connIndex=0 connection=478225e0-8062-4e7b-8734-782f799ecd86 event=0 ip=198.41.200.33 location=sjc08 protocol=quic
+2025-03-16T06:55:02Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.192.107
+2025-03-16T06:55:03Z INF Registered tunnel connection connIndex=0 connection=99bc4392-7cea-4fa6-b6be-7eafcc21f1bb event=0 ip=198.41.200.53 location=hkg11 protocol=quic
+2025-03-16T06:55:03Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.192.107
+2025-03-16T06:55:03Z INF Registered tunnel connection connIndex=1 connection=848b9a98-2082-4f9e-a58f-63510c613334 event=0 ip=198.41.192.107 location=lax09 protocol=quic
+2025-03-16T06:55:03Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.200.193
+2025-03-16T06:55:03Z INF Registered tunnel connection connIndex=1 connection=f666e95c-4f22-4c4e-a39a-dcacc5b73ea1 event=0 ip=198.41.192.107 location=hkg01 protocol=quic
+2025-03-16T06:55:04Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.192.57
+2025-03-16T06:55:04Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.192.7
+2025-03-16T06:55:05Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.200.13
+2025-03-16T06:55:05Z INF Registered tunnel connection connIndex=2 connection=e65f83a3-b9eb-4dc4-b271-bc14d98064e5 event=0 ip=198.41.192.57 location=lax05 protocol=quic
+2025-03-16T06:55:05Z INF Registered tunnel connection connIndex=3 connection=1366f4c6-d1dc-4d35-b7d6-95eac842b58b event=0 ip=198.41.192.7 location=lax05 protocol=quic
+2025-03-16T06:55:05Z INF Registered tunnel connection connIndex=3 connection=b5d33cdb-21ae-415b-be9b-23a0f75662cc event=0 ip=198.41.200.13 location=hkg12 protocol=quic
+2025-03-16T06:55:08Z WRN Failed to dial a quic connection error="failed to dial to edge with quic: timeout: no recent network activity" connIndex=2 event=0 ip=198.41.200.193
+2025-03-16T06:55:08Z INF Retrying connection in up to 2s connIndex=2 event=0 ip=198.41.200.193
+2025-03-16T06:55:10Z WRN Connection terminated error="failed to dial to edge with quic: timeout: no recent network activity" connIndex=2
+2025-03-16T06:55:11Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.200.73
+2025-03-16T06:55:16Z WRN Failed to dial a quic connection error="failed to dial to edge with quic: timeout: no recent network activity" connIndex=2 event=0 ip=198.41.200.73
+2025-03-16T06:55:16Z INF Retrying connection in up to 4s connIndex=2 event=0 ip=198.41.200.73
+2025-03-16T06:55:17Z WRN Connection terminated error="failed to dial to edge with quic: timeout: no recent network activity" connIndex=2
