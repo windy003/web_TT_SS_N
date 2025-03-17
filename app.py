@@ -74,6 +74,18 @@ def load_from_url(url):
         # 滚动页面以触发懒加载
         page.scroll.down()
         time.sleep(2)  # 等待图片加载
+        page.scroll.down()
+        time.sleep(2)  # 等待图片加载
+
+        # 滚动页面以触发懒加载
+        page.scroll.down()
+        time.sleep(2)  # 等待图片加载
+        page.scroll.down()
+        time.sleep(2)  # 等待图片加载
+
+        # 滚动页面以触发懒加载
+        page.scroll.down()
+        time.sleep(2)  # 等待图片加载
 
 
         imgs_A_Ds_lists = page.eles('xpath://div[@class="pgc-img"]')
