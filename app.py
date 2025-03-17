@@ -48,17 +48,47 @@ def load_from_url(url):
         print(f"文章标题: {title}")
         
         # 获取文章内容
-        content_elements = page.eles('xpath://article//p')
-        content = '\n'.join([ele.text for ele in content_elements if ele.text])
+        content = page.ele('xpath://article').text 
         
+
+        # 尝试找到并点击"点开展开剩余.."按钮
+        try:
+            # 使用 contains() 函数匹配包含特定文本的按钮
+            more_button = page.ele('xpath://*[contains(text(), "点击展开剩余")]')
+            more_button.click()
+            print("已点击展开更多按钮")
+            time.sleep(2)  # 等待内容加载
+        except Exception as e:
+            print(f"未找到展开更多按钮或点击失败: {e}")
+
         
+        time.sleep(2)
+
+        # 滚动页面以触发懒加载
+        page.scroll.down()
+        time.sleep(2)  # 等待图片加载
+
+        # 滚动页面以触发懒加载
+        page.scroll.down()
+        time.sleep(2)  # 等待图片加载
+
+
+        imgs = page.eles('xpath://article//img')
+
+        img_tags = "" # 用于存储完整的 img 标签
+        for img in imgs:
+            img_html = img.html  # 获取 img 标签的完整 HTML 代码
+            img_tags+=img_html
         
+        print(f"img_tags:{img_tags}")  # 打印所有 img 标签
+        
+        content += img_tags
+
         
         return render_template('index.html', title=title, content=content)
     
     except Exception as e:
         print(f"爬取过程中出现错误: {e}")
-        return None
     finally:
         # 关闭浏览器
         page.quit()
