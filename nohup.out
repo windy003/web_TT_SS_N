@@ -9471,3 +9471,730 @@ failed to accept QUIC stream: Application error 0x0 (remote)
 2025-03-17T07:04:06Z INF Registered tunnel connection connIndex=3 connection=34fd30d6-2000-427a-a13c-986a47a9800f event=0 ip=198.41.192.57 location=lax08 protocol=quic
 2025-03-17T07:04:06Z INF Registered tunnel connection connIndex=3 connection=3fd401b9-c422-495f-b65b-b9fc2b525e7d event=0 ip=198.41.200.43 location=sjc07 protocol=quic
 2025-03-17T07:04:06Z INF Registered tunnel connection connIndex=3 connection=833e3d10-d49b-4274-a6ff-d410c59021b2 event=0 ip=198.41.200.53 location=lax01 protocol=quic
+2025-03-17T07:41:22Z INF Initiating graceful shutdown due to signal interrupt ...
+2025-03-17T07:41:22Z INF Initiating graceful shutdown due to signal interrupt ...
+2025-03-17T07:41:22Z INF Initiating graceful shutdown due to signal interrupt ...
+2025-03-17T07:41:22Z ERR Failed to serve tunnel connection error="Application error 0x0 (remote)" connIndex=1 event=0 ip=198.41.192.227
+2025-03-17T07:41:22Z ERR Serve tunnel error error="Application error 0x0 (remote)" connIndex=1 event=0 ip=198.41.192.227
+2025-03-17T07:41:22Z INF Retrying connection in up to 1s connIndex=1 event=0 ip=198.41.192.227
+2025-03-17T07:41:22Z ERR Failed to serve tunnel connection error="Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.192.57
+2025-03-17T07:41:22Z ERR Serve tunnel error error="Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.192.57
+2025-03-17T07:41:22Z INF Retrying connection in up to 1s connIndex=3 event=0 ip=198.41.192.57
+2025-03-17T07:41:22Z ERR Failed to serve tunnel connection error="Application error 0x0 (remote)" connIndex=0 event=0 ip=198.41.200.23
+2025-03-17T07:41:22Z ERR Serve tunnel error error="Application error 0x0 (remote)" connIndex=0 event=0 ip=198.41.200.23
+2025-03-17T07:41:22Z INF Retrying connection in up to 1s connIndex=0 event=0 ip=198.41.200.23
+2025-03-17T07:41:22Z ERR Failed to serve tunnel connection error="Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.200.53
+2025-03-17T07:41:22Z ERR Serve tunnel error error="Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.200.53
+2025-03-17T07:41:22Z INF Retrying connection in up to 1s connIndex=3 event=0 ip=198.41.200.53
+2025-03-17T07:41:22Z ERR Failed to serve tunnel connection error="context canceled" connIndex=3 event=0 ip=198.41.200.43
+2025-03-17T07:41:22Z INF Retrying connection in up to 1s connIndex=3 event=0 ip=198.41.200.43
+2025-03-17T07:41:22Z ERR Failed to serve tunnel connection error="context canceled" connIndex=1 event=0 ip=198.41.192.227
+2025-03-17T07:41:22Z INF Retrying connection in up to 1s connIndex=1 event=0 ip=198.41.192.227
+2025-03-17T07:41:22Z ERR Failed to serve tunnel connection error="context canceled" connIndex=2 event=0 ip=198.41.200.43
+2025-03-17T07:41:22Z INF Retrying connection in up to 1s connIndex=2 event=0 ip=198.41.200.43
+2025-03-17T07:41:22Z ERR Failed to serve tunnel connection error="Application error 0x0 (remote)" connIndex=1 event=0 ip=198.41.192.27
+2025-03-17T07:41:22Z ERR Serve tunnel error error="Application error 0x0 (remote)" connIndex=1 event=0 ip=198.41.192.27
+2025-03-17T07:41:22Z INF Retrying connection in up to 1s connIndex=1 event=0 ip=198.41.192.27
+2025-03-17T07:41:22Z ERR no more connections active and exiting
+2025-03-17T07:41:22Z INF Tunnel server stopped
+2025-03-17T07:41:22Z ERR icmp router terminated error="context canceled"
+2025-03-17T07:41:22Z INF Metrics server stopped
+2025-03-17T07:41:22Z ERR Failed to serve tunnel connection error="context canceled" connIndex=2 event=0 ip=198.41.192.167
+2025-03-17T07:41:22Z ERR Failed to serve tunnel connection error="Application error 0x0 (remote)" connIndex=2 event=0 ip=198.41.192.57
+2025-03-17T07:41:22Z ERR Serve tunnel error error="Application error 0x0 (remote)" connIndex=2 event=0 ip=198.41.192.57
+2025-03-17T07:41:22Z INF Retrying connection in up to 1s connIndex=2 event=0 ip=198.41.192.57
+2025-03-17T07:41:22Z INF Retrying connection in up to 1s connIndex=2 event=0 ip=198.41.192.167
+2025-03-17T07:41:22Z ERR Failed to serve tunnel connection error="context canceled" connIndex=0 event=0 ip=198.41.200.63
+2025-03-17T07:41:22Z INF Retrying connection in up to 1s connIndex=0 event=0 ip=198.41.200.63
+2025-03-17T07:41:22Z ERR no more connections active and exiting
+2025-03-17T07:41:22Z INF Tunnel server stopped
+2025-03-17T07:41:22Z ERR icmp router terminated error="context canceled"
+2025-03-17T07:41:22Z INF Metrics server stopped
+2025-03-17T07:41:22Z ERR Failed to serve tunnel connection error="context canceled" connIndex=0 event=0 ip=198.41.200.63
+2025-03-17T07:41:22Z INF Retrying connection in up to 1s connIndex=0 event=0 ip=198.41.200.63
+2025-03-17T07:41:22Z ERR no more connections active and exiting
+2025-03-17T07:41:22Z INF Tunnel server stopped
+2025-03-17T07:41:22Z ERR icmp router terminated error="context canceled"
+2025-03-17T07:41:22Z INF Metrics server stopped
+2025-03-17T07:46:14Z INF Starting tunnel tunnelID=fe4712d9-c8f5-4f12-9f90-1d186c0ad61b
+2025-03-17T07:46:14Z INF Version 2025.2.1 (Checksum afdfadd1ef552e66bffc35246fe30a9bd578356d2d386de95585ccfc432472b8)
+2025-03-17T07:46:14Z INF GOOS: linux, GOVersion: go1.22.10, GoArch: amd64
+2025-03-17T07:46:14Z INF Settings: map[config:/root/.cloudflared/web_TT_SS_WTT.yml cred-file:/root/.cloudflared/fe4712d9-c8f5-4f12-9f90-1d186c0ad61b.json credentials-file:/root/.cloudflared/fe4712d9-c8f5-4f12-9f90-1d186c0ad61b.json]
+2025-03-17T07:46:14Z INF Generated Connector ID: 12f8b352-17e4-4960-86cf-e3100170bbd4
+2025-03-17T07:46:14Z INF Autoupdate frequency is set autoupdateFreq=86400000
+2025-03-17T07:46:14Z INF Initial protocol quic
+2025-03-17T07:46:14Z INF Starting tunnel tunnelID=bcdc9de5-4470-4628-8d9b-8ca34a373ee9
+2025-03-17T07:46:14Z INF Version 2025.2.1 (Checksum afdfadd1ef552e66bffc35246fe30a9bd578356d2d386de95585ccfc432472b8)
+2025-03-17T07:46:14Z INF GOOS: linux, GOVersion: go1.22.10, GoArch: amd64
+2025-03-17T07:46:14Z INF Settings: map[config:/root/.cloudflared/web_TT_SS_NTT.yml cred-file:/root/.cloudflared/bcdc9de5-4470-4628-8d9b-8ca34a373ee9.json credentials-file:/root/.cloudflared/bcdc9de5-4470-4628-8d9b-8ca34a373ee9.json]
+2025-03-17T07:46:14Z INF Autoupdate frequency is set autoupdateFreq=86400000
+2025-03-17T07:46:14Z INF Generated Connector ID: d2628850-3335-4ba4-ba42-a33bd04c39e1
+2025-03-17T07:46:14Z INF Starting tunnel tunnelID=6647e3ad-8bed-4a72-bc89-eded4c3464a9
+2025-03-17T07:46:14Z INF Version 2025.2.1 (Checksum afdfadd1ef552e66bffc35246fe30a9bd578356d2d386de95585ccfc432472b8)
+2025-03-17T07:46:14Z INF GOOS: linux, GOVersion: go1.22.10, GoArch: amd64
+2025-03-17T07:46:14Z INF Settings: map[config:/root/.cloudflared/web_TT_SS_CTT.yml cred-file:/root/.cloudflared/6647e3ad-8bed-4a72-bc89-eded4c3464a9.json credentials-file:/root/.cloudflared/6647e3ad-8bed-4a72-bc89-eded4c3464a9.json]
+2025-03-17T07:46:14Z INF Autoupdate frequency is set autoupdateFreq=86400000
+2025-03-17T07:46:14Z INF Generated Connector ID: b8ba3040-68c1-4905-8323-fa74b94b7dfa
+2025-03-17T07:46:14Z INF ICMP proxy will use 172.23.45.17 as source for IPv4
+2025-03-17T07:46:14Z INF ICMP proxy will use fe80::215:5dff:fe6a:23ba in zone eth0 as source for IPv6
+2025-03-17T07:46:14Z INF Initial protocol quic
+2025-03-17T07:46:14Z INF Initial protocol quic
+2025-03-17T07:46:14Z INF ICMP proxy will use 172.23.45.17 as source for IPv4
+2025-03-17T07:46:14Z INF ICMP proxy will use fe80::215:5dff:fe6a:23ba in zone eth0 as source for IPv6
+2025-03-17T07:46:14Z INF ICMP proxy will use 172.23.45.17 as source for IPv4
+2025-03-17T07:46:14Z INF ICMP proxy will use fe80::215:5dff:fe6a:23ba in zone eth0 as source for IPv6
+2025-03-17T07:46:14Z INF Starting metrics server on 127.0.0.1:43061/metrics
+2025-03-17T07:46:14Z INF ICMP proxy will use 172.23.45.17 as source for IPv4
+2025-03-17T07:46:14Z INF ICMP proxy will use fe80::215:5dff:fe6a:23ba in zone eth0 as source for IPv6
+2025-03-17T07:46:14Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.192.107
+2025-03-17T07:46:14Z INF ICMP proxy will use 172.23.45.17 as source for IPv4
+2025-03-17T07:46:14Z INF ICMP proxy will use fe80::215:5dff:fe6a:23ba in zone eth0 as source for IPv6
+2025-03-17T07:46:14Z INF ICMP proxy will use 172.23.45.17 as source for IPv4
+2025-03-17T07:46:14Z INF Starting metrics server on 127.0.0.1:42899/metrics
+2025-03-17T07:46:14Z INF ICMP proxy will use fe80::215:5dff:fe6a:23ba in zone eth0 as source for IPv6
+2025-03-17T07:46:14Z INF Starting metrics server on 127.0.0.1:33967/metrics
+2025-03-17T07:46:14Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.192.7
+2025-03-17T07:46:14Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.192.227
+2025-03-17T07:46:14Z INF Registered tunnel connection connIndex=0 connection=94837d14-c8bd-467e-ad81-078465e4adc3 event=0 ip=198.41.192.7 location=hkg01 protocol=quic
+2025-03-17T07:46:14Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.200.23
+2025-03-17T07:46:15Z INF Registered tunnel connection connIndex=0 connection=86e08506-df62-4f98-a644-40a76d66f15f event=0 ip=198.41.192.107 location=hkg09 protocol=quic
+2025-03-17T07:46:15Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.200.233
+2025-03-17T07:46:15Z INF Registered tunnel connection connIndex=1 connection=8e548520-e30b-4b4b-9649-b3c6251b69bf event=0 ip=198.41.200.23 location=hkg11 protocol=quic
+2025-03-17T07:46:15Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.200.73
+2025-03-17T07:46:16Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.200.23
+2025-03-17T07:46:16Z INF Registered tunnel connection connIndex=1 connection=d23bcea9-3584-4497-8897-bc1cc7965fdd event=0 ip=198.41.200.233 location=hkg10 protocol=quic
+2025-03-17T07:46:16Z INF Starting tunnel tunnelID=bcdc9de5-4470-4628-8d9b-8ca34a373ee9
+2025-03-17T07:46:16Z INF Version 2025.2.1 (Checksum afdfadd1ef552e66bffc35246fe30a9bd578356d2d386de95585ccfc432472b8)
+2025-03-17T07:46:16Z INF GOOS: linux, GOVersion: go1.22.10, GoArch: amd64
+2025-03-17T07:46:16Z INF Settings: map[config:/root/.cloudflared/web_TT_SS_NTT.yml cred-file:/root/.cloudflared/bcdc9de5-4470-4628-8d9b-8ca34a373ee9.json credentials-file:/root/.cloudflared/bcdc9de5-4470-4628-8d9b-8ca34a373ee9.json]
+2025-03-17T07:46:16Z INF Generated Connector ID: bb45c287-f3a9-4f72-952b-dd9438a4bb19
+2025-03-17T07:46:16Z INF Autoupdate frequency is set autoupdateFreq=86400000
+2025-03-17T07:46:16Z INF Starting tunnel tunnelID=fe4712d9-c8f5-4f12-9f90-1d186c0ad61b
+2025-03-17T07:46:16Z INF Version 2025.2.1 (Checksum afdfadd1ef552e66bffc35246fe30a9bd578356d2d386de95585ccfc432472b8)
+2025-03-17T07:46:16Z INF GOOS: linux, GOVersion: go1.22.10, GoArch: amd64
+2025-03-17T07:46:16Z INF Settings: map[config:/root/.cloudflared/web_TT_SS_WTT.yml cred-file:/root/.cloudflared/fe4712d9-c8f5-4f12-9f90-1d186c0ad61b.json credentials-file:/root/.cloudflared/fe4712d9-c8f5-4f12-9f90-1d186c0ad61b.json]
+2025-03-17T07:46:16Z INF Generated Connector ID: 5499fe51-4ad7-4455-92de-72b39d9cea5e
+2025-03-17T07:46:16Z INF Autoupdate frequency is set autoupdateFreq=86400000
+2025-03-17T07:46:16Z INF Starting tunnel tunnelID=6647e3ad-8bed-4a72-bc89-eded4c3464a9
+2025-03-17T07:46:16Z INF Version 2025.2.1 (Checksum afdfadd1ef552e66bffc35246fe30a9bd578356d2d386de95585ccfc432472b8)
+2025-03-17T07:46:16Z INF GOOS: linux, GOVersion: go1.22.10, GoArch: amd64
+2025-03-17T07:46:16Z INF Settings: map[config:/root/.cloudflared/web_TT_SS_CTT.yml cred-file:/root/.cloudflared/6647e3ad-8bed-4a72-bc89-eded4c3464a9.json credentials-file:/root/.cloudflared/6647e3ad-8bed-4a72-bc89-eded4c3464a9.json]
+2025-03-17T07:46:16Z INF Initial protocol quic
+2025-03-17T07:46:16Z INF Autoupdate frequency is set autoupdateFreq=86400000
+2025-03-17T07:46:16Z INF Generated Connector ID: 8c50f801-509a-456e-9650-a1743418568b
+2025-03-17T07:46:16Z INF ICMP proxy will use 172.23.45.17 as source for IPv4
+2025-03-17T07:46:16Z INF Initial protocol quic
+2025-03-17T07:46:16Z INF ICMP proxy will use fe80::215:5dff:fe6a:23ba in zone eth0 as source for IPv6
+2025-03-17T07:46:16Z INF Initial protocol quic
+2025-03-17T07:46:16Z INF ICMP proxy will use 172.23.45.17 as source for IPv4
+2025-03-17T07:46:16Z INF ICMP proxy will use fe80::215:5dff:fe6a:23ba in zone eth0 as source for IPv6
+2025-03-17T07:46:16Z INF ICMP proxy will use 172.23.45.17 as source for IPv4
+2025-03-17T07:46:16Z INF ICMP proxy will use fe80::215:5dff:fe6a:23ba in zone eth0 as source for IPv6
+2025-03-17T07:46:16Z INF ICMP proxy will use 172.23.45.17 as source for IPv4
+2025-03-17T07:46:16Z INF ICMP proxy will use 172.23.45.17 as source for IPv4
+2025-03-17T07:46:16Z INF ICMP proxy will use fe80::215:5dff:fe6a:23ba in zone eth0 as source for IPv6
+2025-03-17T07:46:16Z INF ICMP proxy will use fe80::215:5dff:fe6a:23ba in zone eth0 as source for IPv6
+2025-03-17T07:46:16Z INF Starting metrics server on 127.0.0.1:46295/metrics
+2025-03-17T07:46:16Z INF Starting metrics server on 127.0.0.1:42183/metrics
+2025-03-17T07:46:16Z INF ICMP proxy will use 172.23.45.17 as source for IPv4
+2025-03-17T07:46:16Z INF ICMP proxy will use fe80::215:5dff:fe6a:23ba in zone eth0 as source for IPv6
+2025-03-17T07:46:16Z INF Starting metrics server on 127.0.0.1:33631/metrics
+2025-03-17T07:46:16Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.200.113
+2025-03-17T07:46:16Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.200.33
+2025-03-17T07:46:16Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.200.43
+2025-03-17T07:46:16Z INF Registered tunnel connection connIndex=2 connection=e436d9cc-835f-4f04-a417-3d3bf0ffe817 event=0 ip=198.41.200.23 location=lax06 protocol=quic
+2025-03-17T07:46:16Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.192.37
+2025-03-17T07:46:17Z INF Registered tunnel connection connIndex=0 connection=15b2cecb-c83c-4448-ab06-7910fad1afce event=0 ip=198.41.200.113 location=sjc08 protocol=quic
+2025-03-17T07:46:17Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.192.7
+2025-03-17T07:46:17Z INF Registered tunnel connection connIndex=0 connection=42b3b5cb-461b-4eeb-8b59-4e62dea59284 event=0 ip=198.41.200.33 location=lax06 protocol=quic
+2025-03-17T07:46:17Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.192.27
+2025-03-17T07:46:17Z INF Registered tunnel connection connIndex=0 connection=30e9cdb5-d03a-4342-a1c9-c280051394c5 event=0 ip=198.41.200.43 location=lax06 protocol=quic
+2025-03-17T07:46:17Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.192.167
+2025-03-17T07:46:17Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.192.7
+2025-03-17T07:46:17Z INF Registered tunnel connection connIndex=3 connection=a2e8e7c9-8ce2-49b2-b6f5-5ec181741adf event=0 ip=198.41.192.37 location=lax07 protocol=quic
+2025-03-17T07:46:17Z INF Registered tunnel connection connIndex=1 connection=bd1e967a-5650-453d-b1ad-cfc1f8b8308a event=0 ip=198.41.192.7 location=hkg01 protocol=quic
+2025-03-17T07:46:17Z INF Registered tunnel connection connIndex=1 connection=6f5aabf0-aab5-496e-8e2b-cf4c282e4115 event=0 ip=198.41.192.27 location=lax05 protocol=quic
+2025-03-17T07:46:17Z INF Registered tunnel connection connIndex=1 connection=bc2aa081-e2f7-4a68-bf66-9783847cbd4b event=0 ip=198.41.192.167 location=lax07 protocol=quic
+2025-03-17T07:46:17Z INF Registered tunnel connection connIndex=3 connection=56d09543-b51f-42b4-9584-860da561a080 event=0 ip=198.41.192.7 location=lax05 protocol=quic
+2025-03-17T07:46:18Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.192.47
+2025-03-17T07:46:18Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.200.43
+2025-03-17T07:46:18Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.192.57
+2025-03-17T07:46:18Z INF Registered tunnel connection connIndex=2 connection=cc751e5a-f42a-4129-a17a-4ef4502e0aa5 event=0 ip=198.41.192.57 location=lax05 protocol=quic
+2025-03-17T07:46:18Z INF Registered tunnel connection connIndex=2 connection=3008c11a-e5b5-4873-9230-0a6c50d4fa9c event=0 ip=198.41.192.47 location=hkg09 protocol=quic
+2025-03-17T07:46:18Z INF Registered tunnel connection connIndex=2 connection=3502444b-71fb-4ee1-b778-1ab8534ea151 event=0 ip=198.41.200.43 location=hkg08 protocol=quic
+2025-03-17T07:46:19Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.200.23
+2025-03-17T07:46:19Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.192.227
+2025-03-17T07:46:19Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.200.13
+2025-03-17T07:46:19Z INF Registered tunnel connection connIndex=3 connection=11e554ea-54f9-4e72-8086-19f0853ade21 event=0 ip=198.41.200.23 location=hkg11 protocol=quic
+2025-03-17T07:46:19Z INF Registered tunnel connection connIndex=3 connection=fb619417-3477-43a5-963c-bebb0dd543ab event=0 ip=198.41.192.227 location=lax07 protocol=quic
+2025-03-17T07:46:19Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: timeout: no recent network activity" connIndex=0 event=0 ip=198.41.192.227
+2025-03-17T07:46:19Z INF Retrying connection in up to 2s connIndex=0 event=0 ip=198.41.192.227
+2025-03-17T07:46:19Z INF Registered tunnel connection connIndex=3 connection=c1f56080-986f-41c3-849b-5f01fececede event=0 ip=198.41.200.13 location=lax06 protocol=quic
+2025-03-17T07:46:20Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.192.107
+2025-03-17T07:46:20Z WRN Failed to dial a quic connection error="failed to dial to edge with quic: timeout: no recent network activity" connIndex=2 event=0 ip=198.41.200.73
+2025-03-17T07:46:20Z INF Retrying connection in up to 2s connIndex=2 event=0 ip=198.41.200.73
+2025-03-17T07:46:21Z INF Registered tunnel connection connIndex=0 connection=425ae465-a055-4b1c-8c71-d5d1bbcf1794 event=0 ip=198.41.192.107 location=lax07 protocol=quic
+2025-03-17T07:46:21Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.200.73
+2025-03-17T07:46:22Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.200.63
+2025-03-17T07:46:22Z WRN Connection terminated error="failed to dial to edge with quic: timeout: no recent network activity" connIndex=2
+2025-03-17T07:46:23Z INF Registered tunnel connection connIndex=2 connection=fea02c89-9ca2-4788-a96b-84e34864b1b6 event=0 ip=198.41.200.63 location=lax06 protocol=quic
+2025-03-17T07:46:23Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.192.7
+2025-03-17T07:46:24Z INF Registered tunnel connection connIndex=3 connection=ee0d3416-08a9-49ea-bae0-d7f1d5c0d08e event=0 ip=198.41.192.7 location=lax08 protocol=quic
+2025-03-17T07:46:26Z WRN Failed to dial a quic connection error="failed to dial to edge with quic: timeout: no recent network activity" connIndex=1 event=0 ip=198.41.200.73
+2025-03-17T07:46:26Z INF Retrying connection in up to 2s connIndex=1 event=0 ip=198.41.200.73
+2025-03-17T07:46:26Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.200.13
+2025-03-17T07:46:27Z INF Registered tunnel connection connIndex=2 connection=a7323b76-54bb-46da-b62f-7c020c739417 event=0 ip=198.41.200.13 location=sjc07 protocol=quic
+2025-03-17T07:46:27Z WRN Connection terminated error="failed to dial to edge with quic: timeout: no recent network activity" connIndex=1
+2025-03-17T07:46:31Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.200.13
+2025-03-17T07:46:31Z INF Registered tunnel connection connIndex=1 connection=9da7131f-1219-4a53-9fc8-010d53d678c0 event=0 ip=198.41.200.13 location=lax01 protocol=quic
+2025-03-17T08:07:18Z INF Initiating graceful shutdown due to signal interrupt ...
+2025-03-17T08:07:18Z INF Initiating graceful shutdown due to signal interrupt ...
+2025-03-17T08:07:18Z INF Initiating graceful shutdown due to signal interrupt ...
+2025-03-17T08:07:19Z ERR Failed to serve tunnel connection error="Application error 0x0 (remote)" connIndex=1 event=0 ip=198.41.200.23
+2025-03-17T08:07:19Z ERR Failed to serve tunnel connection error="context canceled" connIndex=1 event=0 ip=198.41.200.13
+2025-03-17T08:07:19Z ERR Serve tunnel error error="Application error 0x0 (remote)" connIndex=1 event=0 ip=198.41.200.23
+2025-03-17T08:07:19Z INF Retrying connection in up to 1s connIndex=1 event=0 ip=198.41.200.13
+2025-03-17T08:07:19Z INF Retrying connection in up to 1s connIndex=1 event=0 ip=198.41.200.23
+2025-03-17T08:07:19Z ERR Failed to serve tunnel connection error="Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.192.37
+2025-03-17T08:07:19Z ERR Serve tunnel error error="Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.192.37
+2025-03-17T08:07:19Z INF Retrying connection in up to 1s connIndex=3 event=0 ip=198.41.192.37
+2025-03-17T08:07:19Z ERR Failed to serve tunnel connection error="context canceled" connIndex=0 event=0 ip=198.41.192.107
+2025-03-17T08:07:19Z ERR Failed to serve tunnel connection error="Application error 0x0 (remote)" connIndex=2 event=0 ip=198.41.200.13
+2025-03-17T08:07:19Z INF Retrying connection in up to 1s connIndex=0 event=0 ip=198.41.192.107
+2025-03-17T08:07:19Z ERR Serve tunnel error error="Application error 0x0 (remote)" connIndex=2 event=0 ip=198.41.200.13
+2025-03-17T08:07:19Z INF Retrying connection in up to 1s connIndex=2 event=0 ip=198.41.200.13
+2025-03-17T08:07:19Z ERR Failed to serve tunnel connection error="Application error 0x0 (remote)" connIndex=2 event=0 ip=198.41.200.63
+2025-03-17T08:07:19Z ERR Serve tunnel error error="Application error 0x0 (remote)" connIndex=2 event=0 ip=198.41.200.63
+2025-03-17T08:07:19Z INF Retrying connection in up to 1s connIndex=2 event=0 ip=198.41.200.63
+2025-03-17T08:07:19Z ERR Failed to serve tunnel connection error="context canceled" connIndex=2 event=0 ip=198.41.200.23
+2025-03-17T08:07:19Z INF Retrying connection in up to 1s connIndex=2 event=0 ip=198.41.200.23
+2025-03-17T08:07:19Z ERR Failed to serve tunnel connection error="context canceled" connIndex=0 event=0 ip=198.41.192.7
+2025-03-17T08:07:19Z INF Retrying connection in up to 1s connIndex=0 event=0 ip=198.41.192.7
+2025-03-17T08:07:19Z ERR no more connections active and exiting
+2025-03-17T08:07:19Z INF Tunnel server stopped
+2025-03-17T08:07:19Z ERR icmp router terminated error="context canceled"
+2025-03-17T08:07:19Z INF Metrics server stopped
+2025-03-17T08:07:19Z ERR Failed to serve tunnel connection error="Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.192.7
+2025-03-17T08:07:19Z ERR Serve tunnel error error="Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.192.7
+2025-03-17T08:07:19Z INF Retrying connection in up to 1s connIndex=3 event=0 ip=198.41.192.7
+2025-03-17T08:07:19Z ERR Failed to serve tunnel connection error="context canceled" connIndex=3 event=0 ip=198.41.192.7
+2025-03-17T08:07:19Z INF Retrying connection in up to 1s connIndex=3 event=0 ip=198.41.192.7
+2025-03-17T08:07:19Z ERR no more connections active and exiting
+2025-03-17T08:07:19Z INF Tunnel server stopped
+2025-03-17T08:07:19Z ERR icmp router terminated error="context canceled"
+2025-03-17T08:07:19Z INF Metrics server stopped
+2025-03-17T08:07:19Z ERR Failed to serve tunnel connection error="context canceled" connIndex=1 event=0 ip=198.41.200.233
+2025-03-17T08:07:19Z INF Retrying connection in up to 1s connIndex=1 event=0 ip=198.41.200.233
+2025-03-17T08:07:20Z ERR Failed to serve tunnel connection error="Application error 0x0 (remote)" connIndex=0 event=0 ip=198.41.192.107
+2025-03-17T08:07:20Z ERR Serve tunnel error error="Application error 0x0 (remote)" connIndex=0 event=0 ip=198.41.192.107
+2025-03-17T08:07:20Z INF Retrying connection in up to 1s connIndex=0 event=0 ip=198.41.192.107
+2025-03-17T08:07:20Z ERR no more connections active and exiting
+2025-03-17T08:07:20Z INF Tunnel server stopped
+2025-03-17T08:07:20Z ERR icmp router terminated error="context canceled"
+2025-03-17T08:07:20Z INF Metrics server stopped
+2025-03-17T10:49:36Z WRN Failed to serve tunnel connection error="timeout: no recent network activity" connIndex=3 event=0 ip=198.41.192.37
+2025-03-17T10:49:36Z WRN Serve tunnel error error="timeout: no recent network activity" connIndex=3 event=0 ip=198.41.192.37
+2025-03-17T10:49:36Z INF Retrying connection in up to 1s connIndex=3 event=0 ip=198.41.192.37
+2025-03-17T10:49:36Z WRN Failed to serve tunnel connection error="timeout: no recent network activity" connIndex=1 event=0 ip=198.41.200.233
+2025-03-17T10:49:36Z WRN Serve tunnel error error="timeout: no recent network activity" connIndex=1 event=0 ip=198.41.200.233
+2025-03-17T10:49:36Z INF Retrying connection in up to 1s connIndex=1 event=0 ip=198.41.200.233
+2025-03-17T10:49:36Z WRN Failed to serve tunnel connection error="timeout: no recent network activity" connIndex=1 event=0 ip=198.41.192.7
+2025-03-17T10:49:36Z WRN Serve tunnel error error="timeout: no recent network activity" connIndex=1 event=0 ip=198.41.192.7
+2025-03-17T10:49:36Z INF Retrying connection in up to 1s connIndex=1 event=0 ip=198.41.192.7
+2025-03-17T10:49:36Z WRN Failed to serve tunnel connection error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=0 event=0 ip=198.41.200.33
+2025-03-17T10:49:36Z WRN Serve tunnel error error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=0 event=0 ip=198.41.200.33
+2025-03-17T10:49:36Z INF Retrying connection in up to 1s connIndex=0 event=0 ip=198.41.200.33
+2025-03-17T10:49:36Z WRN Failed to serve tunnel connection error="timeout: no recent network activity" connIndex=3 event=0 ip=198.41.192.167
+2025-03-17T10:49:36Z WRN Serve tunnel error error="timeout: no recent network activity" connIndex=3 event=0 ip=198.41.192.167
+2025-03-17T10:49:36Z INF Retrying connection in up to 1s connIndex=3 event=0 ip=198.41.192.167
+2025-03-17T10:49:36Z WRN Failed to serve tunnel connection error="timeout: no recent network activity" connIndex=2 event=0 ip=198.41.200.33
+2025-03-17T10:49:36Z WRN Serve tunnel error error="timeout: no recent network activity" connIndex=2 event=0 ip=198.41.200.33
+2025-03-17T10:49:36Z INF Retrying connection in up to 1s connIndex=2 event=0 ip=198.41.200.33
+2025-03-17T10:49:36Z WRN Failed to serve tunnel connection error="timeout: no recent network activity" connIndex=1 event=0 ip=198.41.200.233
+2025-03-17T10:49:36Z WRN Serve tunnel error error="timeout: no recent network activity" connIndex=1 event=0 ip=198.41.200.233
+2025-03-17T10:49:36Z INF Retrying connection in up to 1s connIndex=1 event=0 ip=198.41.200.233
+2025-03-17T10:49:36Z WRN Connection terminated error="timeout: no recent network activity" connIndex=3
+2025-03-17T10:49:36Z WRN Failed to serve tunnel connection error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=3 event=0 ip=198.41.192.67
+2025-03-17T10:49:36Z WRN Serve tunnel error error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=3 event=0 ip=198.41.192.67
+2025-03-17T10:49:36Z INF Retrying connection in up to 1s connIndex=3 event=0 ip=198.41.192.67
+2025-03-17T10:49:37Z WRN Connection terminated error="timeout: no recent network activity" connIndex=3
+2025-03-17T10:49:37Z WRN Connection terminated error="timeout: no recent network activity" connIndex=2
+2025-03-17T10:49:37Z WRN Connection terminated error="timeout: no recent network activity" connIndex=1
+2025-03-17T10:49:37Z WRN Connection terminated error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=0
+2025-03-17T10:49:37Z WRN Connection terminated error="timeout: no recent network activity" connIndex=1
+2025-03-17T10:49:37Z WRN Connection terminated error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=3
+2025-03-17T10:49:38Z WRN Connection terminated error="timeout: no recent network activity" connIndex=1
+2025-03-17T10:49:39Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.200.33
+2025-03-17T10:49:40Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.192.57
+2025-03-17T10:49:40Z INF Registered tunnel connection connIndex=0 connection=afc7353d-96ad-47d2-97e2-1e17d9f2ace5 event=0 ip=198.41.200.33 location=hkg11 protocol=quic
+2025-03-17T10:49:40Z INF Registered tunnel connection connIndex=3 connection=0845f746-1882-4818-a62f-bbd822a67cda event=0 ip=198.41.192.57 location=sjc01 protocol=quic
+2025-03-17T10:49:42Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.192.107
+2025-03-17T10:49:42Z INF Registered tunnel connection connIndex=3 connection=8e624cf8-19c6-4976-b4d7-5ee3b37f5cec event=0 ip=198.41.192.107 location=lax09 protocol=quic
+2025-03-17T10:49:51Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.200.113
+2025-03-17T10:49:51Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.192.67
+2025-03-17T10:49:51Z INF Registered tunnel connection connIndex=3 connection=57f0e3dc-d554-4f6f-8e61-6a41fc986b77 event=0 ip=198.41.192.67 location=lax09 protocol=quic
+2025-03-17T10:49:52Z INF Registered tunnel connection connIndex=1 connection=d3f88974-232e-4e91-a8c8-e6d709ca5408 event=0 ip=198.41.200.113 location=lax06 protocol=quic
+2025-03-17T10:49:52Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.192.107
+2025-03-17T10:49:52Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.200.233
+2025-03-17T10:49:52Z INF Registered tunnel connection connIndex=1 connection=1b624155-c185-4534-b6f1-e07eeb5db670 event=0 ip=198.41.192.107 location=lax07 protocol=quic
+2025-03-17T10:49:53Z INF Registered tunnel connection connIndex=2 connection=dde25b9f-04c5-40fe-82a8-d20efc93f2b2 event=0 ip=198.41.200.233 location=hkg08 protocol=quic
+2025-03-17T10:49:55Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.200.53
+2025-03-17T10:49:56Z INF Registered tunnel connection connIndex=1 connection=1690487c-5a85-41da-907e-9fbf39669188 event=0 ip=198.41.200.53 location=lax06 protocol=quic
+2025-03-17T11:59:35Z WRN Failed to serve tunnel connection error="timeout: no recent network activity" connIndex=3 event=0 ip=198.41.192.167
+2025-03-17T11:59:35Z WRN Serve tunnel error error="timeout: no recent network activity" connIndex=3 event=0 ip=198.41.192.167
+2025-03-17T11:59:35Z INF Retrying connection in up to 1s connIndex=3 event=0 ip=198.41.192.167
+2025-03-17T11:59:36Z WRN Failed to serve tunnel connection error="timeout: no recent network activity" connIndex=3 event=0 ip=198.41.192.107
+2025-03-17T11:59:36Z WRN Serve tunnel error error="timeout: no recent network activity" connIndex=3 event=0 ip=198.41.192.107
+2025-03-17T11:59:36Z INF Retrying connection in up to 1s connIndex=3 event=0 ip=198.41.192.107
+2025-03-17T11:59:36Z WRN Failed to serve tunnel connection error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=2 event=0 ip=198.41.200.233
+2025-03-17T11:59:36Z WRN Serve tunnel error error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=2 event=0 ip=198.41.200.233
+2025-03-17T11:59:36Z INF Retrying connection in up to 1s connIndex=2 event=0 ip=198.41.200.233
+2025-03-17T11:59:36Z WRN Failed to serve tunnel connection error="timeout: no recent network activity" connIndex=1 event=0 ip=198.41.200.113
+2025-03-17T11:59:36Z WRN Serve tunnel error error="timeout: no recent network activity" connIndex=1 event=0 ip=198.41.200.113
+2025-03-17T11:59:36Z INF Retrying connection in up to 1s connIndex=1 event=0 ip=198.41.200.113
+2025-03-17T11:59:36Z WRN Failed to serve tunnel connection error="timeout: no recent network activity" connIndex=2 event=0 ip=198.41.200.13
+2025-03-17T11:59:36Z WRN Serve tunnel error error="timeout: no recent network activity" connIndex=2 event=0 ip=198.41.200.13
+2025-03-17T11:59:36Z INF Retrying connection in up to 1s connIndex=2 event=0 ip=198.41.200.13
+2025-03-17T11:59:36Z WRN Failed to serve tunnel connection error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=0 event=0 ip=198.41.200.33
+2025-03-17T11:59:36Z WRN Serve tunnel error error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=0 event=0 ip=198.41.200.33
+2025-03-17T11:59:36Z INF Retrying connection in up to 1s connIndex=0 event=0 ip=198.41.200.33
+2025-03-17T11:59:36Z WRN Failed to serve tunnel connection error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=3 event=0 ip=198.41.192.227
+2025-03-17T11:59:36Z WRN Serve tunnel error error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=3 event=0 ip=198.41.192.227
+2025-03-17T11:59:36Z INF Retrying connection in up to 1s connIndex=3 event=0 ip=198.41.192.227
+2025-03-17T11:59:36Z WRN Failed to serve tunnel connection error="timeout: no recent network activity" connIndex=2 event=0 ip=198.41.200.233
+2025-03-17T11:59:36Z WRN Serve tunnel error error="timeout: no recent network activity" connIndex=2 event=0 ip=198.41.200.233
+2025-03-17T11:59:36Z INF Retrying connection in up to 1s connIndex=2 event=0 ip=198.41.200.233
+2025-03-17T11:59:36Z WRN Failed to serve tunnel connection error="context canceled" connIndex=2 event=0 ip=198.41.192.47
+2025-03-17T11:59:36Z INF Retrying connection in up to 1s connIndex=2 event=0 ip=198.41.192.47
+2025-03-17T11:59:36Z WRN Failed to serve tunnel connection error="timeout: no recent network activity" connIndex=0 event=0 ip=198.41.192.47
+2025-03-17T11:59:36Z WRN Serve tunnel error error="timeout: no recent network activity" connIndex=0 event=0 ip=198.41.192.47
+2025-03-17T11:59:36Z INF Retrying connection in up to 1s connIndex=0 event=0 ip=198.41.192.47
+2025-03-17T11:59:36Z WRN Failed to serve tunnel connection error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=0 event=0 ip=198.41.200.113
+2025-03-17T11:59:36Z WRN Serve tunnel error error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=0 event=0 ip=198.41.200.113
+2025-03-17T11:59:36Z INF Retrying connection in up to 1s connIndex=0 event=0 ip=198.41.200.113
+2025-03-17T11:59:36Z WRN Connection terminated error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=3
+2025-03-17T11:59:36Z WRN Failed to serve tunnel connection error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=1 event=0 ip=198.41.200.13
+2025-03-17T11:59:36Z WRN Serve tunnel error error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=1 event=0 ip=198.41.200.13
+2025-03-17T11:59:36Z INF Retrying connection in up to 1s connIndex=1 event=0 ip=198.41.200.13
+2025-03-17T11:59:36Z WRN Failed to serve tunnel connection error="timeout: no recent network activity" connIndex=3 event=0 ip=198.41.192.67
+2025-03-17T11:59:36Z WRN Serve tunnel error error="timeout: no recent network activity" connIndex=3 event=0 ip=198.41.192.67
+2025-03-17T11:59:36Z INF Retrying connection in up to 1s connIndex=3 event=0 ip=198.41.192.67
+2025-03-17T11:59:36Z WRN Connection terminated error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=0
+2025-03-17T11:59:36Z WRN Failed to serve tunnel connection error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=1 event=0 ip=198.41.192.27
+2025-03-17T11:59:36Z WRN Serve tunnel error error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=1 event=0 ip=198.41.192.27
+2025-03-17T11:59:36Z INF Retrying connection in up to 1s connIndex=1 event=0 ip=198.41.192.27
+2025-03-17T11:59:36Z WRN Connection terminated error="timeout: no recent network activity" connIndex=3
+2025-03-17T11:59:36Z WRN Failed to serve tunnel connection error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=1 event=0 ip=198.41.192.27
+2025-03-17T11:59:36Z WRN Serve tunnel error error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=1 event=0 ip=198.41.192.27
+2025-03-17T11:59:36Z INF Retrying connection in up to 1s connIndex=1 event=0 ip=198.41.192.27
+2025-03-17T11:59:36Z WRN Failed to serve tunnel connection error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=0 event=0 ip=198.41.192.37
+2025-03-17T11:59:36Z WRN Serve tunnel error error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=0 event=0 ip=198.41.192.37
+2025-03-17T11:59:36Z INF Retrying connection in up to 1s connIndex=0 event=0 ip=198.41.192.37
+2025-03-17T11:59:36Z WRN Connection terminated error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=2
+2025-03-17T11:59:37Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.192.167
+2025-03-17T11:59:37Z WRN Connection terminated error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=1
+2025-03-17T11:59:37Z WRN Connection terminated error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=1
+2025-03-17T11:59:37Z WRN Connection terminated error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=1
+2025-03-17T11:59:37Z WRN Connection terminated error="timeout: no recent network activity" connIndex=2
+2025-03-17T11:59:37Z WRN Connection terminated error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=0
+2025-03-17T11:59:37Z WRN Connection terminated error="timeout: no recent network activity" connIndex=3
+2025-03-17T11:59:37Z WRN Connection terminated error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=0
+2025-03-17T11:59:37Z INF Registered tunnel connection connIndex=0 connection=58bcae16-0e09-4d88-a822-9700c2a2e321 event=0 ip=198.41.192.167 location=lax05 protocol=quic
+2025-03-17T11:59:37Z WRN Connection terminated error="timeout: no recent network activity" connIndex=2
+2025-03-17T11:59:37Z WRN Connection terminated error="timeout: no recent network activity" connIndex=1
+2025-03-17T11:59:37Z WRN Connection terminated error="context canceled" connIndex=2
+2025-03-17T11:59:38Z WRN Connection terminated error="timeout: no recent network activity" connIndex=3
+2025-03-17T11:59:39Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.200.233
+2025-03-17T11:59:39Z INF Registered tunnel connection connIndex=2 connection=3f03faba-c3d5-4dcf-9fd1-7ede28d88a89 event=0 ip=198.41.200.233 location=lax01 protocol=quic
+2025-03-17T11:59:41Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.192.227
+2025-03-17T11:59:41Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.200.33
+2025-03-17T11:59:41Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.192.27
+2025-03-17T11:59:42Z INF Registered tunnel connection connIndex=1 connection=47b08850-dfb3-4b70-894c-f60596f04d6a event=0 ip=198.41.192.27 location=hkg09 protocol=quic
+2025-03-17T11:59:42Z INF Registered tunnel connection connIndex=3 connection=b0a91996-0640-461d-969f-1eede3edbd13 event=0 ip=198.41.192.227 location=lax07 protocol=quic
+2025-03-17T11:59:42Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.192.167
+2025-03-17T11:59:42Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.192.37
+2025-03-17T11:59:42Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.200.233
+2025-03-17T11:59:42Z INF Registered tunnel connection connIndex=0 connection=95c1cb14-3869-4753-94f9-3281169ddc2d event=0 ip=198.41.200.33 location=hkg12 protocol=quic
+2025-03-17T11:59:42Z INF Registered tunnel connection connIndex=1 connection=f5d259bf-9ea2-4a84-a0eb-28eebc7aedb9 event=0 ip=198.41.200.233 location=lax01 protocol=quic
+2025-03-17T11:59:42Z INF Registered tunnel connection connIndex=3 connection=61965cbe-7a1b-41ce-9485-8bd0b2a5190a event=0 ip=198.41.192.167 location=sjc01 protocol=quic
+2025-03-17T11:59:43Z INF Registered tunnel connection connIndex=0 connection=4212a724-7972-4d16-b719-c7fab10a1ac1 event=0 ip=198.41.192.37 location=lax08 protocol=quic
+2025-03-17T11:59:44Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.200.193
+2025-03-17T11:59:44Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.192.27
+2025-03-17T11:59:44Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.192.37
+2025-03-17T11:59:44Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.192.7
+2025-03-17T11:59:45Z INF Registered tunnel connection connIndex=1 connection=7b457d70-dfea-460f-b33b-2eef06c48080 event=0 ip=198.41.192.27 location=sjc01 protocol=quic
+2025-03-17T11:59:45Z INF Registered tunnel connection connIndex=3 connection=8dea6f4f-b40f-4b1c-b632-ad8c8c846f4d event=0 ip=198.41.192.37 location=lax07 protocol=quic
+2025-03-17T11:59:45Z INF Registered tunnel connection connIndex=3 connection=cde5abed-6329-4967-b058-c835533537c3 event=0 ip=198.41.192.7 location=lax07 protocol=quic
+2025-03-17T11:59:48Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.200.13
+2025-03-17T11:59:49Z INF Registered tunnel connection connIndex=1 connection=3be09dd8-4e1b-40b4-8bf2-ae4cc0a63f06 event=0 ip=198.41.200.13 location=lax01 protocol=quic
+2025-03-17T11:59:49Z WRN Failed to dial a quic connection error="failed to dial to edge with quic: timeout: no recent network activity" connIndex=2 event=0 ip=198.41.200.193
+2025-03-17T11:59:49Z INF Retrying connection in up to 4s connIndex=2 event=0 ip=198.41.200.193
+2025-03-17T11:59:50Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.200.33
+2025-03-17T11:59:50Z INF Registered tunnel connection connIndex=2 connection=8db4752f-9bd7-4cb4-87bf-568528fae484 event=0 ip=198.41.200.33 location=hkg08 protocol=quic
+2025-03-17T11:59:51Z WRN Connection terminated error="failed to dial to edge with quic: timeout: no recent network activity" connIndex=2
+2025-03-17T11:59:56Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.192.47
+2025-03-17T11:59:56Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.200.113
+2025-03-17T11:59:56Z INF Registered tunnel connection connIndex=0 connection=e52110a1-c291-46c8-8d37-7975050619ba event=0 ip=198.41.200.113 location=lax06 protocol=quic
+2025-03-17T11:59:57Z INF Registered tunnel connection connIndex=2 connection=9021583c-122d-455b-ac32-dd274db41f11 event=0 ip=198.41.192.47 location=lax08 protocol=quic
+2025-03-17T12:00:03Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.200.23
+2025-03-17T12:00:03Z INF Registered tunnel connection connIndex=2 connection=134de82e-e1b1-4e7d-8dc3-5ea762eee519 event=0 ip=198.41.200.23 location=lax06 protocol=quic
+2025-03-17T12:39:35Z WRN Failed to serve tunnel connection error="timeout: no recent network activity" connIndex=2 event=0 ip=198.41.200.23
+2025-03-17T12:39:35Z WRN Serve tunnel error error="timeout: no recent network activity" connIndex=2 event=0 ip=198.41.200.23
+2025-03-17T12:39:35Z INF Retrying connection in up to 1s connIndex=2 event=0 ip=198.41.200.23
+2025-03-17T12:39:35Z WRN Failed to serve tunnel connection error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=2 event=0 ip=198.41.200.233
+2025-03-17T12:39:35Z WRN Serve tunnel error error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=2 event=0 ip=198.41.200.233
+2025-03-17T12:39:35Z INF Retrying connection in up to 1s connIndex=2 event=0 ip=198.41.200.233
+2025-03-17T12:39:35Z WRN Failed to serve tunnel connection error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=1 event=0 ip=198.41.192.7
+2025-03-17T12:39:35Z WRN Serve tunnel error error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=1 event=0 ip=198.41.192.7
+2025-03-17T12:39:35Z INF Retrying connection in up to 1s connIndex=1 event=0 ip=198.41.192.7
+2025-03-17T12:39:35Z WRN Failed to serve tunnel connection error="timeout: no recent network activity" connIndex=1 event=0 ip=198.41.200.113
+2025-03-17T12:39:35Z WRN Serve tunnel error error="timeout: no recent network activity" connIndex=1 event=0 ip=198.41.200.113
+2025-03-17T12:39:35Z INF Retrying connection in up to 1s connIndex=1 event=0 ip=198.41.200.113
+2025-03-17T12:39:35Z WRN Failed to serve tunnel connection error="timeout: no recent network activity" connIndex=3 event=0 ip=198.41.192.57
+2025-03-17T12:39:35Z WRN Serve tunnel error error="timeout: no recent network activity" connIndex=3 event=0 ip=198.41.192.57
+2025-03-17T12:39:35Z INF Retrying connection in up to 1s connIndex=3 event=0 ip=198.41.192.57
+2025-03-17T12:39:36Z WRN Failed to serve tunnel connection error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=2 event=0 ip=198.41.200.33
+2025-03-17T12:39:36Z WRN Serve tunnel error error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=2 event=0 ip=198.41.200.33
+2025-03-17T12:39:36Z INF Retrying connection in up to 1s connIndex=2 event=0 ip=198.41.200.33
+2025-03-17T12:39:36Z WRN Failed to serve tunnel connection error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=3 event=0 ip=198.41.192.227
+2025-03-17T12:39:36Z WRN Serve tunnel error error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=3 event=0 ip=198.41.192.227
+2025-03-17T12:39:36Z INF Retrying connection in up to 1s connIndex=3 event=0 ip=198.41.192.227
+2025-03-17T12:39:36Z WRN Failed to serve tunnel connection error="timeout: no recent network activity" connIndex=3 event=0 ip=198.41.192.7
+2025-03-17T12:39:36Z WRN Serve tunnel error error="timeout: no recent network activity" connIndex=3 event=0 ip=198.41.192.7
+2025-03-17T12:39:36Z INF Retrying connection in up to 1s connIndex=3 event=0 ip=198.41.192.7
+2025-03-17T12:39:36Z WRN Failed to serve tunnel connection error="timeout: no recent network activity" connIndex=1 event=0 ip=198.41.192.27
+2025-03-17T12:39:36Z WRN Serve tunnel error error="timeout: no recent network activity" connIndex=1 event=0 ip=198.41.192.27
+2025-03-17T12:39:36Z INF Retrying connection in up to 1s connIndex=1 event=0 ip=198.41.192.27
+2025-03-17T12:39:36Z WRN Failed to serve tunnel connection error="timeout: no recent network activity" connIndex=2 event=0 ip=198.41.192.57
+2025-03-17T12:39:36Z WRN Serve tunnel error error="timeout: no recent network activity" connIndex=2 event=0 ip=198.41.192.57
+2025-03-17T12:39:36Z INF Retrying connection in up to 1s connIndex=2 event=0 ip=198.41.192.57
+2025-03-17T12:39:36Z WRN Failed to serve tunnel connection error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=1 event=0 ip=198.41.200.53
+2025-03-17T12:39:36Z WRN Serve tunnel error error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=1 event=0 ip=198.41.200.53
+2025-03-17T12:39:36Z INF Retrying connection in up to 1s connIndex=1 event=0 ip=198.41.200.53
+2025-03-17T12:39:36Z WRN Connection terminated error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=1
+2025-03-17T12:39:36Z WRN Failed to serve tunnel connection error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=1 event=0 ip=198.41.192.27
+2025-03-17T12:39:36Z WRN Serve tunnel error error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=1 event=0 ip=198.41.192.27
+2025-03-17T12:39:36Z INF Retrying connection in up to 1s connIndex=1 event=0 ip=198.41.192.27
+2025-03-17T12:39:36Z WRN Connection terminated error="timeout: no recent network activity" connIndex=2
+2025-03-17T12:39:36Z WRN Connection terminated error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=2
+2025-03-17T12:39:36Z WRN Connection terminated error="timeout: no recent network activity" connIndex=2
+2025-03-17T12:39:36Z WRN Connection terminated error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=2
+2025-03-17T12:39:36Z WRN Connection terminated error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=1
+2025-03-17T12:39:37Z WRN Connection terminated error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=1
+2025-03-17T12:39:37Z WRN Connection terminated error="timeout: no recent network activity" connIndex=3
+2025-03-17T12:39:37Z WRN Connection terminated error="timeout: no recent network activity" connIndex=1
+2025-03-17T12:39:37Z WRN Connection terminated error="timeout: no recent network activity" connIndex=1
+2025-03-17T12:39:37Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.192.107
+2025-03-17T12:39:37Z WRN Connection terminated error="timeout: no recent network activity" connIndex=3
+2025-03-17T12:39:37Z WRN Connection terminated error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=3
+2025-03-17T12:39:38Z INF Registered tunnel connection connIndex=3 connection=b8304b51-d5f8-412c-aa37-50dbf8e46c59 event=0 ip=198.41.192.107 location=lax09 protocol=quic
+2025-03-17T12:39:39Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.200.33
+2025-03-17T12:39:39Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.200.53
+2025-03-17T12:39:40Z INF Registered tunnel connection connIndex=1 connection=a431eff2-32d7-4bc5-a4b8-bf492ea2620d event=0 ip=198.41.200.53 location=lax01 protocol=quic
+2025-03-17T12:39:40Z INF Registered tunnel connection connIndex=2 connection=50e3d76a-3837-4eb2-97ec-2da12579af13 event=0 ip=198.41.200.33 location=lax01 protocol=quic
+2025-03-17T12:39:41Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.200.233
+2025-03-17T12:39:41Z INF Registered tunnel connection connIndex=2 connection=4deb714a-8021-4081-bdb0-128de985d009 event=0 ip=198.41.200.233 location=lax06 protocol=quic
+2025-03-17T12:39:45Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.192.7
+2025-03-17T12:39:45Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.200.13
+2025-03-17T12:39:45Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.192.227
+2025-03-17T12:39:45Z INF Registered tunnel connection connIndex=1 connection=858ec7b0-6a7f-4d16-91cb-fc3c99590324 event=0 ip=198.41.192.7 location=lax07 protocol=quic
+2025-03-17T12:39:46Z INF Registered tunnel connection connIndex=2 connection=dd921cca-671f-4685-8b58-ba32b817cd9e event=0 ip=198.41.200.13 location=lax01 protocol=quic
+2025-03-17T12:39:46Z INF Registered tunnel connection connIndex=1 connection=b725504b-f83e-40ff-af50-5da62a42ce8f event=0 ip=198.41.192.227 location=lax05 protocol=quic
+2025-03-17T12:39:48Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.200.53
+2025-03-17T12:39:48Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.192.167
+2025-03-17T12:39:49Z INF Registered tunnel connection connIndex=1 connection=e84f6d9a-05d6-41b2-861f-3ce24aeaa06a event=0 ip=198.41.200.53 location=lax06 protocol=quic
+2025-03-17T12:39:49Z INF Registered tunnel connection connIndex=3 connection=5736057a-f9e4-47d0-882c-ddea643012e3 event=0 ip=198.41.192.167 location=sjc06 protocol=quic
+2025-03-17T12:39:53Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.192.77
+2025-03-17T12:39:54Z INF Registered tunnel connection connIndex=2 connection=d7bc1708-5d9c-4138-a5db-298a228a3192 event=0 ip=198.41.192.77 location=sjc06 protocol=quic
+2025-03-17T12:39:55Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.192.227
+2025-03-17T12:39:55Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.192.27
+2025-03-17T12:39:55Z INF Registered tunnel connection connIndex=1 connection=62167ffa-caca-49af-9a69-f3afacb3bccd event=0 ip=198.41.192.27 location=sjc01 protocol=quic
+2025-03-17T12:39:56Z INF Registered tunnel connection connIndex=3 connection=7712db39-7e65-4ff3-b182-25b82d2ca009 event=0 ip=198.41.192.227 location=lax05 protocol=quic
+2025-03-17T14:49:35Z WRN Failed to serve tunnel connection error="timeout: no recent network activity" connIndex=2 event=0 ip=198.41.200.23
+2025-03-17T14:49:35Z WRN Serve tunnel error error="timeout: no recent network activity" connIndex=2 event=0 ip=198.41.200.23
+2025-03-17T14:49:35Z INF Retrying connection in up to 1s connIndex=2 event=0 ip=198.41.200.23
+2025-03-17T14:49:35Z WRN Failed to serve tunnel connection error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=0 event=0 ip=198.41.200.43
+2025-03-17T14:49:35Z WRN Serve tunnel error error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=0 event=0 ip=198.41.200.43
+2025-03-17T14:49:35Z INF Retrying connection in up to 1s connIndex=0 event=0 ip=198.41.200.43
+2025-03-17T14:49:35Z WRN Failed to serve tunnel connection error="timeout: no recent network activity" connIndex=2 event=0 ip=198.41.192.47
+2025-03-17T14:49:35Z WRN Serve tunnel error error="timeout: no recent network activity" connIndex=2 event=0 ip=198.41.192.47
+2025-03-17T14:49:35Z INF Retrying connection in up to 1s connIndex=2 event=0 ip=198.41.192.47
+2025-03-17T14:49:35Z WRN Failed to serve tunnel connection error="timeout: no recent network activity" connIndex=3 event=0 ip=198.41.200.23
+2025-03-17T14:49:35Z WRN Serve tunnel error error="timeout: no recent network activity" connIndex=3 event=0 ip=198.41.200.23
+2025-03-17T14:49:35Z INF Retrying connection in up to 1s connIndex=3 event=0 ip=198.41.200.23
+2025-03-17T14:49:35Z WRN Failed to serve tunnel connection error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=1 event=0 ip=198.41.200.13
+2025-03-17T14:49:35Z WRN Serve tunnel error error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=1 event=0 ip=198.41.200.13
+2025-03-17T14:49:35Z INF Retrying connection in up to 1s connIndex=1 event=0 ip=198.41.200.13
+2025-03-17T14:49:35Z WRN Failed to serve tunnel connection error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=2 event=0 ip=198.41.200.113
+2025-03-17T14:49:35Z WRN Serve tunnel error error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=2 event=0 ip=198.41.200.113
+2025-03-17T14:49:35Z INF Retrying connection in up to 1s connIndex=2 event=0 ip=198.41.200.113
+2025-03-17T14:49:35Z WRN Failed to serve tunnel connection error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=1 event=0 ip=198.41.192.7
+2025-03-17T14:49:35Z WRN Serve tunnel error error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=1 event=0 ip=198.41.192.7
+2025-03-17T14:49:35Z INF Retrying connection in up to 1s connIndex=1 event=0 ip=198.41.192.7
+2025-03-17T14:49:36Z WRN Failed to serve tunnel connection error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=1 event=0 ip=198.41.192.227
+2025-03-17T14:49:36Z WRN Serve tunnel error error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=1 event=0 ip=198.41.192.227
+2025-03-17T14:49:36Z INF Retrying connection in up to 1s connIndex=1 event=0 ip=198.41.192.227
+2025-03-17T14:49:36Z WRN Connection terminated error="timeout: no recent network activity" connIndex=2
+2025-03-17T14:49:36Z WRN Failed to serve tunnel connection error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=1 event=0 ip=198.41.192.167
+2025-03-17T14:49:36Z WRN Serve tunnel error error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=1 event=0 ip=198.41.192.167
+2025-03-17T14:49:36Z INF Retrying connection in up to 1s connIndex=1 event=0 ip=198.41.192.167
+2025-03-17T14:49:36Z WRN Connection terminated error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=1
+2025-03-17T14:49:36Z WRN Connection terminated error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=1
+2025-03-17T14:49:36Z WRN Connection terminated error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=2
+2025-03-17T14:49:37Z WRN Connection terminated error="timeout: no recent network activity" connIndex=3
+2025-03-17T14:49:37Z WRN Connection terminated error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=0
+2025-03-17T14:49:37Z WRN Connection terminated error="timeout: no recent network activity" connIndex=2
+2025-03-17T14:49:37Z WRN Connection terminated error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=1
+2025-03-17T14:49:37Z WRN Connection terminated error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=1
+2025-03-17T14:49:38Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.200.13
+2025-03-17T14:49:38Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.200.113
+2025-03-17T14:49:39Z INF Registered tunnel connection connIndex=1 connection=4d286807-3778-4bb0-89f8-90e6e1f84cbf event=0 ip=198.41.200.13 location=lax01 protocol=quic
+2025-03-17T14:49:39Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.192.167
+2025-03-17T14:49:39Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.200.43
+2025-03-17T14:49:39Z INF Registered tunnel connection connIndex=2 connection=215cf5fb-1811-49be-89b3-2c503bf88cca event=0 ip=198.41.200.113 location=sjc05 protocol=quic
+2025-03-17T14:49:40Z INF Registered tunnel connection connIndex=1 connection=f2201639-106f-468b-8493-7ffb15dfbb50 event=0 ip=198.41.192.167 location=lax05 protocol=quic
+2025-03-17T14:49:40Z INF Registered tunnel connection connIndex=0 connection=af72c523-274d-444d-984b-12de1466d875 event=0 ip=198.41.200.43 location=sjc07 protocol=quic
+2025-03-17T14:49:40Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.200.43
+2025-03-17T14:49:43Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.192.227
+2025-03-17T14:49:44Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.192.7
+2025-03-17T14:49:44Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.200.73
+2025-03-17T14:49:44Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.192.57
+2025-03-17T14:49:45Z INF Registered tunnel connection connIndex=1 connection=c10986fc-7080-4d28-969f-c8a14547edf9 event=0 ip=198.41.192.7 location=hkg09 protocol=quic
+2025-03-17T14:49:45Z INF Registered tunnel connection connIndex=2 connection=42ea4342-5ac6-4a6d-bace-976579451d12 event=0 ip=198.41.192.57 location=hkg01 protocol=quic
+2025-03-17T14:49:45Z WRN Failed to dial a quic connection error="failed to dial to edge with quic: timeout: no recent network activity" connIndex=2 event=0 ip=198.41.200.43
+2025-03-17T14:49:45Z INF Retrying connection in up to 4s connIndex=2 event=0 ip=198.41.200.43
+2025-03-17T14:49:48Z WRN Failed to dial a quic connection error="failed to dial to edge with quic: timeout: no recent network activity" connIndex=1 event=0 ip=198.41.192.227
+2025-03-17T14:49:48Z INF Retrying connection in up to 4s connIndex=1 event=0 ip=198.41.192.227
+2025-03-17T14:49:49Z WRN Failed to dial a quic connection error="failed to dial to edge with quic: timeout: no recent network activity" connIndex=3 event=0 ip=198.41.200.73
+2025-03-17T14:49:49Z INF Retrying connection in up to 4s connIndex=3 event=0 ip=198.41.200.73
+2025-03-17T14:49:49Z WRN Connection terminated error="failed to dial to edge with quic: timeout: no recent network activity" connIndex=2
+2025-03-17T14:49:49Z WRN Connection terminated error="failed to dial to edge with quic: timeout: no recent network activity" connIndex=3
+2025-03-17T14:49:51Z WRN Connection terminated error="failed to dial to edge with quic: timeout: no recent network activity" connIndex=1
+2025-03-17T14:50:05Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.200.23
+2025-03-17T14:50:06Z INF Registered tunnel connection connIndex=2 connection=2a39851f-7775-4c69-87c3-75d1fccab6cd event=0 ip=198.41.200.23 location=sjc05 protocol=quic
+2025-03-17T14:50:15Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.200.43
+2025-03-17T14:50:16Z INF Registered tunnel connection connIndex=3 connection=8c1cb81b-8a43-407c-90e0-e0b33eaca6ce event=0 ip=198.41.200.43 location=lax01 protocol=quic
+2025-03-17T14:50:31Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.192.77
+2025-03-17T14:50:31Z INF Registered tunnel connection connIndex=1 connection=d2fa6420-6031-4f0c-9fb1-012535069645 event=0 ip=198.41.192.77 location=sjc01 protocol=quic
+2025-03-17T15:40:53Z WRN Failed to serve tunnel connection error="timeout: no recent network activity" connIndex=2 event=0 ip=198.41.200.43
+2025-03-17T15:40:53Z WRN Serve tunnel error error="timeout: no recent network activity" connIndex=2 event=0 ip=198.41.200.43
+2025-03-17T15:40:53Z INF Retrying connection in up to 1s connIndex=2 event=0 ip=198.41.200.43
+2025-03-17T15:40:54Z WRN Connection terminated error="timeout: no recent network activity" connIndex=2
+2025-03-17T15:41:07Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.200.53
+2025-03-17T15:41:08Z INF Registered tunnel connection connIndex=2 connection=17a08999-d0ab-488c-acc5-bad6b73f4574 event=0 ip=198.41.200.53 location=lax01 protocol=quic
+2025-03-17T20:49:45Z INF Starting tunnel tunnelID=6647e3ad-8bed-4a72-bc89-eded4c3464a9
+2025-03-17T20:49:45Z INF Version 2025.2.1 (Checksum afdfadd1ef552e66bffc35246fe30a9bd578356d2d386de95585ccfc432472b8)
+2025-03-17T20:49:45Z INF GOOS: linux, GOVersion: go1.22.10, GoArch: amd64
+2025-03-17T20:49:45Z INF Settings: map[config:/root/.cloudflared/web_TT_SS_CTT.yml cred-file:/root/.cloudflared/6647e3ad-8bed-4a72-bc89-eded4c3464a9.json credentials-file:/root/.cloudflared/6647e3ad-8bed-4a72-bc89-eded4c3464a9.json]
+2025-03-17T20:49:45Z INF Generated Connector ID: 004ac2fd-874f-4470-84cf-c09ffe0ba19a
+2025-03-17T20:49:45Z INF Autoupdate frequency is set autoupdateFreq=86400000
+2025-03-17T20:49:45Z INF Starting tunnel tunnelID=bcdc9de5-4470-4628-8d9b-8ca34a373ee9
+2025-03-17T20:49:45Z INF Version 2025.2.1 (Checksum afdfadd1ef552e66bffc35246fe30a9bd578356d2d386de95585ccfc432472b8)
+2025-03-17T20:49:45Z INF GOOS: linux, GOVersion: go1.22.10, GoArch: amd64
+2025-03-17T20:49:45Z INF Settings: map[config:/root/.cloudflared/web_TT_SS_NTT.yml cred-file:/root/.cloudflared/bcdc9de5-4470-4628-8d9b-8ca34a373ee9.json credentials-file:/root/.cloudflared/bcdc9de5-4470-4628-8d9b-8ca34a373ee9.json]
+2025-03-17T20:49:45Z INF Autoupdate frequency is set autoupdateFreq=86400000
+2025-03-17T20:49:45Z INF Starting tunnel tunnelID=fe4712d9-c8f5-4f12-9f90-1d186c0ad61b
+2025-03-17T20:49:45Z INF Version 2025.2.1 (Checksum afdfadd1ef552e66bffc35246fe30a9bd578356d2d386de95585ccfc432472b8)
+2025-03-17T20:49:45Z INF Generated Connector ID: 3d6fb0c0-e748-4659-aa04-3b34df095c4a
+2025-03-17T20:49:45Z INF GOOS: linux, GOVersion: go1.22.10, GoArch: amd64
+2025-03-17T20:49:45Z INF Settings: map[config:/root/.cloudflared/web_TT_SS_WTT.yml cred-file:/root/.cloudflared/fe4712d9-c8f5-4f12-9f90-1d186c0ad61b.json credentials-file:/root/.cloudflared/fe4712d9-c8f5-4f12-9f90-1d186c0ad61b.json]
+2025-03-17T20:49:45Z INF Starting tunnel tunnelID=fe4712d9-c8f5-4f12-9f90-1d186c0ad61b
+2025-03-17T20:49:45Z INF Version 2025.2.1 (Checksum afdfadd1ef552e66bffc35246fe30a9bd578356d2d386de95585ccfc432472b8)
+2025-03-17T20:49:45Z INF GOOS: linux, GOVersion: go1.22.10, GoArch: amd64
+2025-03-17T20:49:45Z INF Settings: map[config:/root/.cloudflared/web_TT_SS_WTT.yml cred-file:/root/.cloudflared/fe4712d9-c8f5-4f12-9f90-1d186c0ad61b.json credentials-file:/root/.cloudflared/fe4712d9-c8f5-4f12-9f90-1d186c0ad61b.json]
+2025-03-17T20:49:45Z INF Autoupdate frequency is set autoupdateFreq=86400000
+2025-03-17T20:49:45Z INF Generated Connector ID: b19ac75e-512c-4272-9713-4a81b07d5311
+2025-03-17T20:49:45Z INF Starting tunnel tunnelID=bcdc9de5-4470-4628-8d9b-8ca34a373ee9
+2025-03-17T20:49:45Z INF Autoupdate frequency is set autoupdateFreq=86400000
+2025-03-17T20:49:45Z INF Starting tunnel tunnelID=6647e3ad-8bed-4a72-bc89-eded4c3464a9
+2025-03-17T20:49:45Z INF Generated Connector ID: 92e349db-207a-434d-86ed-8bbf3b392cd5
+2025-03-17T20:49:45Z INF Version 2025.2.1 (Checksum afdfadd1ef552e66bffc35246fe30a9bd578356d2d386de95585ccfc432472b8)
+2025-03-17T20:49:45Z INF GOOS: linux, GOVersion: go1.22.10, GoArch: amd64
+2025-03-17T20:49:45Z INF Settings: map[config:/root/.cloudflared/web_TT_SS_NTT.yml cred-file:/root/.cloudflared/bcdc9de5-4470-4628-8d9b-8ca34a373ee9.json credentials-file:/root/.cloudflared/bcdc9de5-4470-4628-8d9b-8ca34a373ee9.json]
+2025-03-17T20:49:45Z INF Version 2025.2.1 (Checksum afdfadd1ef552e66bffc35246fe30a9bd578356d2d386de95585ccfc432472b8)
+2025-03-17T20:49:45Z INF GOOS: linux, GOVersion: go1.22.10, GoArch: amd64
+2025-03-17T20:49:45Z INF Settings: map[config:/root/.cloudflared/web_TT_SS_CTT.yml cred-file:/root/.cloudflared/6647e3ad-8bed-4a72-bc89-eded4c3464a9.json credentials-file:/root/.cloudflared/6647e3ad-8bed-4a72-bc89-eded4c3464a9.json]
+2025-03-17T20:49:45Z INF Generated Connector ID: 4bd2a4c3-3c51-42ac-b227-33f2978faf7f
+2025-03-17T20:49:45Z INF Autoupdate frequency is set autoupdateFreq=86400000
+2025-03-17T20:49:45Z INF Generated Connector ID: fc05fc6f-ecec-4745-8c00-0c2db66b3f8f
+2025-03-17T20:49:45Z INF Autoupdate frequency is set autoupdateFreq=86400000
+2025-03-17T20:49:45Z INF Initial protocol quic
+2025-03-17T20:49:45Z INF Initial protocol quic
+2025-03-17T20:49:45Z INF Initial protocol quic
+2025-03-17T20:49:45Z INF Initial protocol quic
+2025-03-17T20:49:45Z INF Initial protocol quic
+2025-03-17T20:49:45Z INF Initial protocol quic
+2025-03-17T20:49:45Z INF ICMP proxy will use 172.23.45.17 as source for IPv4
+2025-03-17T20:49:45Z INF ICMP proxy will use fe80::215:5dff:fe6a:23ba in zone eth0 as source for IPv6
+2025-03-17T20:49:45Z INF ICMP proxy will use 172.23.45.17 as source for IPv4
+2025-03-17T20:49:45Z INF ICMP proxy will use fe80::215:5dff:fe6a:23ba in zone eth0 as source for IPv6
+2025-03-17T20:49:45Z INF ICMP proxy will use 172.23.45.17 as source for IPv4
+2025-03-17T20:49:45Z INF ICMP proxy will use fe80::215:5dff:fe6a:23ba in zone eth0 as source for IPv6
+2025-03-17T20:49:45Z INF ICMP proxy will use 172.23.45.17 as source for IPv4
+2025-03-17T20:49:45Z INF ICMP proxy will use fe80::215:5dff:fe6a:23ba in zone eth0 as source for IPv6
+2025-03-17T20:49:45Z INF ICMP proxy will use 172.23.45.17 as source for IPv4
+2025-03-17T20:49:45Z INF ICMP proxy will use fe80::215:5dff:fe6a:23ba in zone eth0 as source for IPv6
+2025-03-17T20:49:45Z INF ICMP proxy will use 172.23.45.17 as source for IPv4
+2025-03-17T20:49:45Z INF ICMP proxy will use fe80::215:5dff:fe6a:23ba in zone eth0 as source for IPv6
+2025-03-17T20:49:45Z INF ICMP proxy will use 172.23.45.17 as source for IPv4
+2025-03-17T20:49:45Z INF ICMP proxy will use 172.23.45.17 as source for IPv4
+2025-03-17T20:49:45Z INF ICMP proxy will use 172.23.45.17 as source for IPv4
+2025-03-17T20:49:45Z INF ICMP proxy will use fe80::215:5dff:fe6a:23ba in zone eth0 as source for IPv6
+2025-03-17T20:49:45Z INF ICMP proxy will use fe80::215:5dff:fe6a:23ba in zone eth0 as source for IPv6
+2025-03-17T20:49:45Z INF Starting metrics server on 127.0.0.1:35005/metrics
+2025-03-17T20:49:45Z INF Starting metrics server on 127.0.0.1:38307/metrics
+2025-03-17T20:49:45Z INF ICMP proxy will use fe80::215:5dff:fe6a:23ba in zone eth0 as source for IPv6
+2025-03-17T20:49:45Z INF Starting metrics server on 127.0.0.1:41189/metrics
+2025-03-17T20:49:45Z INF ICMP proxy will use 172.23.45.17 as source for IPv4
+2025-03-17T20:49:45Z INF ICMP proxy will use fe80::215:5dff:fe6a:23ba in zone eth0 as source for IPv6
+2025-03-17T20:49:45Z INF Starting metrics server on 127.0.0.1:38783/metrics
+2025-03-17T20:49:45Z INF ICMP proxy will use 172.23.45.17 as source for IPv4
+2025-03-17T20:49:45Z INF ICMP proxy will use fe80::215:5dff:fe6a:23ba in zone eth0 as source for IPv6
+2025-03-17T20:49:45Z INF Starting metrics server on 127.0.0.1:41015/metrics
+2025-03-17T20:49:45Z INF ICMP proxy will use 172.23.45.17 as source for IPv4
+2025-03-17T20:49:45Z INF ICMP proxy will use fe80::215:5dff:fe6a:23ba in zone eth0 as source for IPv6
+2025-03-17T20:49:45Z INF Starting metrics server on 127.0.0.1:46875/metrics
+2025-03-17T20:49:45Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.192.27
+2025-03-17T20:49:45Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.192.167
+2025-03-17T20:49:45Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.192.77
+2025-03-17T20:49:45Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.192.37
+2025-03-17T20:49:45Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.192.27
+2025-03-17T20:49:45Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.200.23
+2025-03-17T20:49:46Z INF Registered tunnel connection connIndex=0 connection=aa37bf68-4c55-4e06-b6bf-f1299bdae78a event=0 ip=198.41.192.77 location=lax09 protocol=quic
+2025-03-17T20:49:46Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.200.73
+2025-03-17T20:49:46Z INF Registered tunnel connection connIndex=0 connection=576c6cd4-1f48-4ab3-ac4c-5c12e480bbb6 event=0 ip=198.41.192.37 location=lax09 protocol=quic
+2025-03-17T20:49:46Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.200.13
+2025-03-17T20:49:46Z INF Registered tunnel connection connIndex=0 connection=7df449ac-bb2f-40d9-8725-3df2183a7161 event=0 ip=198.41.192.27 location=lax07 protocol=quic
+2025-03-17T20:49:46Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.200.53
+2025-03-17T20:49:46Z INF Registered tunnel connection connIndex=0 connection=2c124b31-fb51-4302-a36e-6ff0ffeaa000 event=0 ip=198.41.192.27 location=lax07 protocol=quic
+2025-03-17T20:49:46Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.200.53
+2025-03-17T20:49:46Z INF Registered tunnel connection connIndex=0 connection=0b43f34a-355d-4a2e-a138-87eed014c51f event=0 ip=198.41.192.167 location=lax05 protocol=quic
+2025-03-17T20:49:46Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.200.63
+2025-03-17T20:49:46Z INF Registered tunnel connection connIndex=0 connection=5e03725e-feeb-4b2d-a348-8e81053304f4 event=0 ip=198.41.200.23 location=lax06 protocol=quic
+2025-03-17T20:49:46Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.192.47
+2025-03-17T20:49:46Z INF Registered tunnel connection connIndex=1 connection=9cdbf93a-d434-4951-a8eb-a42c97e02c31 event=0 ip=198.41.200.53 location=lax01 protocol=quic
+2025-03-17T20:49:46Z INF Registered tunnel connection connIndex=1 connection=9158499f-5847-4cac-aeb0-e86f3a066efa event=0 ip=198.41.200.53 location=lax01 protocol=quic
+2025-03-17T20:49:46Z INF Registered tunnel connection connIndex=1 connection=a601919c-9e2e-4931-b58b-fb270a59a184 event=0 ip=198.41.200.63 location=lax01 protocol=quic
+2025-03-17T20:49:46Z INF Registered tunnel connection connIndex=1 connection=32ee65f9-0333-40fd-b44e-8f2ae69f872b event=0 ip=198.41.192.47 location=hkg01 protocol=quic
+2025-03-17T20:49:47Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.192.27
+2025-03-17T20:49:47Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.200.73
+2025-03-17T20:49:47Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.192.167
+2025-03-17T20:49:47Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.200.13
+2025-03-17T20:49:47Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.192.77
+2025-03-17T20:49:47Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.192.27
+2025-03-17T20:49:47Z INF Registered tunnel connection connIndex=2 connection=1525fd45-b683-499f-a5e2-9fbdbe871cde event=0 ip=198.41.192.27 location=sjc06 protocol=quic
+2025-03-17T20:49:47Z INF Registered tunnel connection connIndex=2 connection=4dfcbdf6-3fe7-4dda-9bba-3f19146fc8ca event=0 ip=198.41.192.167 location=lax05 protocol=quic
+2025-03-17T20:49:47Z INF Starting tunnel tunnelID=6647e3ad-8bed-4a72-bc89-eded4c3464a9
+2025-03-17T20:49:47Z INF Version 2025.2.1 (Checksum afdfadd1ef552e66bffc35246fe30a9bd578356d2d386de95585ccfc432472b8)
+2025-03-17T20:49:47Z INF GOOS: linux, GOVersion: go1.22.10, GoArch: amd64
+2025-03-17T20:49:47Z INF Settings: map[config:/root/.cloudflared/web_TT_SS_CTT.yml cred-file:/root/.cloudflared/6647e3ad-8bed-4a72-bc89-eded4c3464a9.json credentials-file:/root/.cloudflared/6647e3ad-8bed-4a72-bc89-eded4c3464a9.json]
+2025-03-17T20:49:47Z INF Autoupdate frequency is set autoupdateFreq=86400000
+2025-03-17T20:49:47Z INF Generated Connector ID: cf6c95c0-c320-4992-9ba0-a0d00c286e84
+2025-03-17T20:49:47Z INF Starting tunnel tunnelID=fe4712d9-c8f5-4f12-9f90-1d186c0ad61b
+2025-03-17T20:49:47Z INF Version 2025.2.1 (Checksum afdfadd1ef552e66bffc35246fe30a9bd578356d2d386de95585ccfc432472b8)
+2025-03-17T20:49:47Z INF GOOS: linux, GOVersion: go1.22.10, GoArch: amd64
+2025-03-17T20:49:47Z INF Settings: map[config:/root/.cloudflared/web_TT_SS_WTT.yml cred-file:/root/.cloudflared/fe4712d9-c8f5-4f12-9f90-1d186c0ad61b.json credentials-file:/root/.cloudflared/fe4712d9-c8f5-4f12-9f90-1d186c0ad61b.json]
+2025-03-17T20:49:47Z INF Autoupdate frequency is set autoupdateFreq=86400000
+2025-03-17T20:49:47Z INF Generated Connector ID: cfe25d47-3110-4217-ad80-ba6d08ead220
+2025-03-17T20:49:47Z INF Starting tunnel tunnelID=bcdc9de5-4470-4628-8d9b-8ca34a373ee9
+2025-03-17T20:49:47Z INF Version 2025.2.1 (Checksum afdfadd1ef552e66bffc35246fe30a9bd578356d2d386de95585ccfc432472b8)
+2025-03-17T20:49:47Z INF GOOS: linux, GOVersion: go1.22.10, GoArch: amd64
+2025-03-17T20:49:47Z INF Settings: map[config:/root/.cloudflared/web_TT_SS_NTT.yml cred-file:/root/.cloudflared/bcdc9de5-4470-4628-8d9b-8ca34a373ee9.json credentials-file:/root/.cloudflared/bcdc9de5-4470-4628-8d9b-8ca34a373ee9.json]
+2025-03-17T20:49:47Z INF Autoupdate frequency is set autoupdateFreq=86400000
+2025-03-17T20:49:47Z INF Generated Connector ID: eb512ce7-5db8-4330-a602-b713ad5c0e53
+2025-03-17T20:49:47Z INF Initial protocol quic
+2025-03-17T20:49:47Z INF Initial protocol quic
+2025-03-17T20:49:47Z INF Registered tunnel connection connIndex=2 connection=3002d811-53cc-4cce-9d42-6300fd20d9b9 event=0 ip=198.41.200.13 location=lax06 protocol=quic
+2025-03-17T20:49:47Z INF Initial protocol quic
+2025-03-17T20:49:47Z INF ICMP proxy will use 172.23.45.17 as source for IPv4
+2025-03-17T20:49:47Z INF ICMP proxy will use fe80::215:5dff:fe6a:23ba in zone eth0 as source for IPv6
+2025-03-17T20:49:47Z INF ICMP proxy will use 172.23.45.17 as source for IPv4
+2025-03-17T20:49:47Z INF ICMP proxy will use fe80::215:5dff:fe6a:23ba in zone eth0 as source for IPv6
+2025-03-17T20:49:47Z INF ICMP proxy will use 172.23.45.17 as source for IPv4
+2025-03-17T20:49:47Z INF ICMP proxy will use fe80::215:5dff:fe6a:23ba in zone eth0 as source for IPv6
+2025-03-17T20:49:47Z INF Registered tunnel connection connIndex=2 connection=de3b21fc-5eb0-44d2-b496-f73e38947ab8 event=0 ip=198.41.192.77 location=lax07 protocol=quic
+2025-03-17T20:49:47Z INF ICMP proxy will use 172.23.45.17 as source for IPv4
+2025-03-17T20:49:47Z INF ICMP proxy will use 172.23.45.17 as source for IPv4
+2025-03-17T20:49:47Z INF ICMP proxy will use fe80::215:5dff:fe6a:23ba in zone eth0 as source for IPv6
+2025-03-17T20:49:47Z INF ICMP proxy will use fe80::215:5dff:fe6a:23ba in zone eth0 as source for IPv6
+2025-03-17T20:49:47Z INF Starting metrics server on 127.0.0.1:40741/metrics
+2025-03-17T20:49:47Z INF Starting metrics server on 127.0.0.1:33791/metrics
+2025-03-17T20:49:47Z INF ICMP proxy will use 172.23.45.17 as source for IPv4
+2025-03-17T20:49:47Z INF ICMP proxy will use fe80::215:5dff:fe6a:23ba in zone eth0 as source for IPv6
+2025-03-17T20:49:47Z INF Starting metrics server on 127.0.0.1:35713/metrics
+2025-03-17T20:49:47Z INF Registered tunnel connection connIndex=2 connection=bfc2c26c-b9a2-4f02-ad14-314a8976ea3e event=0 ip=198.41.192.27 location=lax09 protocol=quic
+2025-03-17T20:49:47Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.192.57
+2025-03-17T20:49:47Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.200.53
+2025-03-17T20:49:47Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.192.167
+2025-03-17T20:49:47Z INF Registered tunnel connection connIndex=0 connection=41fea819-92d6-4cc4-a9be-ceb4c8d63ccd event=0 ip=198.41.192.57 location=hkg01 protocol=quic
+2025-03-17T20:49:47Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.200.43
+2025-03-17T20:49:48Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.200.193
+2025-03-17T20:49:48Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.192.7
+2025-03-17T20:49:48Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.200.113
+2025-03-17T20:49:48Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.192.57
+2025-03-17T20:49:48Z INF Registered tunnel connection connIndex=0 connection=cf3eb63c-2cb5-435a-b06a-32491daab3a0 event=0 ip=198.41.192.167 location=lax07 protocol=quic
+2025-03-17T20:49:48Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.200.43
+2025-03-17T20:49:48Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.200.193
+2025-03-17T20:49:48Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.200.193
+2025-03-17T20:49:48Z INF Registered tunnel connection connIndex=0 connection=7a21cdbc-4fa7-4b6f-99e2-9fe0bfd294bb event=0 ip=198.41.200.53 location=lax06 protocol=quic
+2025-03-17T20:49:48Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.192.167
+2025-03-17T20:49:48Z INF Registered tunnel connection connIndex=3 connection=fa5911c0-2d20-4fb5-9699-68048c90f049 event=0 ip=198.41.200.113 location=sjc07 protocol=quic
+2025-03-17T20:49:48Z INF Registered tunnel connection connIndex=1 connection=34bdd708-7cf1-4157-b7ea-b2b15edf9b77 event=0 ip=198.41.200.43 location=lax01 protocol=quic
+2025-03-17T20:49:48Z INF Registered tunnel connection connIndex=3 connection=ec6844bd-50eb-4cda-8a54-5fe98d84db6f event=0 ip=198.41.192.57 location=lax05 protocol=quic
+2025-03-17T20:49:48Z INF Registered tunnel connection connIndex=3 connection=63587080-30d2-48d9-9ba8-80817a07c7a7 event=0 ip=198.41.192.7 location=hkg01 protocol=quic
+2025-03-17T20:49:48Z INF Registered tunnel connection connIndex=1 connection=9b6c5532-2791-4469-b549-1cc2ff03830d event=0 ip=198.41.192.167 location=lax08 protocol=quic
+2025-03-17T20:49:48Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.192.7
+2025-03-17T20:49:49Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.192.47
+2025-03-17T20:49:49Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.192.67
+2025-03-17T20:49:49Z INF Registered tunnel connection connIndex=2 connection=8e6bb1b7-c277-4d40-bd4a-f3dce992daf0 event=0 ip=198.41.192.7 location=hkg09 protocol=quic
+2025-03-17T20:49:49Z INF Registered tunnel connection connIndex=2 connection=25c3bb5f-47d5-4f4b-9166-06c36c9f00ba event=0 ip=198.41.192.47 location=lax05 protocol=quic
+2025-03-17T20:49:49Z INF Registered tunnel connection connIndex=2 connection=8eea3a36-c081-4597-86ba-4c1c03e9ac1a event=0 ip=198.41.192.67 location=lax09 protocol=quic
+2025-03-17T20:49:49Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.200.113
+2025-03-17T20:49:50Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.200.53
+2025-03-17T20:49:50Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.200.23
+2025-03-17T20:49:50Z INF Registered tunnel connection connIndex=3 connection=a6476eb5-4d3f-4706-b411-a87146f92536 event=0 ip=198.41.200.113 location=lax01 protocol=quic
+2025-03-17T20:49:50Z INF Registered tunnel connection connIndex=3 connection=df81d091-591c-4231-a78a-19f3c459e158 event=0 ip=198.41.200.23 location=hkg10 protocol=quic
+2025-03-17T20:49:50Z INF Registered tunnel connection connIndex=3 connection=4919a02c-42b9-4807-a920-b878e3154e65 event=0 ip=198.41.200.53 location=lax01 protocol=quic
+2025-03-17T20:49:51Z WRN Failed to dial a quic connection error="failed to dial to edge with quic: timeout: no recent network activity" connIndex=1 event=0 ip=198.41.200.73
+2025-03-17T20:49:51Z INF Retrying connection in up to 2s connIndex=1 event=0 ip=198.41.200.73
+2025-03-17T20:49:51Z WRN Failed to dial a quic connection error="failed to dial to edge with quic: timeout: no recent network activity" connIndex=1 event=0 ip=198.41.200.13
+2025-03-17T20:49:51Z INF Retrying connection in up to 2s connIndex=1 event=0 ip=198.41.200.13
+2025-03-17T20:49:52Z WRN Failed to dial a quic connection error="failed to dial to edge with quic: timeout: no recent network activity" connIndex=2 event=0 ip=198.41.200.73
+2025-03-17T20:49:52Z INF Retrying connection in up to 2s connIndex=2 event=0 ip=198.41.200.73
+2025-03-17T20:49:52Z WRN Connection terminated error="failed to dial to edge with quic: timeout: no recent network activity" connIndex=1
+2025-03-17T20:49:52Z WRN Connection terminated error="failed to dial to edge with quic: timeout: no recent network activity" connIndex=2
+2025-03-17T20:49:52Z WRN Connection terminated error="failed to dial to edge with quic: timeout: no recent network activity" connIndex=1
+2025-03-17T20:49:53Z WRN Failed to dial a quic connection error="failed to dial to edge with quic: timeout: no recent network activity" connIndex=3 event=0 ip=198.41.200.193
+2025-03-17T20:49:53Z INF Retrying connection in up to 2s connIndex=3 event=0 ip=198.41.200.193
+2025-03-17T20:49:53Z WRN Failed to dial a quic connection error="failed to dial to edge with quic: timeout: no recent network activity" connIndex=1 event=0 ip=198.41.200.43
+2025-03-17T20:49:53Z INF Retrying connection in up to 2s connIndex=1 event=0 ip=198.41.200.43
+2025-03-17T20:49:53Z WRN Failed to dial a quic connection error="failed to dial to edge with quic: timeout: no recent network activity" connIndex=3 event=0 ip=198.41.200.193
+2025-03-17T20:49:53Z INF Retrying connection in up to 2s connIndex=3 event=0 ip=198.41.200.193
+2025-03-17T20:49:53Z WRN Failed to dial a quic connection error="failed to dial to edge with quic: timeout: no recent network activity" connIndex=3 event=0 ip=198.41.200.193
+2025-03-17T20:49:53Z INF Retrying connection in up to 2s connIndex=3 event=0 ip=198.41.200.193
+2025-03-17T20:49:54Z WRN Connection terminated error="failed to dial to edge with quic: timeout: no recent network activity" connIndex=3
+2025-03-17T20:49:54Z WRN Connection terminated error="failed to dial to edge with quic: timeout: no recent network activity" connIndex=3
+2025-03-17T20:49:54Z WRN Connection terminated error="failed to dial to edge with quic: timeout: no recent network activity" connIndex=1
+2025-03-17T20:49:54Z WRN Connection terminated error="failed to dial to edge with quic: timeout: no recent network activity" connIndex=3
+2025-03-17T20:49:57Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.200.113
+2025-03-17T20:49:58Z INF Registered tunnel connection connIndex=3 connection=22fe2cde-0d84-46c1-8e5f-448e90bb4fc2 event=0 ip=198.41.200.113 location=sjc08 protocol=quic
+2025-03-17T20:50:02Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.200.113
+2025-03-17T20:50:02Z INF Registered tunnel connection connIndex=3 connection=9fb8865d-3e1f-471b-8ce5-9c938f837286 event=0 ip=198.41.200.113 location=lax06 protocol=quic
+2025-03-17T20:50:05Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.200.23
+2025-03-17T20:50:05Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.200.63
+2025-03-17T20:50:05Z INF Registered tunnel connection connIndex=1 connection=bbcf396c-c978-457b-9b50-b09170a6bd04 event=0 ip=198.41.200.63 location=lax06 protocol=quic
+2025-03-17T20:50:05Z INF Registered tunnel connection connIndex=3 connection=21e22488-4fda-4b8a-ac59-aa5534cff769 event=0 ip=198.41.200.23 location=hkg12 protocol=quic
+2025-03-17T20:50:11Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.200.73
+2025-03-17T20:50:13Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.200.193
+2025-03-17T20:50:13Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.200.63
+2025-03-17T20:50:13Z INF Registered tunnel connection connIndex=2 connection=80bd8ad9-1d5a-496b-809e-a16a5eded548 event=0 ip=198.41.200.63 location=sjc08 protocol=quic
+2025-03-17T20:50:16Z WRN Failed to dial a quic connection error="failed to dial to edge with quic: timeout: no recent network activity" connIndex=1 event=0 ip=198.41.200.73
+2025-03-17T20:50:16Z INF Retrying connection in up to 4s connIndex=1 event=0 ip=198.41.200.73
+2025-03-17T20:50:18Z WRN Failed to dial a quic connection error="failed to dial to edge with quic: timeout: no recent network activity" connIndex=1 event=0 ip=198.41.200.193
+2025-03-17T20:50:18Z INF Retrying connection in up to 4s connIndex=1 event=0 ip=198.41.200.193
+2025-03-17T20:50:18Z WRN Connection terminated error="failed to dial to edge with quic: timeout: no recent network activity" connIndex=1
+2025-03-17T20:50:19Z WRN Connection terminated error="failed to dial to edge with quic: timeout: no recent network activity" connIndex=1
+2025-03-17T20:50:22Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.200.53
+2025-03-17T20:50:22Z INF Registered tunnel connection connIndex=1 connection=0e3f0561-3a67-483c-b9d2-0ce025aeae42 event=0 ip=198.41.200.53 location=lax01 protocol=quic
+2025-03-17T20:50:46Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.200.23
+2025-03-17T20:50:46Z INF Registered tunnel connection connIndex=1 connection=5bbe4ee2-403d-4eb9-8c0c-5f7d9c39c144 event=0 ip=198.41.200.23 location=sjc05 protocol=quic
