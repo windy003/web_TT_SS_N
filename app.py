@@ -47,8 +47,11 @@ def load_from_url(url):
         title = page.ele('xpath://h1').text
         print(f"文章标题: {title}")
         
-        # 获取文章内容
-        content = page.ele('xpath://article').text 
+        # 获取文章内容，排除 pgc-img 标签及其子节点
+        content = ''.join([
+            ele.text 
+            for ele in page.eles('xpath://article//node()[not(ancestor-or-self::div[@class="pgc-img"])]')
+        ])
         
 
         # 尝试找到并点击"点开展开剩余.."按钮
@@ -73,16 +76,16 @@ def load_from_url(url):
         time.sleep(2)  # 等待图片加载
 
 
-        imgs = page.eles('xpath://article//img')
+        imgs_A_Ds_lists = page.eles('xpath://div[@class="pgc-img"]')
 
-        img_tags = "" # 用于存储完整的 img 标签
-        for img in imgs:
-            img_html = img.html  # 获取 img 标签的完整 HTML 代码
-            img_tags+=img_html
+        imgs_A_Ds_tags = "" # 用于存储完整的 img 标签
+        for imgs_A_Ds in imgs_A_Ds_lists:
+            imgs_A_Ds_html = imgs_A_Ds.html  # 获取 img 标签的完整 HTML 代码
+            imgs_A_Ds_tags+=imgs_A_Ds_html
         
-        print(f"img_tags:{img_tags}")  # 打印所有 img 标签
+        # print(f"imgs_A_Ds_tags:{imgs_A_Ds_tags}")  # 打印所有 img 标签
         
-        content += img_tags
+        content += imgs_A_Ds_tags
 
         
         return render_template('index.html', title=title, content=content)
