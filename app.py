@@ -85,8 +85,15 @@ def load_from_url(url):
         
         # print(f"imgs_A_Ds_tags:{imgs_A_Ds_tags}")  # 打印所有 img 标签
         
-        content += imgs_A_Ds_tags
+        wtt_imgs_tags_lists = page.eles('xpath://img[@class="weitoutiao-img"]')
 
+        wtt_imgs_tags = "" # 用于存储完整的 img 标签
+        for wtt_imgs in wtt_imgs_tags_lists:
+            wtt_imgs_html = wtt_imgs.html  # 获取 img 标签的完整 HTML 代码
+            wtt_imgs_tags+=wtt_imgs_html
+
+        content += imgs_A_Ds_tags
+        content += wtt_imgs_tags
         
         return render_template('index.html', title=title, content=content)
     
