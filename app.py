@@ -6,16 +6,33 @@ import re
 import html
 import time
 import os
+import json
 
 app = Flask(__name__)
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
+
+
+    url_old = ""
+    content_old = ""
+    # 读取 backup.json 文件
+    if os.path.exists("./backup.json"):
+        with open("./backup.json", "r", encoding="utf-8") as f:
+            data = json.load(f)
+            url_old = data.get("url", "").strip()
+            content_old = data.get("content", "")
+
     if request.method == 'POST':
         if 'url' in request.form:
-            url = request.form['url']
-            url = url.split(' ',1)[0]
-            return load_from_url(url)
+            url = request.form['url'].strip()
+            if url_old:
+                if url == url_old:
+                    return render_template('index.html',content=content_old)
+                else:
+                    return load_from_url(url)
+            else:
+                return load_from_url(url)
     
     return render_template('index.html')
 
@@ -43,10 +60,6 @@ def load_from_url(url):
         print("正在加载页面...")
         time.sleep(2)  # 等待页面加载
         
-        # 获取文章标题
-        title = page.ele('xpath://h1').text
-        print(f"文章标题: {title}")
-        
 
         
         # 尝试找到并点击"点开展开剩余.."按钮
@@ -59,40 +72,53 @@ def load_from_url(url):
         except Exception as e:
             print(f"未找到展开更多按钮或点击失败: {e}")
 
-        
-        time.sleep(2)
 
-        # 滚动页面以触发懒加载
-        page.scroll.down()
-        time.sleep(2)  # 等待图片加载
+        # 向下翻页,并延迟时间
+        try:
+            time.sleep(2)
 
-        # 滚动页面以触发懒加载
-        page.scroll.down()
-        time.sleep(2)  # 等待图片加载
-        page.scroll.down()
-        time.sleep(2)  # 等待图片加载
+            # 滚动页面以触发懒加载
+            page.scroll.down()
+            time.sleep(2)  # 等待图片加载
 
-        # 滚动页面以触发懒加载
-        page.scroll.down()
-        time.sleep(2)  # 等待图片加载
-        page.scroll.down()
-        time.sleep(2)  # 等待图片加载
+            # 滚动页面以触发懒加载
+            page.scroll.down()
+            time.sleep(2)  # 等待图片加载
+            page.scroll.down()
+            time.sleep(2)  # 等待图片加载
 
-        # 滚动页面以触发懒加载
-        page.scroll.down()
-        time.sleep(2)  # 等待图片加载
+            # 滚动页面以触发懒加载
+            page.scroll.down()
+            time.sleep(2)  # 等待图片加载
+            page.scroll.down()
+            time.sleep(2)  # 等待图片加载
 
-        page.scroll.down()
-        time.sleep(2)  # 等待图片加载
-        page.scroll.down()
-        time.sleep(2)  # 等待图片加载
+            # 滚动页面以触发懒加载
+            page.scroll.down()
+            time.sleep(2)  # 等待图片加载
 
-        # 滚动页面以触发懒加载
-        page.scroll.down()
-        time.sleep(2)  # 等待图片加载
+            page.scroll.down()
+            time.sleep(2)  # 等待图片加载
+            page.scroll.down()
+            time.sleep(2)  # 等待图片加载
 
+            # 滚动页面以触发懒加载
+            page.scroll.down()
+            time.sleep(2)  # 等待图片加载
+        except Exception as e:
+            print(f"向下翻页失败: {e}")
 
         content=""
+
+
+        # 获取文章标题
+        title = page.ele('xpath://h1').text
+        print(f"文章标题: {title}")
+        
+        content+=  f"<h1>{title}</h1>"
+
+
+
         for ele in page.eles('xpath://article//p//span'):
             content += ele.text
     
@@ -121,9 +147,18 @@ def load_from_url(url):
 
         content += imgs_A_Ds_tags
         content += wtt_imgs_tags
-        
-        return render_template('index.html', title=title, content=content)
-    
+
+
+        # 将 url 和 content 写入 backup.json 文件
+        data = {
+            "url": url,
+            "content": content
+        }
+        with open("./backup.json", "w", encoding="utf-8") as f:
+            json.dump(data, f, ensure_ascii=False, indent=4)
+
+        return render_template('index.html',content=content)
+
     except Exception as e:
         print(f"爬取过程中出现错误: {e}")
     finally:

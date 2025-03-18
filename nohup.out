@@ -11937,3 +11937,577 @@ failed to accept QUIC stream: Application error 0x0 (remote)
 2025-03-18T01:06:50Z WRN Connection terminated error="Application error 0x0 (remote)" connIndex=3
 2025-03-18T01:06:51Z WRN Connection terminated error="Application error 0x0 (remote)" connIndex=1
 2025-03-18T01:07:09Z WRN Connection terminated error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=2
+2025-03-18T01:07:27Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:07:28Z WRN Failed to serve tunnel connection error="Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:07:28Z WRN Serve tunnel error error="Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:07:28Z INF Retrying connection in up to 1m4s connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:07:30Z INF Initiating graceful shutdown due to signal interrupt ...
+2025-03-18T01:07:30Z ERR Failed to serve tunnel connection error="Application error 0x0 (remote)" connIndex=0 event=0 ip=198.41.192.37
+2025-03-18T01:07:30Z ERR Serve tunnel error error="Application error 0x0 (remote)" connIndex=0 event=0 ip=198.41.192.37
+2025-03-18T01:07:30Z INF Retrying connection in up to 1s connIndex=0 event=0 ip=198.41.192.37
+2025-03-18T01:07:30Z ERR no more connections active and exiting
+2025-03-18T01:07:30Z INF Tunnel server stopped
+2025-03-18T01:07:30Z ERR icmp router terminated error="context canceled"
+2025-03-18T01:07:30Z INF Metrics server stopped
+2025-03-18T01:07:48Z WRN Connection terminated error="Application error 0x0 (remote)" connIndex=3
+2025-03-18T01:08:44Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:08:44Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:08:44Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:08:44Z WRN Failed to serve tunnel connection error="Application error 0x0 (remote)" connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:08:44Z WRN Serve tunnel error error="Application error 0x0 (remote)" connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:08:44Z INF Retrying connection in up to 1m4s connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:08:44Z WRN Failed to serve tunnel connection error="Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:08:44Z WRN Serve tunnel error error="Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:08:44Z INF Retrying connection in up to 1m4s connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:08:45Z WRN Failed to serve tunnel connection error="Application error 0x0 (remote)" connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:08:45Z WRN Serve tunnel error error="Application error 0x0 (remote)" connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:08:45Z INF Retrying connection in up to 1m4s connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:08:45Z WRN Connection terminated error="Application error 0x0 (remote)" connIndex=3
+2025-03-18T01:09:07Z WRN Connection terminated error="Application error 0x0 (remote)" connIndex=1
+2025-03-18T01:09:18Z WRN Connection terminated error="Application error 0x0 (remote)" connIndex=2
+2025-03-18T01:11:47Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:11:47Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:11:47Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:11:48Z WRN Failed to serve tunnel connection error="Application error 0x0 (remote)" connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:11:48Z WRN Serve tunnel error error="Application error 0x0 (remote)" connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:11:48Z INF Retrying connection in up to 1m4s connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:11:48Z WRN Failed to serve tunnel connection error="Application error 0x0 (remote)" connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:11:48Z WRN Serve tunnel error error="Application error 0x0 (remote)" connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:11:48Z INF Retrying connection in up to 1m4s connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:11:48Z WRN Failed to serve tunnel connection error="Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:11:48Z WRN Serve tunnel error error="Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:11:48Z INF Retrying connection in up to 1m4s connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:11:48Z WRN Connection terminated error="Application error 0x0 (remote)" connIndex=1
+2025-03-18T01:12:02Z WRN Connection terminated error="Application error 0x0 (remote)" connIndex=2
+2025-03-18T01:12:08Z WRN Connection terminated error="Application error 0x0 (remote)" connIndex=3
+2025-03-18T01:12:18Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:12:18Z WRN Failed to serve tunnel connection error="Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:12:18Z WRN Serve tunnel error error="Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:12:18Z INF Retrying connection in up to 1m4s connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:12:19Z WRN Connection terminated error="Application error 0x0 (remote)" connIndex=3
+2025-03-18T01:13:10Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:13:10Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:13:10Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:13:10Z WRN Failed to serve tunnel connection error="context canceled" connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:13:10Z INF Retrying connection in up to 1m4s connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:13:10Z WRN Failed to serve tunnel connection error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:13:10Z WRN Serve tunnel error error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:13:10Z INF Retrying connection in up to 1m4s connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:13:10Z WRN Failed to serve tunnel connection error="Application error 0x0 (remote)" connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:13:10Z WRN Serve tunnel error error="Application error 0x0 (remote)" connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:13:10Z INF Retrying connection in up to 1m4s connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:13:30Z WRN Connection terminated error="context canceled" connIndex=3
+2025-03-18T01:13:33Z WRN Connection terminated error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=1
+2025-03-18T01:13:39Z WRN Connection terminated error="Application error 0x0 (remote)" connIndex=2
+2025-03-18T01:15:57Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:15:57Z WRN Failed to serve tunnel connection error="Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:15:57Z WRN Serve tunnel error error="Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:15:57Z INF Retrying connection in up to 1m4s connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:16:01Z WRN Connection terminated error="Application error 0x0 (remote)" connIndex=3
+2025-03-18T01:16:28Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:16:28Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:16:28Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:16:28Z WRN Failed to serve tunnel connection error="Application error 0x0 (remote)" connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:16:28Z WRN Serve tunnel error error="Application error 0x0 (remote)" connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:16:28Z INF Retrying connection in up to 1m4s connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:16:28Z WRN Failed to serve tunnel connection error="Application error 0x0 (remote)" connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:16:28Z WRN Serve tunnel error error="Application error 0x0 (remote)" connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:16:28Z INF Retrying connection in up to 1m4s connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:16:28Z WRN Failed to serve tunnel connection error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:16:28Z WRN Serve tunnel error error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:16:28Z INF Retrying connection in up to 1m4s connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:16:34Z WRN Connection terminated error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=3
+2025-03-18T01:16:39Z WRN Connection terminated error="Application error 0x0 (remote)" connIndex=2
+2025-03-18T01:16:53Z WRN Connection terminated error="Application error 0x0 (remote)" connIndex=1
+2025-03-18T01:18:26Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:18:26Z WRN Failed to serve tunnel connection error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:18:26Z WRN Serve tunnel error error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:18:26Z INF Retrying connection in up to 1m4s connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:18:51Z WRN Connection terminated error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=3
+2025-03-18T01:20:03Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:20:03Z WRN Failed to serve tunnel connection error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:20:03Z WRN Serve tunnel error error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:20:03Z INF Retrying connection in up to 1m4s connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:20:17Z WRN Connection terminated error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=3
+2025-03-18T01:20:25Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:20:25Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:20:25Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:20:25Z WRN Failed to serve tunnel connection error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:20:25Z WRN Serve tunnel error error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:20:25Z INF Retrying connection in up to 1m4s connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:20:25Z WRN Failed to serve tunnel connection error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:20:25Z WRN Serve tunnel error error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:20:25Z INF Retrying connection in up to 1m4s connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:20:25Z WRN Failed to serve tunnel connection error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:20:25Z WRN Serve tunnel error error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:20:25Z INF Retrying connection in up to 1m4s connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:20:32Z WRN Connection terminated error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=1
+2025-03-18T01:20:47Z WRN Connection terminated error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=2
+2025-03-18T01:20:53Z WRN Connection terminated error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=3
+2025-03-18T01:24:41Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:24:41Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:24:41Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:24:42Z WRN Failed to serve tunnel connection error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:24:42Z WRN Serve tunnel error error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:24:42Z INF Retrying connection in up to 1m4s connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:24:42Z WRN Failed to serve tunnel connection error="context canceled" connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:24:42Z INF Retrying connection in up to 1m4s connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:24:42Z WRN Failed to serve tunnel connection error="Application error 0x0 (remote)" connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:24:42Z WRN Serve tunnel error error="Application error 0x0 (remote)" connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:24:42Z INF Retrying connection in up to 1m4s connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:24:48Z WRN Connection terminated error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=1
+2025-03-18T01:24:57Z WRN Connection terminated error="Application error 0x0 (remote)" connIndex=2
+2025-03-18T01:25:13Z WRN Connection terminated error="context canceled" connIndex=3
+2025-03-18T01:25:45Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:25:46Z WRN Failed to serve tunnel connection error="Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:25:46Z WRN Serve tunnel error error="Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:25:46Z INF Retrying connection in up to 1m4s connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:26:11Z WRN Connection terminated error="Application error 0x0 (remote)" connIndex=3
+2025-03-18T01:27:36Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:27:36Z WRN Failed to serve tunnel connection error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:27:36Z WRN Serve tunnel error error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:27:36Z INF Retrying connection in up to 1m4s connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:27:51Z WRN Connection terminated error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=3
+2025-03-18T01:28:12Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:28:12Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:28:12Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:28:12Z WRN Failed to serve tunnel connection error="Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:28:12Z WRN Serve tunnel error error="Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:28:12Z INF Retrying connection in up to 1m4s connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:28:12Z WRN Failed to serve tunnel connection error="context canceled" connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:28:12Z INF Retrying connection in up to 1m4s connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:28:12Z WRN Failed to serve tunnel connection error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:28:12Z WRN Serve tunnel error error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:28:12Z INF Retrying connection in up to 1m4s connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:28:27Z WRN Connection terminated error="Application error 0x0 (remote)" connIndex=3
+2025-03-18T01:28:35Z WRN Connection terminated error="context canceled" connIndex=1
+2025-03-18T01:28:36Z WRN Connection terminated error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=2
+2025-03-18T01:31:12Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:31:12Z WRN Failed to serve tunnel connection error="Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:31:12Z WRN Serve tunnel error error="Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:31:12Z INF Retrying connection in up to 1m4s connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:31:19Z WRN Connection terminated error="Application error 0x0 (remote)" connIndex=3
+2025-03-18T01:31:38Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:31:38Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:31:38Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:31:39Z WRN Failed to serve tunnel connection error="Application error 0x0 (remote)" connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:31:39Z WRN Serve tunnel error error="Application error 0x0 (remote)" connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:31:39Z INF Retrying connection in up to 1m4s connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:31:39Z WRN Failed to serve tunnel connection error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:31:39Z WRN Serve tunnel error error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:31:39Z INF Retrying connection in up to 1m4s connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:31:39Z WRN Failed to serve tunnel connection error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:31:39Z WRN Serve tunnel error error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:31:39Z INF Retrying connection in up to 1m4s connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:31:42Z WRN Connection terminated error="Application error 0x0 (remote)" connIndex=1
+2025-03-18T01:31:46Z WRN Connection terminated error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=2
+2025-03-18T01:31:54Z WRN Connection terminated error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=3
+2025-03-18T01:34:03Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:34:03Z WRN Failed to serve tunnel connection error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:34:03Z WRN Serve tunnel error error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:34:03Z INF Retrying connection in up to 1m4s connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:34:29Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:34:29Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:34:29Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:34:29Z WRN Connection terminated error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=3
+2025-03-18T01:34:29Z WRN Failed to serve tunnel connection error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:34:29Z WRN Serve tunnel error error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:34:29Z INF Retrying connection in up to 1m4s connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:34:29Z WRN Failed to serve tunnel connection error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:34:29Z WRN Serve tunnel error error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:34:29Z INF Retrying connection in up to 1m4s connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:34:29Z WRN Failed to serve tunnel connection error="Application error 0x0 (remote)" connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:34:29Z WRN Serve tunnel error error="Application error 0x0 (remote)" connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:34:29Z INF Retrying connection in up to 1m4s connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:34:31Z WRN Connection terminated error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=1
+2025-03-18T01:34:50Z WRN Connection terminated error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=3
+2025-03-18T01:34:54Z WRN Connection terminated error="Application error 0x0 (remote)" connIndex=2
+2025-03-18T01:35:20Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:35:20Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:35:20Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:35:20Z WRN Failed to serve tunnel connection error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:35:20Z WRN Serve tunnel error error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:35:20Z INF Retrying connection in up to 1m4s connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:35:20Z WRN Failed to serve tunnel connection error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:35:20Z WRN Serve tunnel error error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:35:20Z INF Retrying connection in up to 1m4s connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:35:20Z WRN Failed to serve tunnel connection error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:35:20Z WRN Serve tunnel error error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:35:20Z INF Retrying connection in up to 1m4s connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:35:21Z WRN Connection terminated error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=3
+2025-03-18T01:35:25Z WRN Connection terminated error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=2
+2025-03-18T01:35:43Z WRN Connection terminated error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=1
+2025-03-18T01:35:56Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:35:56Z WRN Failed to serve tunnel connection error="Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:35:56Z WRN Serve tunnel error error="Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:35:56Z INF Retrying connection in up to 1m4s connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:36:01Z WRN Connection terminated error="Application error 0x0 (remote)" connIndex=3
+2025-03-18T01:37:00Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:37:00Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:37:00Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:37:00Z WRN Failed to serve tunnel connection error="Application error 0x0 (remote)" connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:37:00Z WRN Serve tunnel error error="Application error 0x0 (remote)" connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:37:00Z INF Retrying connection in up to 1m4s connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:37:00Z WRN Failed to serve tunnel connection error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:37:00Z WRN Serve tunnel error error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:37:00Z INF Retrying connection in up to 1m4s connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:37:00Z WRN Failed to serve tunnel connection error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:37:00Z WRN Serve tunnel error error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:37:00Z INF Retrying connection in up to 1m4s connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:37:08Z WRN Connection terminated error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=2
+2025-03-18T01:37:10Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:37:10Z WRN Failed to serve tunnel connection error="Application error 0x0 (remote)" connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:37:10Z WRN Serve tunnel error error="Application error 0x0 (remote)" connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:37:10Z INF Retrying connection in up to 1m4s connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:37:13Z WRN Connection terminated error="Application error 0x0 (remote)" connIndex=1
+2025-03-18T01:37:16Z WRN Connection terminated error="Application error 0x0 (remote)" connIndex=2
+2025-03-18T01:37:24Z WRN Connection terminated error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=3
+2025-03-18T01:38:51Z INF Starting tunnel tunnelID=6647e3ad-8bed-4a72-bc89-eded4c3464a9
+2025-03-18T01:38:51Z INF Version 2025.2.1 (Checksum afdfadd1ef552e66bffc35246fe30a9bd578356d2d386de95585ccfc432472b8)
+2025-03-18T01:38:51Z INF GOOS: linux, GOVersion: go1.22.10, GoArch: amd64
+2025-03-18T01:38:51Z INF Settings: map[config:/root/.cloudflared/web_TT_SS_CTT.yml cred-file:/root/.cloudflared/6647e3ad-8bed-4a72-bc89-eded4c3464a9.json credentials-file:/root/.cloudflared/6647e3ad-8bed-4a72-bc89-eded4c3464a9.json]
+2025-03-18T01:38:51Z INF Autoupdate frequency is set autoupdateFreq=86400000
+2025-03-18T01:38:51Z INF Generated Connector ID: f3dd48c4-cacc-4a49-9a0c-c2483637a881
+2025-03-18T01:38:51Z INF Starting tunnel tunnelID=bcdc9de5-4470-4628-8d9b-8ca34a373ee9
+2025-03-18T01:38:51Z INF Version 2025.2.1 (Checksum afdfadd1ef552e66bffc35246fe30a9bd578356d2d386de95585ccfc432472b8)
+2025-03-18T01:38:51Z INF GOOS: linux, GOVersion: go1.22.10, GoArch: amd64
+2025-03-18T01:38:51Z INF Settings: map[config:/root/.cloudflared/web_TT_SS_NTT.yml cred-file:/root/.cloudflared/bcdc9de5-4470-4628-8d9b-8ca34a373ee9.json credentials-file:/root/.cloudflared/bcdc9de5-4470-4628-8d9b-8ca34a373ee9.json]
+2025-03-18T01:38:51Z INF Autoupdate frequency is set autoupdateFreq=86400000
+2025-03-18T01:38:51Z INF Generated Connector ID: 5856f70c-aba0-4d41-90f7-892e18a3c0ae
+2025-03-18T01:38:51Z INF Starting tunnel tunnelID=fe4712d9-c8f5-4f12-9f90-1d186c0ad61b
+2025-03-18T01:38:51Z INF Version 2025.2.1 (Checksum afdfadd1ef552e66bffc35246fe30a9bd578356d2d386de95585ccfc432472b8)
+2025-03-18T01:38:51Z INF GOOS: linux, GOVersion: go1.22.10, GoArch: amd64
+2025-03-18T01:38:51Z INF Settings: map[config:/root/.cloudflared/web_TT_SS_WTT.yml cred-file:/root/.cloudflared/fe4712d9-c8f5-4f12-9f90-1d186c0ad61b.json credentials-file:/root/.cloudflared/fe4712d9-c8f5-4f12-9f90-1d186c0ad61b.json]
+2025-03-18T01:38:51Z INF Autoupdate frequency is set autoupdateFreq=86400000
+2025-03-18T01:38:51Z INF Generated Connector ID: d37528d4-f08b-4e0a-86d2-1d2252954eda
+2025-03-18T01:38:51Z INF Initial protocol quic
+2025-03-18T01:38:51Z INF Initial protocol quic
+2025-03-18T01:38:51Z INF Initial protocol quic
+2025-03-18T01:38:51Z INF ICMP proxy will use 172.23.45.17 as source for IPv4
+2025-03-18T01:38:51Z INF ICMP proxy will use fe80::215:5dff:fe6a:23ba in zone eth0 as source for IPv6
+2025-03-18T01:38:51Z INF ICMP proxy will use 172.23.45.17 as source for IPv4
+2025-03-18T01:38:51Z INF ICMP proxy will use fe80::215:5dff:fe6a:23ba in zone eth0 as source for IPv6
+2025-03-18T01:38:51Z INF ICMP proxy will use 172.23.45.17 as source for IPv4
+2025-03-18T01:38:51Z INF ICMP proxy will use fe80::215:5dff:fe6a:23ba in zone eth0 as source for IPv6
+2025-03-18T01:38:51Z INF ICMP proxy will use 172.23.45.17 as source for IPv4
+2025-03-18T01:38:51Z INF ICMP proxy will use fe80::215:5dff:fe6a:23ba in zone eth0 as source for IPv6
+2025-03-18T01:38:51Z INF Starting metrics server on 127.0.0.1:41563/metrics
+2025-03-18T01:38:51Z INF ICMP proxy will use 172.23.45.17 as source for IPv4
+2025-03-18T01:38:51Z INF ICMP proxy will use fe80::215:5dff:fe6a:23ba in zone eth0 as source for IPv6
+2025-03-18T01:38:51Z INF Starting metrics server on 127.0.0.1:38773/metrics
+2025-03-18T01:38:51Z INF ICMP proxy will use 172.23.45.17 as source for IPv4
+2025-03-18T01:38:51Z INF ICMP proxy will use fe80::215:5dff:fe6a:23ba in zone eth0 as source for IPv6
+2025-03-18T01:38:51Z INF Starting metrics server on 127.0.0.1:41777/metrics
+2025-03-18T01:38:51Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.200.73
+2025-03-18T01:38:51Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.192.107
+2025-03-18T01:38:51Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.192.47
+2025-03-18T01:38:51Z ERR Failed to serve tunnel connection error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=0 event=0 ip=198.41.192.107
+2025-03-18T01:38:51Z ERR Serve tunnel error error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=0 event=0 ip=198.41.192.107
+2025-03-18T01:38:51Z INF Retrying connection in up to 2s connIndex=0 event=0 ip=198.41.192.107
+2025-03-18T01:38:51Z ERR Failed to serve tunnel connection error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=0 event=0 ip=198.41.192.47
+2025-03-18T01:38:51Z ERR Serve tunnel error error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=0 event=0 ip=198.41.192.47
+2025-03-18T01:38:51Z INF Retrying connection in up to 2s connIndex=0 event=0 ip=198.41.192.47
+2025-03-18T01:38:53Z INF Tunnel server stopped
+2025-03-18T01:38:53Z ERR Initiating shutdown error="failed to accept QUIC stream: Application error 0x0 (remote)"
+2025-03-18T01:38:53Z INF Metrics server stopped
+2025-03-18T01:38:53Z ERR icmp router terminated error="context canceled"
+failed to accept QUIC stream: Application error 0x0 (remote)
+2025-03-18T01:38:53Z INF Tunnel server stopped
+2025-03-18T01:38:53Z ERR Initiating shutdown error="failed to accept QUIC stream: Application error 0x0 (remote)"
+2025-03-18T01:38:53Z ERR icmp router terminated error="context canceled"
+2025-03-18T01:38:53Z INF Metrics server stopped
+failed to accept QUIC stream: Application error 0x0 (remote)
+2025-03-18T01:38:56Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: timeout: no recent network activity" connIndex=0 event=0 ip=198.41.200.73
+2025-03-18T01:38:56Z INF Retrying connection in up to 2s connIndex=0 event=0 ip=198.41.200.73
+2025-03-18T01:38:57Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.192.77
+2025-03-18T01:38:58Z ERR Failed to serve tunnel connection error="Application error 0x0 (remote)" connIndex=0 event=0 ip=198.41.192.77
+2025-03-18T01:38:58Z ERR Serve tunnel error error="Application error 0x0 (remote)" connIndex=0 event=0 ip=198.41.192.77
+2025-03-18T01:38:58Z INF Retrying connection in up to 4s connIndex=0 event=0 ip=198.41.192.77
+2025-03-18T01:38:59Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.192.77
+2025-03-18T01:38:59Z ERR Failed to serve tunnel connection error="Application error 0x0 (remote)" connIndex=0 event=0 ip=198.41.192.77
+2025-03-18T01:38:59Z ERR Serve tunnel error error="Application error 0x0 (remote)" connIndex=0 event=0 ip=198.41.192.77
+2025-03-18T01:38:59Z INF Retrying connection in up to 8s connIndex=0 event=0 ip=198.41.192.77
+2025-03-18T01:39:04Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.192.77
+2025-03-18T01:39:05Z ERR Failed to serve tunnel connection error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=0 event=0 ip=198.41.192.77
+2025-03-18T01:39:05Z ERR Serve tunnel error error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=0 event=0 ip=198.41.192.77
+2025-03-18T01:39:05Z INF Retrying connection in up to 16s connIndex=0 event=0 ip=198.41.192.77
+2025-03-18T01:39:19Z INF Tunnel server stopped
+2025-03-18T01:39:19Z ERR Initiating shutdown error="failed to accept QUIC stream: Application error 0x0 (remote)"
+2025-03-18T01:39:19Z ERR icmp router terminated error="context canceled"
+2025-03-18T01:39:19Z INF Metrics server stopped
+failed to accept QUIC stream: Application error 0x0 (remote)
+2025-03-18T01:39:45Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:39:45Z WRN Failed to serve tunnel connection error="Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:39:45Z WRN Serve tunnel error error="Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:39:45Z INF Retrying connection in up to 1m4s connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:39:52Z WRN Connection terminated error="Application error 0x0 (remote)" connIndex=3
+2025-03-18T01:40:24Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:40:24Z WRN Failed to serve tunnel connection error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:40:24Z WRN Serve tunnel error error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:40:24Z INF Retrying connection in up to 1m4s connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:40:31Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:40:31Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:40:31Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:40:32Z WRN Failed to serve tunnel connection error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:40:32Z WRN Failed to serve tunnel connection error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:40:32Z WRN Serve tunnel error error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:40:32Z WRN Serve tunnel error error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:40:32Z INF Retrying connection in up to 1m4s connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:40:32Z INF Retrying connection in up to 1m4s connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:40:32Z WRN Failed to serve tunnel connection error="Application error 0x0 (remote)" connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:40:32Z WRN Serve tunnel error error="Application error 0x0 (remote)" connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:40:32Z INF Retrying connection in up to 1m4s connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:40:33Z WRN Connection terminated error="Application error 0x0 (remote)" connIndex=2
+2025-03-18T01:40:35Z WRN Connection terminated error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=1
+2025-03-18T01:40:46Z WRN Connection terminated error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=3
+2025-03-18T01:40:54Z WRN Connection terminated error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=3
+2025-03-18T01:41:13Z INF Starting tunnel tunnelID=fe4712d9-c8f5-4f12-9f90-1d186c0ad61b
+2025-03-18T01:41:13Z INF Starting tunnel tunnelID=bcdc9de5-4470-4628-8d9b-8ca34a373ee9
+2025-03-18T01:41:13Z INF Version 2025.2.1 (Checksum afdfadd1ef552e66bffc35246fe30a9bd578356d2d386de95585ccfc432472b8)
+2025-03-18T01:41:13Z INF Version 2025.2.1 (Checksum afdfadd1ef552e66bffc35246fe30a9bd578356d2d386de95585ccfc432472b8)
+2025-03-18T01:41:13Z INF GOOS: linux, GOVersion: go1.22.10, GoArch: amd64
+2025-03-18T01:41:13Z INF GOOS: linux, GOVersion: go1.22.10, GoArch: amd64
+2025-03-18T01:41:13Z INF Settings: map[config:/root/.cloudflared/web_TT_SS_NTT.yml cred-file:/root/.cloudflared/bcdc9de5-4470-4628-8d9b-8ca34a373ee9.json credentials-file:/root/.cloudflared/bcdc9de5-4470-4628-8d9b-8ca34a373ee9.json]
+2025-03-18T01:41:13Z INF Settings: map[config:/root/.cloudflared/web_TT_SS_WTT.yml cred-file:/root/.cloudflared/fe4712d9-c8f5-4f12-9f90-1d186c0ad61b.json credentials-file:/root/.cloudflared/fe4712d9-c8f5-4f12-9f90-1d186c0ad61b.json]
+2025-03-18T01:41:13Z INF Autoupdate frequency is set autoupdateFreq=86400000
+2025-03-18T01:41:13Z INF Autoupdate frequency is set autoupdateFreq=86400000
+2025-03-18T01:41:13Z INF Generated Connector ID: f2266070-6531-4364-877f-cd030058e79a
+2025-03-18T01:41:13Z INF Generated Connector ID: d6b3112b-fede-4e33-96c1-afbf1ff1b914
+2025-03-18T01:41:13Z INF Starting tunnel tunnelID=6647e3ad-8bed-4a72-bc89-eded4c3464a9
+2025-03-18T01:41:13Z INF Version 2025.2.1 (Checksum afdfadd1ef552e66bffc35246fe30a9bd578356d2d386de95585ccfc432472b8)
+2025-03-18T01:41:13Z INF GOOS: linux, GOVersion: go1.22.10, GoArch: amd64
+2025-03-18T01:41:13Z INF Settings: map[config:/root/.cloudflared/web_TT_SS_CTT.yml cred-file:/root/.cloudflared/6647e3ad-8bed-4a72-bc89-eded4c3464a9.json credentials-file:/root/.cloudflared/6647e3ad-8bed-4a72-bc89-eded4c3464a9.json]
+2025-03-18T01:41:13Z INF Generated Connector ID: 6c7f6e05-5cb5-4141-9a7f-e6f24168c72f
+2025-03-18T01:41:13Z INF Autoupdate frequency is set autoupdateFreq=86400000
+2025-03-18T01:41:13Z INF Initial protocol quic
+2025-03-18T01:41:13Z INF Initial protocol quic
+2025-03-18T01:41:13Z INF ICMP proxy will use 172.23.45.17 as source for IPv4
+2025-03-18T01:41:13Z INF ICMP proxy will use fe80::215:5dff:fe6a:23ba in zone eth0 as source for IPv6
+2025-03-18T01:41:13Z INF ICMP proxy will use 172.23.45.17 as source for IPv4
+2025-03-18T01:41:13Z INF Initial protocol quic
+2025-03-18T01:41:13Z INF ICMP proxy will use fe80::215:5dff:fe6a:23ba in zone eth0 as source for IPv6
+2025-03-18T01:41:13Z INF ICMP proxy will use 172.23.45.17 as source for IPv4
+2025-03-18T01:41:13Z INF ICMP proxy will use fe80::215:5dff:fe6a:23ba in zone eth0 as source for IPv6
+2025-03-18T01:41:13Z INF ICMP proxy will use 172.23.45.17 as source for IPv4
+2025-03-18T01:41:13Z INF ICMP proxy will use 172.23.45.17 as source for IPv4
+2025-03-18T01:41:13Z INF ICMP proxy will use 172.23.45.17 as source for IPv4
+2025-03-18T01:41:13Z INF ICMP proxy will use fe80::215:5dff:fe6a:23ba in zone eth0 as source for IPv6
+2025-03-18T01:41:13Z INF ICMP proxy will use fe80::215:5dff:fe6a:23ba in zone eth0 as source for IPv6
+2025-03-18T01:41:13Z INF ICMP proxy will use fe80::215:5dff:fe6a:23ba in zone eth0 as source for IPv6
+2025-03-18T01:41:13Z INF Starting metrics server on 127.0.0.1:43255/metrics
+2025-03-18T01:41:13Z INF Starting metrics server on 127.0.0.1:39069/metrics
+2025-03-18T01:41:13Z INF Starting metrics server on 127.0.0.1:44907/metrics
+2025-03-18T01:41:13Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.200.13
+2025-03-18T01:41:13Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.200.13
+2025-03-18T01:41:13Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.200.63
+2025-03-18T01:41:13Z ERR Failed to serve tunnel connection error="Application error 0x0 (remote)" connIndex=0 event=0 ip=198.41.200.13
+2025-03-18T01:41:13Z ERR Serve tunnel error error="Application error 0x0 (remote)" connIndex=0 event=0 ip=198.41.200.13
+2025-03-18T01:41:13Z INF Retrying connection in up to 2s connIndex=0 event=0 ip=198.41.200.13
+2025-03-18T01:41:13Z ERR Failed to serve tunnel connection error="Application error 0x0 (remote)" connIndex=0 event=0 ip=198.41.200.13
+2025-03-18T01:41:13Z ERR Serve tunnel error error="Application error 0x0 (remote)" connIndex=0 event=0 ip=198.41.200.13
+2025-03-18T01:41:13Z INF Retrying connection in up to 2s connIndex=0 event=0 ip=198.41.200.13
+2025-03-18T01:41:14Z ERR Failed to serve tunnel connection error="Application error 0x0 (remote)" connIndex=0 event=0 ip=198.41.200.63
+2025-03-18T01:41:14Z ERR Serve tunnel error error="Application error 0x0 (remote)" connIndex=0 event=0 ip=198.41.200.63
+2025-03-18T01:41:14Z INF Retrying connection in up to 2s connIndex=0 event=0 ip=198.41.200.63
+2025-03-18T01:41:14Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.200.13
+2025-03-18T01:41:14Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.200.63
+2025-03-18T01:41:14Z ERR Failed to serve tunnel connection error="Application error 0x0 (remote)" connIndex=0 event=0 ip=198.41.200.63
+2025-03-18T01:41:14Z ERR Serve tunnel error error="Application error 0x0 (remote)" connIndex=0 event=0 ip=198.41.200.63
+2025-03-18T01:41:14Z INF Retrying connection in up to 4s connIndex=0 event=0 ip=198.41.200.63
+2025-03-18T01:41:14Z ERR Failed to serve tunnel connection error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=0 event=0 ip=198.41.200.13
+2025-03-18T01:41:14Z ERR Serve tunnel error error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=0 event=0 ip=198.41.200.13
+2025-03-18T01:41:14Z INF Retrying connection in up to 4s connIndex=0 event=0 ip=198.41.200.13
+2025-03-18T01:41:15Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.200.13
+2025-03-18T01:41:16Z ERR Failed to serve tunnel connection error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=0 event=0 ip=198.41.200.13
+2025-03-18T01:41:16Z ERR Serve tunnel error error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=0 event=0 ip=198.41.200.13
+2025-03-18T01:41:16Z INF Retrying connection in up to 4s connIndex=0 event=0 ip=198.41.200.13
+2025-03-18T01:41:16Z INF Tunnel server stopped
+2025-03-18T01:41:16Z ERR Initiating shutdown error="failed to accept QUIC stream: Application error 0x0 (remote)"
+2025-03-18T01:41:16Z INF Metrics server stopped
+failed to accept QUIC stream: Application error 0x0 (remote)
+2025-03-18T01:41:16Z ERR icmp router terminated error="context canceled"
+2025-03-18T01:41:17Z ERR Initiating shutdown error="failed to accept QUIC stream: Application error 0x0 (remote)"
+2025-03-18T01:41:17Z INF Tunnel server stopped
+2025-03-18T01:41:17Z ERR icmp router terminated error="context canceled"
+2025-03-18T01:41:17Z INF Metrics server stopped
+failed to accept QUIC stream: Application error 0x0 (remote)
+2025-03-18T01:41:18Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.200.63
+2025-03-18T01:41:18Z ERR Failed to serve tunnel connection error="context canceled" connIndex=0 event=0 ip=198.41.200.63
+2025-03-18T01:41:18Z INF Retrying connection in up to 8s connIndex=0 event=0 ip=198.41.200.63
+2025-03-18T01:41:24Z INF Tunnel server stopped
+2025-03-18T01:41:24Z ERR Initiating shutdown error="context canceled"
+2025-03-18T01:41:24Z ERR icmp router terminated error="context canceled"
+2025-03-18T01:41:24Z INF Metrics server stopped
+context canceled
+2025-03-18T01:41:53Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:41:53Z WRN Failed to serve tunnel connection error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:41:53Z WRN Serve tunnel error error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:41:53Z INF Retrying connection in up to 1m4s connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:41:59Z WRN Connection terminated error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=3
+2025-03-18T01:43:18Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:43:18Z WRN Failed to serve tunnel connection error="context canceled" connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:43:18Z INF Retrying connection in up to 1m4s connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:43:31Z WRN Connection terminated error="context canceled" connIndex=3
+2025-03-18T01:44:57Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:44:57Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:44:57Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:44:58Z WRN Failed to serve tunnel connection error="Application error 0x0 (remote)" connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:44:58Z WRN Serve tunnel error error="Application error 0x0 (remote)" connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:44:58Z INF Retrying connection in up to 1m4s connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:44:58Z WRN Failed to serve tunnel connection error="Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:44:58Z WRN Serve tunnel error error="Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:44:58Z INF Retrying connection in up to 1m4s connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:44:58Z WRN Failed to serve tunnel connection error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:44:58Z WRN Serve tunnel error error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:44:58Z INF Retrying connection in up to 1m4s connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:45:01Z WRN Connection terminated error="Application error 0x0 (remote)" connIndex=3
+2025-03-18T01:45:22Z WRN Connection terminated error="Application error 0x0 (remote)" connIndex=2
+2025-03-18T01:45:29Z WRN Connection terminated error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=1
+2025-03-18T01:46:40Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:46:40Z WRN Failed to serve tunnel connection error="Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:46:40Z WRN Serve tunnel error error="Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:46:40Z INF Retrying connection in up to 1m4s connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:46:43Z WRN Connection terminated error="Application error 0x0 (remote)" connIndex=3
+2025-03-18T01:47:49Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:47:49Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:47:49Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:47:49Z WRN Failed to serve tunnel connection error="Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:47:49Z WRN Serve tunnel error error="Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:47:49Z INF Retrying connection in up to 1m4s connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:47:49Z WRN Failed to serve tunnel connection error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:47:49Z WRN Serve tunnel error error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:47:49Z INF Retrying connection in up to 1m4s connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:47:49Z WRN Failed to serve tunnel connection error="Application error 0x0 (remote)" connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:47:49Z WRN Serve tunnel error error="Application error 0x0 (remote)" connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:47:49Z INF Retrying connection in up to 1m4s connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:47:52Z WRN Connection terminated error="Application error 0x0 (remote)" connIndex=2
+2025-03-18T01:47:59Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:48:00Z WRN Failed to serve tunnel connection error="Application error 0x0 (remote)" connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:48:00Z WRN Serve tunnel error error="Application error 0x0 (remote)" connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:48:00Z INF Retrying connection in up to 1m4s connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:48:00Z WRN Connection terminated error="Application error 0x0 (remote)" connIndex=3
+2025-03-18T01:48:11Z WRN Connection terminated error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=1
+2025-03-18T01:48:17Z WRN Connection terminated error="Application error 0x0 (remote)" connIndex=2
+2025-03-18T01:49:12Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:49:12Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:49:12Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:49:12Z WRN Failed to serve tunnel connection error="Application error 0x0 (remote)" connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:49:12Z WRN Serve tunnel error error="Application error 0x0 (remote)" connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:49:12Z INF Retrying connection in up to 1m4s connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:49:12Z WRN Failed to serve tunnel connection error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:49:12Z WRN Serve tunnel error error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:49:12Z INF Retrying connection in up to 1m4s connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:49:12Z WRN Failed to serve tunnel connection error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:49:12Z WRN Serve tunnel error error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:49:12Z INF Retrying connection in up to 1m4s connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:49:20Z WRN Connection terminated error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=3
+2025-03-18T01:49:26Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:49:26Z WRN Failed to serve tunnel connection error="Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:49:26Z WRN Serve tunnel error error="Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:49:26Z INF Retrying connection in up to 1m4s connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:49:28Z WRN Connection terminated error="Application error 0x0 (remote)" connIndex=3
+2025-03-18T01:49:38Z WRN Connection terminated error="Application error 0x0 (remote)" connIndex=2
+2025-03-18T01:49:41Z WRN Connection terminated error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=1
+2025-03-18T01:49:44Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:49:45Z WRN Failed to serve tunnel connection error="Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:49:45Z WRN Serve tunnel error error="Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:49:45Z INF Retrying connection in up to 1m4s connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:50:10Z WRN Connection terminated error="Application error 0x0 (remote)" connIndex=3
+2025-03-18T01:51:01Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:51:02Z WRN Failed to serve tunnel connection error="Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:51:02Z WRN Serve tunnel error error="Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:51:02Z INF Retrying connection in up to 1m4s connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:51:14Z WRN Connection terminated error="Application error 0x0 (remote)" connIndex=3
+2025-03-18T01:53:42Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:53:42Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:53:42Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:53:43Z WRN Failed to serve tunnel connection error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:53:43Z WRN Serve tunnel error error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:53:43Z INF Retrying connection in up to 1m4s connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:53:43Z WRN Failed to serve tunnel connection error="Application error 0x0 (remote)" connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:53:43Z WRN Serve tunnel error error="Application error 0x0 (remote)" connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:53:43Z INF Retrying connection in up to 1m4s connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:53:43Z WRN Failed to serve tunnel connection error="context canceled" connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:53:43Z INF Retrying connection in up to 1m4s connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:53:55Z WRN Connection terminated error="Application error 0x0 (remote)" connIndex=1
+2025-03-18T01:54:06Z WRN Connection terminated error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=3
+2025-03-18T01:54:06Z WRN Connection terminated error="context canceled" connIndex=2
+2025-03-18T01:54:14Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:54:14Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:54:14Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:54:14Z WRN Failed to serve tunnel connection error="Application error 0x0 (remote)" connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:54:14Z WRN Serve tunnel error error="Application error 0x0 (remote)" connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:54:14Z INF Retrying connection in up to 1m4s connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:54:14Z WRN Failed to serve tunnel connection error="Application error 0x0 (remote)" connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:54:14Z WRN Serve tunnel error error="Application error 0x0 (remote)" connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:54:14Z INF Retrying connection in up to 1m4s connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:54:15Z WRN Failed to serve tunnel connection error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:54:15Z WRN Serve tunnel error error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:54:15Z INF Retrying connection in up to 1m4s connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:54:21Z WRN Connection terminated error="Application error 0x0 (remote)" connIndex=2
+2025-03-18T01:54:36Z WRN Connection terminated error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=3
+2025-03-18T01:54:46Z WRN Connection terminated error="Application error 0x0 (remote)" connIndex=1
+2025-03-18T01:55:04Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:55:04Z WRN Failed to serve tunnel connection error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:55:04Z WRN Serve tunnel error error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:55:04Z INF Retrying connection in up to 1m4s connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:55:11Z WRN Connection terminated error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=3
+2025-03-18T01:56:07Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:56:07Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:56:07Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:56:07Z WRN Failed to serve tunnel connection error="Application error 0x0 (remote)" connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:56:07Z WRN Serve tunnel error error="Application error 0x0 (remote)" connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:56:07Z INF Retrying connection in up to 1m4s connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:56:07Z WRN Failed to serve tunnel connection error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:56:07Z WRN Serve tunnel error error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:56:07Z INF Retrying connection in up to 1m4s connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:56:07Z WRN Failed to serve tunnel connection error="context canceled" connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:56:07Z INF Retrying connection in up to 1m4s connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:56:08Z WRN Connection terminated error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=3
+2025-03-18T01:56:21Z WRN Connection terminated error="Application error 0x0 (remote)" connIndex=1
+2025-03-18T01:56:36Z WRN Connection terminated error="context canceled" connIndex=2
+2025-03-18T01:59:14Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:59:14Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:59:14Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:59:14Z WRN Failed to serve tunnel connection error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:59:14Z WRN Serve tunnel error error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:59:14Z INF Retrying connection in up to 1m4s connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T01:59:15Z WRN Failed to serve tunnel connection error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:59:15Z WRN Serve tunnel error error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:59:15Z INF Retrying connection in up to 1m4s connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T01:59:15Z WRN Failed to serve tunnel connection error="Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:59:15Z WRN Serve tunnel error error="Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:59:15Z INF Retrying connection in up to 1m4s connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T01:59:19Z WRN Connection terminated error="Application error 0x0 (remote)" connIndex=3
+2025-03-18T01:59:21Z WRN Connection terminated error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=1
+2025-03-18T01:59:32Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:59:32Z WRN Connection terminated error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=2
+2025-03-18T01:59:32Z WRN Failed to serve tunnel connection error="Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:59:32Z WRN Serve tunnel error error="Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:59:32Z INF Retrying connection in up to 1m4s connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T01:59:53Z WRN Connection terminated error="Application error 0x0 (remote)" connIndex=3
+2025-03-18T02:03:29Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T02:03:29Z WRN Failed to serve tunnel connection error="Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T02:03:29Z WRN Serve tunnel error error="Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T02:03:29Z INF Retrying connection in up to 1m4s connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T02:03:55Z WRN Connection terminated error="Application error 0x0 (remote)" connIndex=3
+2025-03-18T02:04:14Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T02:04:14Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T02:04:14Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T02:04:15Z WRN Failed to serve tunnel connection error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T02:04:15Z WRN Serve tunnel error error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T02:04:15Z INF Retrying connection in up to 1m4s connIndex=3 event=0 ip=198.41.192.37
+2025-03-18T02:04:15Z WRN Failed to serve tunnel connection error="Application error 0x0 (remote)" connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T02:04:15Z WRN Serve tunnel error error="Application error 0x0 (remote)" connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T02:04:15Z INF Retrying connection in up to 1m4s connIndex=2 event=0 ip=198.41.200.53
+2025-03-18T02:04:15Z WRN Failed to serve tunnel connection error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T02:04:15Z WRN Serve tunnel error error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T02:04:15Z INF Retrying connection in up to 1m4s connIndex=1 event=0 ip=198.41.200.113
+2025-03-18T02:04:16Z WRN Connection terminated error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=3
+2025-03-18T02:04:34Z WRN Connection terminated error="Application error 0x0 (remote)" connIndex=2
+2025-03-18T02:04:42Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T02:04:43Z WRN Failed to serve tunnel connection error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T02:04:43Z WRN Serve tunnel error error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T02:04:43Z INF Retrying connection in up to 1m4s connIndex=3 event=0 ip=198.41.200.33
+2025-03-18T02:04:45Z WRN Connection terminated error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=1
+2025-03-18T02:04:57Z WRN Connection terminated error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=3
