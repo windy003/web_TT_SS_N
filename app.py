@@ -118,6 +118,11 @@ def load_from_url(url):
         content+=  f"<h1>{title}</h1>"
 
 
+        wtt = page.ele("xpath://div[@class='weitoutiao-html']")
+        if wtt:
+            content += wtt.text
+
+
 
         if page.eles('xpath://article//p/span'):
             for ele in page.eles('xpath://article//p/span'):
