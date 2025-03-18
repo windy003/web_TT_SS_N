@@ -118,6 +118,18 @@ def load_from_url(url):
         content+=  f"<h1>{title}</h1>"
 
 
+        # 获取文章作者和发布时间
+        article_meta = page.ele("xpath://div[@class='article-meta']")
+        if article_meta:
+            content+= article_meta.text + "<br><br>"
+
+        # 获取微头条的发布时间和作者
+        des_div=page.ele("xpath://div[@class='desc']")
+        if des_div:
+            content+= des_div.text + "<br><br>"
+
+
+        # 微头条文本
         wtt = page.ele("xpath://div[@class='weitoutiao-html']")
         if wtt:
             content += wtt.text
