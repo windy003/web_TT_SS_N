@@ -47,13 +47,8 @@ def load_from_url(url):
         title = page.ele('xpath://h1').text
         print(f"文章标题: {title}")
         
-        # 获取文章内容，排除 pgc-img 标签及其子节点
-        content = ''.join([
-            ele.text 
-            for ele in page.eles('xpath://article//node()[not(ancestor-or-self::div[@class="pgc-img"])]')
-        ])
-        
 
+        
         # 尝试找到并点击"点开展开剩余.."按钮
         try:
             # 使用 contains() 函数匹配包含特定文本的按钮
@@ -95,6 +90,18 @@ def load_from_url(url):
         # 滚动页面以触发懒加载
         page.scroll.down()
         time.sleep(2)  # 等待图片加载
+
+
+        content=""
+        for ele in page.eles('xpath://article//p//span'):
+            content += ele.text
+    
+
+        print(f"文章内容: {content}")
+
+
+
+
 
         imgs_A_Ds_lists = page.eles('xpath://div[@class="pgc-img"]')
 
