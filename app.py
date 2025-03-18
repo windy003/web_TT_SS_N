@@ -119,7 +119,7 @@ def load_from_url(url):
 
 
 
-        for ele in page.eles('xpath://article//p//span'):
+        for ele in page.eles('xpath://article//p/span'):
             content += ele.text
     
 
