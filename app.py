@@ -119,14 +119,24 @@ def load_from_url(url):
 
 
 
-        for ele in page.eles('xpath://article//p/span'):
-            content += ele.text
+        if page.eles('xpath://article//p/span'):
+            for ele in page.eles('xpath://article//p/span'):
+                content += ele.text
+        else:
+            for ele in page.eles('xpath://article//p'):
+                content += ele.text
+
     
 
         print(f"文章内容: {content}")
 
 
+        imgs_lists = page.eles('xpath://article/img')
+        imgs_tags = ""
+        for img in imgs_lists:
+            imgs_tags += img.html
 
+        content += imgs_tags
 
 
         imgs_A_Ds_lists = page.eles('xpath://div[@class="pgc-img"]')
