@@ -117,16 +117,30 @@ def load_from_url(url):
         
         content+=  f"<h1>{title}</h1>"
 
+        # 获取文章的发布时间和作者
+        # 获取所有 span 元素
+        spans = page.eles("xpath://div[@class='article-meta']/span")
 
-        # 获取文章作者和发布时间
-        article_meta = page.ele("xpath://div[@class='article-meta']")
-        if article_meta:
-            content+= article_meta.text + "<br><br>"
+        # 获取文章发布时间（第一个 span）
+        if len(spans) > 0:
+            article_pub_time = spans[0].text
+            if article_pub_time:
+                content += article_pub_time + "<br>"
+
+        # 获取文章作者（第二个 span）
+        if len(spans) > 2:
+            article_author = spans[2].text
+            if article_author:
+                content += article_author + "<br><br>"
 
         # 获取微头条的发布时间和作者
-        des_div=page.ele("xpath://div[@class='desc']")
-        if des_div:
-            content+= des_div.text + "<br><br>"
+        wtt_author=page.ele("xpath://div[@class='desc']/a").text  
+        if wtt_author:
+            content+= wtt_author + "<br>"
+
+        wtt_pub_time=page.ele("xpath://div[@class='desc']/p/span").text
+        if wtt_pub_time:
+            content+= wtt_pub_time + "<br><br>"
 
 
         # 微头条文本
