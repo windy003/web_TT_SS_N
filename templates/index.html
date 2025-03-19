@@ -584,22 +584,21 @@
             
             // 应用设置到指定元素及其所有子元素
             function applySettings(element) {
-                // 设置主元素样式
-                element.style.cssText = `
-                    font-size: ${settings.fontSize}px !important;
-                    letter-spacing: ${settings.letterSpacing}px !important;
-                    line-height: ${settings.lineHeight} !important;
-                `;
+                // 设置基础样式（字体大小和行高）
+                element.style.fontSize = `${settings.fontSize}px`;
+                element.style.lineHeight = settings.lineHeight;
                 
-                // 遍历所有子元素并应用样式
-                const children = element.querySelectorAll('*');
-                children.forEach(child => {
-                    child.style.cssText = `
-                        font-size: ${settings.fontSize}px !important;
-                        letter-spacing: ${settings.letterSpacing}px !important;
-                        line-height: ${settings.lineHeight} !important;
-                    `;
-                });
+                // 保存原始HTML
+                const originalHtml = element.innerHTML;
+                
+                // 使用正则表达式替换所有中文字符，为它们添加字间距样式
+                const processedHtml = originalHtml.replace(/([\u4e00-\u9fa5]+)/g, 
+                    `<span style="letter-spacing: ${settings.letterSpacing}px;">$1</span>`);
+                
+                // 应用处理后的HTML
+                element.innerHTML = processedHtml;
+                
+                console.log(`应用字间距: ${settings.letterSpacing}px 到中文字符`);
             }
             
             // 显示/隐藏控制面板
