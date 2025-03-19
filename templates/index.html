@@ -584,21 +584,103 @@
             
             // 应用设置到指定元素及其所有子元素
             function applySettings(element) {
+                console.log('应用设置：字体大小=' + settings.fontSize + ', 字间距=' + settings.letterSpacing + ', 行高=' + settings.lineHeight);
+                
+                // 首先清理所有之前添加的样式
+                cleanupPreviousStyling(element);
+                
                 // 设置基础样式（字体大小和行高）
                 element.style.fontSize = `${settings.fontSize}px`;
                 element.style.lineHeight = settings.lineHeight;
                 
-                // 保存原始HTML
-                const originalHtml = element.innerHTML;
+                // 处理所有文本节点，创建新的样式结构
+                processTextNodesForChinese(element);
+            }
+            
+            // 清理之前应用的所有样式
+            function cleanupPreviousStyling(element) {
+                // 查找所有带有特定样式的span标签
+                const styledSpans = element.querySelectorAll('span[style*="letter-spacing"]');
                 
-                // 使用正则表达式替换所有中文字符，为它们添加字间距样式
-                const processedHtml = originalHtml.replace(/([\u4e00-\u9fa5]+)/g, 
-                    `<span style="letter-spacing: ${settings.letterSpacing}px;">$1</span>`);
+                // 处理每个找到的span标签
+                styledSpans.forEach(span => {
+                    // 获取span的内容
+                    const content = span.textContent;
+                    // 创建文本节点替换这个span
+                    const textNode = document.createTextNode(content);
+                    // 替换节点
+                    span.parentNode.replaceChild(textNode, span);
+                });
                 
-                // 应用处理后的HTML
-                element.innerHTML = processedHtml;
+                // 处理完成后，合并相邻的文本节点
+                element.normalize();
+            }
+            
+            // 处理文本节点以添加字间距到中文字符
+            function processTextNodesForChinese(element) {
+                // 使用TreeWalker遍历所有文本节点
+                const walker = document.createTreeWalker(
+                    element,
+                    NodeFilter.SHOW_TEXT,
+                    null,
+                    false
+                );
                 
-                console.log(`应用字间距: ${settings.letterSpacing}px 到中文字符`);
+                // 收集需要处理的文本节点
+                const textNodes = [];
+                let node;
+                while (node = walker.nextNode()) {
+                    if (node.nodeValue.trim() !== '') {
+                        textNodes.push(node);
+                    }
+                }
+                
+                // 处理收集到的文本节点
+                textNodes.forEach(textNode => {
+                    const text = textNode.nodeValue;
+                    
+                    // 检查是否包含中文字符
+                    if (!/[\u4e00-\u9fa5]/.test(text)) {
+                        return; // 如果不包含中文，跳过处理
+                    }
+                    
+                    // 创建文档片段来保存处理后的内容
+                    const fragment = document.createDocumentFragment();
+                    
+                    // 匹配中文字符的正则表达式
+                    const pattern = /([\u4e00-\u9fa5]+)/g;
+                    
+                    let lastIndex = 0;
+                    let match;
+                    
+                    // 处理所有中文匹配项
+                    while ((match = pattern.exec(text)) !== null) {
+                        // 添加匹配前的非中文内容
+                        if (match.index > lastIndex) {
+                            fragment.appendChild(
+                                document.createTextNode(text.substring(lastIndex, match.index))
+                            );
+                        }
+                        
+                        // 创建带有字间距的span，包含中文字符
+                        const chineseSpan = document.createElement('span');
+                        chineseSpan.style.letterSpacing = `${settings.letterSpacing}px`;
+                        chineseSpan.textContent = match[0];
+                        fragment.appendChild(chineseSpan);
+                        
+                        lastIndex = pattern.lastIndex;
+                    }
+                    
+                    // 添加剩余的非中文内容
+                    if (lastIndex < text.length) {
+                        fragment.appendChild(
+                            document.createTextNode(text.substring(lastIndex))
+                        );
+                    }
+                    
+                    // 替换原始文本节点
+                    textNode.parentNode.replaceChild(fragment, textNode);
+                });
             }
             
             // 显示/隐藏控制面板
