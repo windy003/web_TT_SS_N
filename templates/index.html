@@ -460,10 +460,31 @@
             display: block;
             margin: 0 auto;
         }
+
+        /* 阅读进度条样式 */
+        .reading-progress-bar {
+            position: fixed;
+            right: 0;
+            top: 0;
+            width: 4px;
+            height: 0;
+            background-color: #4CAF50;
+            z-index: 9999;
+            transition: height 0.1s;
+        }
+        
+        /* 在移动设备上调整进度条 */
+        @media (max-width: 768px) {
+            .reading-progress-bar {
+                width: 3px;
+            }
+        }
     </style>
 </head>
 <body>
     <a id="top" style="position: absolute; top: 0;"></a>
+    <!-- 添加阅读进度条 -->
+    <div class="reading-progress-bar" id="readingProgressBar"></div>
     <div class="container">
         <h1>头条文章爬取器</h1>
         
@@ -529,6 +550,24 @@
             const togglePanel = document.getElementById('togglePanel');
             const panelContent = document.querySelector('.panel-content');
             const dragHandle = document.getElementById('dragHandle');
+            
+            // 阅读进度条相关元素
+            const progressBar = document.getElementById('readingProgressBar');
+            
+            // 更新阅读进度条函数
+            function updateReadingProgress() {
+                const windowHeight = window.innerHeight;
+                const documentHeight = document.documentElement.scrollHeight - windowHeight;
+                const scrollTop = window.scrollY;
+                const progress = (scrollTop / documentHeight) * 100;
+                progressBar.style.height = `${progress}%`;
+            }
+            
+            // 监听滚动事件以更新进度条
+            window.addEventListener('scroll', updateReadingProgress);
+            // 页面加载和调整大小时更新进度条
+            window.addEventListener('load', updateReadingProgress);
+            window.addEventListener('resize', updateReadingProgress);
             
             // 获取表单输入元素
             const bookInput = document.getElementById('bookInput');
