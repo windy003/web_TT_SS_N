@@ -88,10 +88,19 @@ def load_from_url(url):
             time.sleep(2)
 
             page.scroll.down()
+            time.sleep(2)
 
             page.scroll.down()
+            time.sleep(2)
 
             page.scroll.down()
+            time.sleep(2)
+
+            page.scroll.down()
+            time.sleep(2)
+
+            page.scroll.down()
+            time.sleep(2)
 
             page.scroll.down()
             time.sleep(5)
