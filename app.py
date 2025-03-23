@@ -152,7 +152,7 @@ def load_from_url(url):
             title = page.ele('xpath://h1').text
             print(f"文章标题: {title}")
             
-            content+=  f"<h1>{title}</h1>"
+            content+=  f"<b>{title}</b>"
         except Exception as e:
             print(f"获取文章标题失败: {e}")
             traceback.print_exc()
