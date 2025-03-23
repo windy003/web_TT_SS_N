@@ -48,17 +48,10 @@ def load_from_url(url):
     """
     # 创建配置对象
     options = ChromiumOptions()
-    # options.set_argument('--headless=new')  # 使用新的无头模式
-    # options.set_argument('--no-sandbox')    # 在Linux系统中添加此参数
-    # options.set_argument('--disable-dev-shm-usage')  # 避免内存不足问题
+    options.set_argument('--headless=new')  # 使用新的无头模式
+    options.set_argument('--no-sandbox')    # 在Linux系统中添加此参数
+    options.set_argument('--disable-dev-shm-usage')  # 避免内存不足问题
     
-    # # 设置用户数据目录，用于保存Cookie和缓存
-    # user_data_dir = os.path.join(os.getcwd(), 'user_data')
-    # options.set_argument(f'--user-data-dir={user_data_dir}')
-    
-    # # 设置缓存路径
-    # cache_path = os.path.join(os.getcwd(), 'cache')
-    # options.set_cache_path(cache_path)
     
     # 使用配置创建页面对象
     page = ChromiumPage(options)
