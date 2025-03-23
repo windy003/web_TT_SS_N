@@ -437,15 +437,6 @@
         }
 
 
-        /* 添加箭头图标样式 */
-         .arrow-up {
-            width: 0;
-            height: 0;
-            border-left: 10px solid transparent;
-            border-right: 10px solid transparent;
-            border-bottom: 15px solid white;
-        }
-
         input::placeholder {
             color: #999; !important/* 使用浅灰色 */
             opacity: 1; !important /* 确保不透明 */
@@ -472,7 +463,7 @@
             top: 0;
             width: 4px;
             height: 0;
-            background-color: #4CAF50;
+            background-color: #076b2a;
             z-index: 9999;
             transition: height 0.1s;
         }
@@ -480,7 +471,7 @@
         /* 在移动设备上调整进度条 */
         @media (max-width: 768px) {
             .reading-progress-bar {
-                width: 3px;
+                width: 10px;
             }
         }
     </style>
@@ -489,6 +480,8 @@
     <a id="top" style="position: absolute; top: 0;"></a>
     <!-- 添加阅读进度条 -->
     <div class="reading-progress-bar" id="readingProgressBar"></div>
+    
+    <!-- 实际的显示区域 -->
     <div class="container">
         <h1>头条文章爬取器</h1>
         
@@ -543,9 +536,11 @@
 
     <!-- 悬浮球 -->
     <a href="#top" class="floating_jump_ball" id="floatingBall_jump">
-        <div class="arrow-up"></div>
+        <div style="font-size: 30px;">顶</div>
     </a>
 
+
+    <!-- 悬浮按钮控制控制面板 -->
     <div id="floating_button"   class="floating_button_ball" style="font-size: 30px;">悬
     </div>  
 
