@@ -8,7 +8,8 @@ services:
     volumes:
       - ./user_data:/app/user_data
       - ./cache:/app/cache
-      - ./backup.json:/app/backup.json
+      - ./backup:/app/backup
+      - ./chrome_data:/app/chrome_data
     environment:
       - HTTP_PROXY=http://host.docker.internal:10809
       - HTTPS_PROXY=http://host.docker.internal:10809

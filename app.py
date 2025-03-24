@@ -19,8 +19,8 @@ def index():
     url_old = ""
     content_old = ""
     # 读取 backup.json 文件
-    if os.path.exists("./backup.json"):
-        with open("./backup.json", "r", encoding="utf-8") as f:
+    if os.path.exists("./backup/backup.json"):
+        with open("./backup/backup.json", "r", encoding="utf-8") as f:
             data = json.load(f)
             url_old = data.get("url", "").strip()
             content_old = data.get("content", "")
@@ -51,11 +51,16 @@ def load_from_url(url):
     options.set_argument('--headless=new')  # 使用新的无头模式
     options.set_argument('--no-sandbox')    # 在Linux系统中添加此参数
     options.set_argument('--disable-dev-shm-usage')  # 避免内存不足问题
-    
+    options.set_argument('--user-data-dir=./chrome_data')
     
     # 使用配置创建页面对象
     page = ChromiumPage(options)
     print("已启动浏览器...")
+
+
+    # 确保data目录存在
+    if not os.path.exists('./chrome_data'):
+        os.makedirs('./chrome_data')
 
     
     # 开始操作
@@ -135,10 +140,6 @@ def load_from_url(url):
             
             page.scroll.down()
             time.sleep(2)
-
-            
-            page.scroll.down()
-            time.sleep(2)
         except Exception as e:
             print(f"向下翻页失败: {e}")
             traceback.print_exc()
@@ -167,7 +168,7 @@ def load_from_url(url):
             if len(spans) > 0:
                 article_pub_time = spans[0].text
                 if article_pub_time:
-                    content += article_pub_time + "<br>"
+                    content += "<br>" + article_pub_time + "<br>"
         except Exception as e:
             print(f"获取文章发布时间失败: {e}")
             traceback.print_exc()
@@ -218,7 +219,7 @@ def save_content(content,url):
             "url": url,
             "content": content
         }
-        with open("./backup.json", "w", encoding="utf-8") as f:
+        with open("./backup/backup.json", "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=4)
     except Exception as e:
         print(f"写入 backup.json 文件失败: {e}")
@@ -266,6 +267,8 @@ def mode_2(page,content,url):
                         # 提取所有文本内容（包括嵌套标签中的文本）
                         content += ele.text
                     elif ele.tag == 'div':
+                        content += ele.html
+                    elif ele.tag == 'img':
                         content += ele.html
             except Exception as e:
                 print(f"获取文章内容失败: {e}")
