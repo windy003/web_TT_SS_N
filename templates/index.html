@@ -691,7 +691,7 @@
                         // 添加匹配前的非中文内容
                         if (match.index > lastIndex) {
                             fragment.appendChild(
-                                document.createTextNode("\u00A0\u00A0\u00A0\u00A0" + text.substring(lastIndex, match.index) + "\u00A0\u00A0\u00A0\u00A0")
+                                document.createTextNode("\u00A0\u00A0" + text.substring(lastIndex, match.index) + "\u00A0\u00A0")
                             );
                         }
                         
