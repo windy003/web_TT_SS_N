@@ -534,11 +534,6 @@
 
   
 
-    <!-- 悬浮球 -->
-    <a href="#top" class="floating_jump_ball" id="floatingBall_jump">
-        <div style="font-size: 30px;">顶</div>
-    </a>
-
 
     <!-- 悬浮按钮控制控制面板 -->
     <div id="floating_button"   class="floating_button_ball" style="font-size: 30px;">悬
@@ -553,7 +548,6 @@
             const dragHandle = document.getElementById('dragHandle');
 
             const floatingButton = document.getElementById('floating_button');
-            const floatingBall = document.getElementById('floatingBall_jump');
             
             // 阅读进度条相关元素
             const progressBar = document.getElementById('readingProgressBar');
@@ -830,145 +824,6 @@
             let isDraggingBall = false;
             let ballOffsetX, ballOffsetY;
             let hasMoved = false;
-
-            // 修改触摸事件处理
-            floatingBall.addEventListener('touchstart', function(e) {
-                isDraggingBall = true;
-                hasMoved = false;
-                ballOffsetX = e.touches[0].clientX - floatingBall.getBoundingClientRect().left;
-                ballOffsetY = e.touches[0].clientY - floatingBall.getBoundingClientRect().top;
-                // 不要在这里阻止默认行为，这会导致点击事件无法触发
-            });
-
-            floatingBall.addEventListener('touchmove', function(e) {
-                if (!isDraggingBall) return;
-                
-                hasMoved = true;
-                
-                const x = e.touches[0].clientX - ballOffsetX;
-                const y = e.touches[0].clientY - ballOffsetY;
-                
-                // 确保悬浮球不会超出屏幕边界
-                const maxX = window.innerWidth - floatingBall.offsetWidth;
-                const maxY = window.innerHeight - floatingBall.offsetHeight;
-                
-                const boundedX = Math.max(0, Math.min(x, maxX));
-                const boundedY = Math.max(0, Math.min(y, maxY));
-                
-                floatingBall.style.left = boundedX + 'px';
-                floatingBall.style.bottom = 'auto';
-                floatingBall.style.top = boundedY + 'px';
-                floatingBall.style.right = 'auto';
-                
-                e.preventDefault(); // 现在可以阻止默认行为，因为我们确定是在拖动
-            });
-
-            floatingBall.addEventListener('touchend', function(e) {
-                if (isDraggingBall) {
-                    if (!hasMoved) {
-                        // 如果没有移动，则是点击，不需要做任何事情，让默认的锚点行为发生
-                    } else {
-                        // 如果移动了，保存位置
-                        saveBallPosition();
-                    }
-                    isDraggingBall = false;
-                }
-            });
-
-            // 修改加载位置函数，确保位置在视口内
-            function loadBallPosition() {
-                const savedPosition = localStorage.getItem('floatingBallPosition');
-                if (savedPosition && !isMobile) { // 只在非移动设备上加载保存的位置
-                    const position = JSON.parse(savedPosition);
-                    
-                    // 检查保存的位置是否在当前视口内
-                    const viewportWidth = window.innerWidth;
-                    const viewportHeight = window.innerHeight;
-                    
-                    // 解析位置值为数字
-                    let left = parseInt(position.left);
-                    let top = parseInt(position.top);
-                    
-                    // 如果不是有效数字或超出视口，使用默认位置
-                    if (isNaN(left) || left < 0 || left > viewportWidth - 50) {
-                        floatingBall.style.left = 'auto';
-                        floatingBall.style.right = '30px';
-                    } else {
-                        floatingBall.style.left = position.left;
-                        floatingBall.style.right = 'auto';
-                    }
-                    
-                    if (isNaN(top) || top < 0 || top > viewportHeight - 50) {
-                        floatingBall.style.top = 'auto';
-                        floatingBall.style.bottom = '30px';
-                    } else {
-                        floatingBall.style.top = position.top;
-                        floatingBall.style.bottom = 'auto';
-                    }
-                }
-            }
-
-            // 保存悬浮球位置
-            function saveBallPosition() {
-                const position = {
-                    left: floatingBall.style.left,
-                    top: floatingBall.style.top
-                };
-                localStorage.setItem('floatingBallPosition', JSON.stringify(position));
-            }
-
-            // 加载保存的位置
-            loadBallPosition();
-
-            // 添加备用点击处理
-            floatingBall.addEventListener('click', function(e) {
-                if (hasMoved) {
-                    e.preventDefault(); // 如果拖动过，阻止默认的锚点跳转
-                } else {
-                    // 确保在移动设备上也能正常工作
-                    if (isMobile) {
-                        e.preventDefault();
-                        window.scrollTo({
-                            top: 0,
-                            behavior: 'smooth'
-                        });
-                        document.body.scrollTop = 0; // Safari
-                        document.documentElement.scrollTop = 0; // 其他浏览器
-                    }
-                }
-            });
-
-            // ===== 新增：记住上次输入的功能 =====
-            
-            // 从localStorage加载上次输入的值
-            function loadLastInputs() {
-                const lastInputs = localStorage.getItem('bibleReaderLastInputs');
-                if (lastInputs) {
-                    const inputs = JSON.parse(lastInputs);
-                    
-                    // 填充书名、章数和版本输入框
-                    if (inputs.book) bookInput.value = inputs.book;
-                    if (inputs.chapter) chapterInput.value = inputs.chapter;
-                    if (inputs.version) versionInput.value = inputs.version;
-                    
-                    // 填充URL输入框
-                    if (inputs.url) urlInput.value = inputs.url;
-                }
-            }
-            
-            // 保存输入值到localStorage
-            function saveInputs() {
-                const inputs = {
-                    book: bookInput.value,
-                    chapter: chapterInput.value,
-                    version: versionInput.value,
-                    url: urlInput.value
-                };
-                localStorage.setItem('bibleReaderLastInputs', JSON.stringify(inputs));
-            }
-            // 悬浮球功能
-            const floatingButton_button = document.getElementById('floatingButton_button');
-
 
             // 如果是移动设备，重置悬浮球位置到默认位置
             if (isMobile) {
