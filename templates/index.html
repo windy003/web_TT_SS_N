@@ -691,7 +691,7 @@
                         // 添加匹配前的非中文内容
                         if (match.index > lastIndex) {
                             fragment.appendChild(
-                                document.createTextNode(text.substring(lastIndex, match.index))
+                                document.createTextNode("\u00A0\u00A0\u00A0\u00A0" + text.substring(lastIndex, match.index) + "\u00A0\u00A0\u00A0\u00A0")
                             );
                         }
                         
@@ -809,16 +809,6 @@
             // 检测是否是移动设备
             const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
-            // 如果是移动设备，重置悬浮球位置到默认位置
-            if (isMobile) {
-                floatingBall.style.left = 'auto';
-                floatingBall.style.top = 'auto';
-                floatingBall.style.right = '20px';
-                floatingBall.style.bottom = '20px';
-                
-                // 清除可能存在的保存位置
-                localStorage.removeItem('floatingBallPosition');
-            }
 
             // 使悬浮球可拖动
             let isDraggingBall = false;
