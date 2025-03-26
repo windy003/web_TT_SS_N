@@ -188,7 +188,7 @@ def load_from_url(url):
         try:
             if len(page.eles('xpath://article/div/div/p')) > 5:
                 return mode_1(page,content,url)
-            elif len(page.eles('xpath://article/p')) > 5:
+            elif len(page.eles('xpath://article/p')) > 4:
                 return mode_2(page,content,url)
             else:
                 return wtt(page,content,url)
@@ -265,6 +265,8 @@ def mode_2(page,content,url):
                 for ele in eles:
                     if ele.tag == 'p':
                         # 提取所有文本内容（包括嵌套标签中的文本）
+                        content += ele.text
+                    elif ele.tag == 'blockquote':
                         content += ele.text
                     elif ele.tag == 'div':
                         content += ele.html
