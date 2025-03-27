@@ -916,38 +916,8 @@
             // 加载保存的位置
             loadBallPosition();
 
-            // ===== 新增：记住上次输入的功能 =====
-            
-            // 从localStorage加载上次输入的值
-            function loadLastInputs() {
-                const lastInputs = localStorage.getItem('bibleReaderLastInputs');
-                if (lastInputs) {
-                    const inputs = JSON.parse(lastInputs);
-                    
-                    // 填充书名、章数和版本输入框
-                    if (inputs.book) bookInput.value = inputs.book;
-                    if (inputs.chapter) chapterInput.value = inputs.chapter;
-                    if (inputs.version) versionInput.value = inputs.version;
-                    
-                    // 填充URL输入框
-                    if (inputs.url) urlInput.value = inputs.url;
-                }
-            }
             
             
-            
-            urlForm.addEventListener('submit', function() {
-                saveInputs();
-            });
-            
-            // 页面加载时，填充上次输入的值
-            loadLastInputs();
- 
-            
-            urlForm.addEventListener('submit', function() {
-                // 保存输入值
-                saveInputs();
-            });
         });
     </script>
 </body>
