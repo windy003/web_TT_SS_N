@@ -48,10 +48,11 @@ def load_from_url(url):
     """
     # 创建配置对象
     options = ChromiumOptions()
-    options.set_argument('--headless=new')  # 使用新的无头模式
-    options.set_argument('--no-sandbox')    # 在Linux系统中添加此参数
-    options.set_argument('--disable-dev-shm-usage')  # 避免内存不足问题
+    # options.set_argument('--headless=new')  # 使用新的无头模式
+    # options.set_argument('--no-sandbox')    # 在Linux系统中添加此参数
+    # options.set_argument('--disable-dev-shm-usage')  # 避免内存不足问题
     options.set_argument('--user-data-dir=./chrome_data')
+    
     
     # 使用配置创建页面对象
     page = ChromiumPage(options)
@@ -80,9 +81,10 @@ def load_from_url(url):
         try:
             # 使用 contains() 函数匹配包含特定文本的按钮
             more_button = page.ele('xpath://*[contains(text(), "点击展开剩余")]')
-            more_button.click()
-            print("已点击展开更多按钮")
-            time.sleep(2)  # 等待内容加载
+            if more_button:
+                more_button.click()
+                print("已点击展开更多按钮")
+                time.sleep(2)  # 等待内容加载
         except Exception as e:
             print(f"未找到展开更多按钮或点击失败: {e}")
             traceback.print_exc()
@@ -272,6 +274,8 @@ def mode_2(page,content,url):
                         content += ele.html
                     elif ele.tag == 'img':
                         content += ele.html
+                    elif ele.tag == 'h1':
+                        content += ele.text
             except Exception as e:
                 print(f"获取文章内容失败: {e}")
                 traceback.print_exc()
@@ -287,6 +291,7 @@ def mode_2(page,content,url):
 
 
 # 获取微头条的发布时间和作者
+# https://www.toutiao.com/w/1827674248868036/?app=&category_new=text_inner_flow&chn_id=94349612189&req_id_new=2025032711472041716F68C8264F18C47B&share_did=MS4wLjACAAAAFIeCXqC-bpKxhp-FMV0EuKV-XQVB6-mSh701zwQO9RpTxDeXwV2yFdvhJIx5cc_q&share_token=4e8f8dc5-f706-4d5b-8639-241efe55b4e9&share_uid=MS4wLjABAAAASxKaOyZkLPeOekvLPbVvpEZxOI0hIbcOi5tNlEAvhVQNRKCRhGolFv7jwed4Tf1r&timestamp=1743047241&tt_from=copy_link&use_new_style=1&utm_campaign=client_share&utm_medium=toutiao_android&utm_source=copy_link&source=m_redirect
 def wtt(page,content,url):
     try:
         wtt_author=page.ele("xpath://div[@class='desc']/a").text  
@@ -308,6 +313,10 @@ def wtt(page,content,url):
         wtt = page.ele("xpath://div[@class='weitoutiao-html']")
         if wtt:
             content += wtt.text
+        imgs = page.eles("xpath://article//img")
+        if imgs:
+            for img in imgs:
+                content += img.html
     except Exception as e:
         print(f"获取微头条文本失败: {e}")
         traceback.print_exc()   
@@ -322,4 +331,4 @@ def wtt(page,content,url):
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5003, debug=True) 
+    app.run(host='0.0.0.0', port=5007, debug=True) 
