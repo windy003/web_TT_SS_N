@@ -32,8 +32,11 @@ def index():
                 if url == url_old:
                     return render_template('index.html',content=content_old)
                 else:
+                    save_url(url)
+                    print(f"url: {url}")
                     return load_from_url(url)
             else:
+                save_url(url)
                 return load_from_url(url)
     
     return render_template('index.html')
@@ -202,8 +205,6 @@ def load_from_url(url):
 
 
 
-       
-
     except Exception as e:
         print(f"爬取过程中出现错误: {e}")
         traceback.print_exc()
@@ -214,19 +215,43 @@ def load_from_url(url):
         traceback.print_exc()
 
 
-# 将 url 和 content 写入 backup.json 文件的函数
-def save_content(content,url):
+def save_url(url):
     try:
-        data = {
-            "url": url,
-            "content": content
-        }
+        # 如果 backup.json 文件存在，读取现有数据
+        if os.path.exists("./backup/backup.json"):
+            with open("./backup/backup.json", "r", encoding="utf-8") as f:
+                data = json.load(f)
+        else:
+            data = {}
+
+        # 更新 url 的值
+        data["url"] = url
+
+        # 写入 backup.json 文件
         with open("./backup/backup.json", "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=4)
     except Exception as e:
         print(f"写入 backup.json 文件失败: {e}")
         traceback.print_exc()
 
+def save_content(content):
+    try:
+        # 如果 backup.json 文件存在，读取现有数据
+        if os.path.exists("./backup/backup.json"):
+            with open("./backup/backup.json", "r", encoding="utf-8") as f:
+                data = json.load(f)
+        else:
+            data = {}
+
+        # 更新 content 的值
+        data["content"] = content
+
+        # 写入 backup.json 文件
+        with open("./backup/backup.json", "w", encoding="utf-8") as f:
+            json.dump(data, f, ensure_ascii=False, indent=4)
+    except Exception as e:
+        print(f"写入 backup.json 文件失败: {e}")
+        traceback.print_exc()
 
 
 # 获取文章内容函数,形式1,示例:https://www.toutiao.com/article/7484780656023667211/?app=news_article&category_new=text_inner_flow&chn_id=94349612189&is_hit_share_recommend=0&req_id_new=20250323084928A9A596CD6AC5AA1F7C3B&share_did=MS4wLjACAAAAFIeCXqC-bpKxhp-FMV0EuKV-XQVB6-mSh701zwQO9RpTxDeXwV2yFdvhJIx5cc_q&share_token=188c7e83-3177-4243-a9dd-f688ccad8998&share_uid=MS4wLjABAAAASxKaOyZkLPeOekvLPbVvpEZxOI0hIbcOi5tNlEAvhVQNRKCRhGolFv7jwed4Tf1r&tt_from=copy_link&use_new_style=1&utm_campaign=client_share&utm_medium=toutiao_android&utm_source=copy_link&source=m_redirect
@@ -245,7 +270,7 @@ def mode_1(page,content,url):
                     if ele.text:
                         content += ele.text
         print("用的是形式1")
-        save_content(content,url)
+        save_content(content)
         return render_template('index.html',content=content)
         
     except Exception as e:
@@ -280,7 +305,7 @@ def mode_2(page,content,url):
                 print(f"获取文章内容失败: {e}")
                 traceback.print_exc()
         print("用的是形式2")
-        save_content(content,url)
+        save_content(content)
         return render_template('index.html',content=content)
     except Exception as e:
         print(f"获取文章内容失败: {e}")
@@ -322,7 +347,7 @@ def wtt(page,content,url):
         traceback.print_exc()   
 
     print("用的是微头条")
-    save_content(content,url)
+    save_content(content) 
     return render_template('index.html',content=content)
 
 
