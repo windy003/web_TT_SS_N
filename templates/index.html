@@ -518,8 +518,8 @@
 
             <label for="letterSpacing">字间距 (px):</label>
             <div class="slider-container">
-                <input type="range" id="letterSpacing" min="0" max="60" value="1" step="0.1">
-                <input type="number" id="letterSpacingInput" min="0" max="60" value="1" step="0.1">
+                <input type="range" id="letterSpacing" min="0" max="90" value="1" step="0.1">
+                <input type="number" id="letterSpacingInput" min="0" max="90" value="1" step="0.1">
             </div>
 
             <label for="lineHeight">行间距 (em):</label>
@@ -625,10 +625,11 @@
                 
                 // 设置基础样式（字体大小和行高）
                 element.style.fontSize = `${settings.fontSize}px`;
+                element.style.letterSpacing = `${settings.letterSpacing}px`;
                 element.style.lineHeight = settings.lineHeight;
                 
-                // 处理所有文本节点，创建新的样式结构
-                processTextNodesForChinese(element);
+                // 处理所有英文单词，将letterSpacing设置为0px
+                processTextNodesForEnglish(element);
             }
             
             // 清理之前应用的所有样式
@@ -650,8 +651,9 @@
                 element.normalize();
             }
             
-            // 处理文本节点以添加字间距到中文字符
-            function processTextNodesForChinese(element) {
+           
+            // 处理文本节点以将英文单词的letterSpacing设置为0px
+            function processTextNodesForEnglish(element) {
                 // 使用TreeWalker遍历所有文本节点
                 const walker = document.createTreeWalker(
                     element,
@@ -673,39 +675,39 @@
                 textNodes.forEach(textNode => {
                     const text = textNode.nodeValue;
                     
-                    // 检查是否包含中文字符
-                    if (!/[\u4e00-\u9fa5]/.test(text)) {
-                        return; // 如果不包含中文，跳过处理
+                    // 检查是否包含英文字符
+                    if (!/(\b[a-zA-Z0-9]+(?:-[a-zA-Z0-9]+)*\b)/.test(text)) {
+                        return; // 如果不包含英文，跳过处理
                     }
                     
                     // 创建文档片段来保存处理后的内容
                     const fragment = document.createDocumentFragment();
                     
-                    // 匹配中文字符的正则表达式
-                    const pattern = /([\u4e00-\u9fa5]+)/g;
+                    // 匹配英文单词的正则表达式
+                    const pattern = /(\b[a-zA-Z0-9]+(?:-[a-zA-Z0-9]+)*\b)/g;
                     
                     let lastIndex = 0;
                     let match;
                     
-                    // 处理所有中文匹配项
+                    // 处理所有英文单词匹配项
                     while ((match = pattern.exec(text)) !== null) {
-                        // 添加匹配前的非中文内容
+                        // 添加匹配前的非英文内容
                         if (match.index > lastIndex) {
                             fragment.appendChild(
-                                document.createTextNode("\u00A0\u00A0" + text.substring(lastIndex, match.index) + "\u00A0\u00A0")
+                                document.createTextNode(text.substring(lastIndex, match.index))
                             );
                         }
                         
-                        // 创建带有字间距的span，包含中文字符
-                        const chineseSpan = document.createElement('span');
-                        chineseSpan.style.letterSpacing = `${settings.letterSpacing}px`;
-                        chineseSpan.textContent = match[0];
-                        fragment.appendChild(chineseSpan);
+                        // 创建带有letterSpacing为0px的span，包含英文单词
+                        const englishSpan = document.createElement('span');
+                        englishSpan.style.letterSpacing = '0px';
+                        englishSpan.textContent = match[0];
+                        fragment.appendChild(englishSpan);
                         
                         lastIndex = pattern.lastIndex;
                     }
                     
-                    // 添加剩余的非中文内容
+                    // 添加剩余的非英文内容
                     if (lastIndex < text.length) {
                         fragment.appendChild(
                             document.createTextNode(text.substring(lastIndex))
@@ -716,7 +718,6 @@
                     textNode.parentNode.replaceChild(fragment, textNode);
                 });
             }
-           
             
             floatingButton.addEventListener('click', function() {
                 controlPanel.style.display = controlPanel.style.display === 'none' || controlPanel.style.display === '' ? 'block' : 'none';
@@ -917,6 +918,8 @@
             loadBallPosition();
 
             
+            // 处理所有文本节点，创建新的样式结构
+            processTextNodesForChinese(element);
             
         });
     </script>
