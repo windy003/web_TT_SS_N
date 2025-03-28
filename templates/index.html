@@ -676,7 +676,8 @@
                     const text = textNode.nodeValue;
                     
                     // 检查是否包含英文字符
-                    if (!/(\b[a-zA-Z0-9]+(?:-[a-zA-Z0-9]+)*\b)/.test(text)) {
+                    const regex = /[a-zA-Z0-9\-_\.\/:?=+*()\[\]{},;'"]+/;
+                    if (!regex.test(text)) {
                         return; // 如果不包含英文，跳过处理
                     }
                     
@@ -684,7 +685,7 @@
                     const fragment = document.createDocumentFragment();
                     
                     // 匹配英文单词的正则表达式
-                    const pattern = /(\b[a-zA-Z0-9]+(?:-[a-zA-Z0-9]+)*\b)/g;
+                    const pattern = /(\b[a-zA-Z0-9\-_\.\/:?=+*()\[\]{},;'"]+\b)/g;
                     
                     let lastIndex = 0;
                     let match;
