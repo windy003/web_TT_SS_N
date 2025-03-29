@@ -305,6 +305,9 @@ def mode_2(page,content,url):
                         content += ele.html
                     elif ele.tag == 'h1':
                         content += ele.text
+                    elif ele.tag == 'ul' or ele.tag == 'ol':
+                        for i, li in enumerate(ele.eles('xpath:.//li')):
+                            content += f"{i+1}. {li.text}<br>"
             except Exception as e:
                 print(f"获取文章内容失败: {e}")
                 traceback.print_exc()
