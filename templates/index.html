@@ -261,6 +261,21 @@
                 margin-right: 10px;
                 margin-bottom: 10px;
             }
+
+
+            #div_tag {
+            word-wrap: break-word;  /* 旧版浏览器支持 */
+            overflow-wrap: break-word;  /* 新版标准 */
+            white-space: normal;  /* 确保文本正常换行 */
+            margin: 0 10px 0 10px;
+        }
+
+        #div_tag img {
+            max-width: 90%; /* 缩小图片宽度，留出右边距 */
+            height: auto;
+            display: block;
+            margin: 0 auto; /* 水平居中 */
+        }
         }
 
 
@@ -438,13 +453,15 @@
             word-wrap: break-word;  /* 旧版浏览器支持 */
             overflow-wrap: break-word;  /* 新版标准 */
             white-space: normal;  /* 确保文本正常换行 */
+            margin: 0 10px 0 10px;
         }
 
         #div_tag img {
-            max-width: 100%;
+            max-width: 90%; /* 缩小图片宽度，留出右边距 */
             height: auto;
             display: block;
-            margin: 0 auto;
+            margin: 0 auto; /* 水平居中 */
+            box-sizing: border-box;
         }
 
         /* 阅读进度条样式 */
@@ -475,6 +492,22 @@
             /* margin-right: 10px; */
             /* margin-right: 5%; */
             width: 100px;
+
+            #div_tag {
+            word-wrap: break-word;  /* 旧版浏览器支持 */
+            overflow-wrap: break-word;  /* 新版标准 */
+            white-space: normal;  /* 确保文本正常换行 */
+            margin: 0 10px 0 10px;
+        }
+
+        #div_tag img {
+            max-width: 97%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            margin: 0 10px 0 10px;
+
+        }
         }
 
         }
