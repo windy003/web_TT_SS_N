@@ -43,7 +43,8 @@
             max-width: 400px;
         }
         .input-container button {
-            padding: 10px 20px;
+            padding: 10px 10px;
+            margin-right: 10px;
             background-color: #4CAF50;
             color: white;
             border: none;
@@ -246,16 +247,6 @@
             text-transform: uppercase;
         }
 
-        /* 为生成URL按钮添加特殊样式 */
-        #generateUrlButton {
-            background-color: #2196F3;
-        }
-
-        #generateUrlButton:hover {
-            background-color: #0b7dda;
-        }
-
-        
 
         /* 响应式设计 */
         @media (max-width: 600px) {
@@ -266,8 +257,8 @@
             
             .input-container input,
             .input-container button {
-                width: 100%;
-                margin-right: 0;
+                width: 300px; 
+                margin-right: 10px;
                 margin-bottom: 10px;
             }
         }
@@ -473,7 +464,31 @@
             .reading-progress-bar {
                 width: 10px;
             }
+
+
+            .jznr_btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            /* padding: 10px 20px; */
+            cursor: pointer;    
+            /* margin-right: 10px; */
+            /* margin-right: 5%; */
+            width: 100px;
         }
+
+        }
+
+        .jznr_btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            /* padding: 10px 20px; */
+            cursor: pointer;    
+            /* margin-right: 10px; */
+            width: 100px;
+        }
+        
     </style>
 </head>
 <body>
@@ -490,7 +505,7 @@
         <div class="input-container">
             <form method="POST" action="/" id="urlForm">
                 <input type="text" id="urlInput" name="url" placeholder="或直接输入头条文章的网址" style="width: 300px;">
-                <button type="submit">加载内容</button>
+                <button class="jznr_btn" type="submit" style="margin-right:10px;">加载内容</button>
             </form>
 
         </div>
@@ -919,8 +934,6 @@
             loadBallPosition();
 
             
-            // 处理所有文本节点，创建新的样式结构
-            processTextNodesForChinese(element);
             
         });
     </script>
