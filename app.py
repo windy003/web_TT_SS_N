@@ -23,17 +23,21 @@ def index():
         with open("./backup/backup.json", "r", encoding="utf-8") as f:
             data = json.load(f)
             url_old = data.get("url", "").strip()
+            print(f"url_old: {url_old}")
             content_old = data.get("content", "")
 
     if request.method == 'POST':
         if 'url' in request.form:
             url = request.form['url'].strip()
+            print(f"url: {url}")
             if url_old:
                 if url == url_old:
+                    print("url 相同,使用content_old")
                     return render_template('index.html',content=content_old)
                 else:
                     save_url(url)
                     print(f"url: {url}")
+                    print(f"old_url: {url_old}")
                     return load_from_url(url)
             else:
                 save_url(url)
