@@ -75,6 +75,7 @@ def load_from_url(url):
     try:
         # 访问文章页面
         page.get(url)
+        print(f"url: {url}")
         print("正在加载页面...")
         time.sleep(2)  # 等待页面加载
         
@@ -306,6 +307,7 @@ def mode_2(page,content,url):
                     elif ele.tag == 'h1':
                         content += ele.text
                     elif ele.tag == 'ul' or ele.tag == 'ol':
+                        content += "<br>"
                         for i, li in enumerate(ele.eles('xpath:.//li')):
                             content += f"{i+1}. {li.text}<br>"
             except Exception as e:
